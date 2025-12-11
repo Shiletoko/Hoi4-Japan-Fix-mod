@@ -1,0 +1,429 @@
+###DEBUG STUFF
+
+
+
+
+#Category allowed for JAP
+
+foreign_politics = {
+	JAP_demand_united_nations_surrender = {
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		priority = 0
+
+		visible = {
+			FROM = { 
+				OR = {
+					is_faction_leader = yes
+					is_in_faction = no
+				}
+				is_subject = no
+				is_major = yes
+			}
+			is_subject = no
+			OR = {
+				has_completed_focus = JAP_nanshin_ron
+				has_completed_focus = JAP_the_pacific_union_of_soviet_socialist_republics
+			}
+		}
+
+		target_array = enemies
+
+		target_trigger = {
+			all_country = {
+				limit = {
+					AND = {
+						OR = {
+							is_faction_leader = yes
+							is_in_faction = no
+						}
+						exists = yes 
+						is_subject = no
+						is_major = yes
+						NOT = { original_tag = JAP }
+					}
+				}
+			}
+		}
+
+		available = {
+			FROM = {
+				exists = yes 
+				is_subject = no
+				has_war_with = ROOT
+				OR = {
+					is_faction_leader = yes
+					is_in_faction = no
+				}
+			}
+
+			IF = {
+				limit = {
+					1021 = {
+						owner = {
+							OR = {
+								original_tag = FROM
+								is_subject_of = FROM
+								is_in_faction_with = FROM
+							}
+						}
+					}
+				}
+				# MAL
+				1021 = {
+					is_controlled_by = ROOT
+				}
+			}
+			IF = {
+				limit = {
+					ROOT = { has_war_with = MAL }
+				}
+				IF = {
+					limit = {
+						336 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# MAL
+					336 = {
+						owner = {
+							has_capitulated = yes
+						}
+					}
+				}
+			}
+			IF = {
+				limit = {
+					ROOT = { has_war_with = INS }
+				}
+				IF = {
+					limit = {
+						335 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# INS
+					335 = {
+						owner = {
+							has_capitulated = yes
+						}
+					}
+				}
+			}
+			IF = {
+				limit = {
+					ROOT = { has_war_with = BRM }
+				}
+				IF = {
+					limit = {
+						995 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# BRM
+					995 = {
+						owner = {
+							has_capitulated = yes
+						}
+					}
+				}
+			}
+			IF = {
+				limit = {
+					ROOT = { has_war_with = PHI }
+				}
+				IF = {
+					limit = {
+						995 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# PHI
+					327 = {
+						owner = {
+							has_capitulated = yes
+						}
+					}
+				}
+			}
+			IF = {
+				limit = {
+					ROOT = { has_war_with = AST }
+				}
+				IF = {
+					limit = {
+						979 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# New Genea
+					979 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+
+				IF = {
+					limit = {
+						523 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# New Genea
+					523 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+
+				IF = {
+					limit = {
+						737 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# New Britain
+					737 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+
+				IF = {
+					limit = {
+						634 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# New Ireland
+					634 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+				IF = {
+					limit = {
+						520 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# Northern Territory
+					520 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+				IF = {
+					limit = {
+						872 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# North Queensland
+					872 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+			}
+			IF = {
+				limit = {
+					ROOT = { has_war_with = USA }
+				}
+				IF = {
+					limit = {
+						638 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# Guam
+					638 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+				IF = {
+					limit = {
+						632 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# Wake Island
+					632 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+				IF = {
+					limit = {
+						631 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# Midway Island
+					631 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+				IF = {
+					limit = {
+						630 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# Johnston Atoll
+					630 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+				IF = {
+					limit = {
+						629 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# Hawaii
+					629 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+				IF = {
+					limit = {
+						642 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# Phoenix Island
+					642 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+				IF = {
+					limit = {
+						650 = {
+							owner = {
+								OR = {
+									original_tag = FROM
+									is_subject_of = FROM
+									is_in_faction_with = FROM
+								}
+							}
+						}
+					}
+					# Attu Island
+					650 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 400
+		}
+
+		complete_effect = {
+			FROM = {
+				country_event = { 
+					id = SEA_japan_foreign_policy_Fixes.1
+					days = 1 
+				}
+			}
+		}
+	}
+}

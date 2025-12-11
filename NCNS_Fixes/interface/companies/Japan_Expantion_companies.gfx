@@ -1,0 +1,58 @@
+spriteTypes = {
+
+	### JAP - Japan ###
+	spriteType = {
+		name = "GFX_idea_JAP_Riken"
+		texturefile = "gfx/interface/companies/JAP/JAP_Riken.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_JAP_Ominato"
+		texturefile = "gfx/interface/companies/JAP/JAP_Ominato.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Railway_Ministry"
+		texturefile = "gfx/interface/companies/JAP/JAP_Tetsudo_sho.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Shimizu"
+		texturefile = "gfx/interface/companies/JAP/JAP_Shimizu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Mitsui_dockyard"
+		texturefile = "gfx/interface/companies/JAP/JAP_Mitsui_dockyard.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Kawasaki_dockyard"
+		texturefile = "gfx/interface/companies/JAP/JAP_Kawasaki_dockyard.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Mitsubishi_dockyard"
+		texturefile = "gfx/interface/companies/JAP/JAP_Mitsubishi_dockyard.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Bank_of_Taiwan"
+		texturefile = "gfx/interface/companies/JAP/JAP_Bank_of_Taiwan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_daiei"
+		texturefile = "gfx/interface/companies/JAP/JAP_daiei.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_JAP_Matsushita"
+		texturefile = "gfx/interface/companies/JAP/JAP_Matsushita.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Komatsu"
+		texturefile = "gfx/interface/companies/JAP/JAP_Komatsu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Nanyo_Kohatsu"
+		texturefile = "gfx/interface/companies/JAP/JAP_Nanyo_Kohatsu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Nihon_Seiko"
+		texturefile = "gfx/interface/companies/JAP/JAP_Nihon_Seiko.png"
+	}
+}

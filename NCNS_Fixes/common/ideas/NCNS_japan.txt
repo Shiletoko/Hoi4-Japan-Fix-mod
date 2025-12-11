@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+	
+	
+		JAP_Austrarian_resources = {
+			allowed = {
+				always = no
+			}
+			picture = raj_metal_and_steel_factory_ishapore
+			removal_cost = -1
+	
+
+			modifier = {
+				country_resource_aluminium = 30
+				country_resource_steel = 50
+				country_resource_coal = 25
+				
+			}
+		}
+	}
+}

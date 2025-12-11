@@ -1,0 +1,295 @@
+###################
+### Armour MIOs ###
+###################
+##################
+### Naval MIOs ###
+##################
+
+
+
+JAP_mitsui_dockyard = {
+	name = JAP_mitsui_dockyard
+	icon = GFX_idea_JAP_Mitsui_dockyard
+	
+	initial_trait = {
+		name = mio_coast_defense_ships
+		limit_to_equipment_type = { mio_cat_eq_all_destroyer }
+		equipment_bonus = {
+			max_strength = -0.15
+			naval_speed = -0.5
+
+			sub_detection = 0.1
+			sub_attack = 0.1
+			naval_range = 0.5
+			build_cost_ic = -0.15
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+
+	}
+
+	allowed = {
+		original_tag = JAP
+	}
+	equipment_type = {
+		mio_cat_eq_all_destroyer
+	}
+	research_categories = {
+		mio_cat_eq_all_destroyer_and_modules
+	}
+	add_trait = {
+		token = JAP_mio_trait_zaibatsu_production_capabilities_trait
+		name = JAP_mio_trait_zaibatsu_production_capabilities_trait
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+		special_trait_background = yes
+
+		relative_position_id = Improve_livability
+
+		position = { x = 3 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = JAP }
+		}
+
+		available = {
+			FROM = {
+				JAP_zaibatsu_faction_is_at_least_influential = yes
+			}
+		}
+
+		on_complete = {
+			
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = JAP_mio_trait_strength_in_numbers
+		name = JAP_mio_trait_strength_in_numbers
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		relative_position_id = Improve_livability
+
+		position = { x = 4 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = JAP }
+		}
+
+		available = {
+			FROM = {
+				has_completed_focus = JAP_seek_strength_in_numbers
+				NOT = { has_country_flag = JAP_mio_trait_strength_in_numbers_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = JAP_mio_trait_strength_in_numbers_taken_flag
+			}
+		}
+
+		organization_modifier = {
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	trait = {
+		token = Improve_livability
+		name = JAP_Improve_livability
+		icon = GFX_generic_mio_department_icon_ship_screen_ship_production
+
+		position = { x=4 y=0 }
+		
+		equipment_bonus = {
+			reliability = 0.05
+			naval_range = 0.05
+		}
+	}
+	trait = {
+		token = CDS_Anti_sub
+		name = JAP_Anti_sub
+		icon = GFX_generic_mio_trait_icon_sub_attack
+
+		
+		all_parents = { Improve_livability }
+		relative_position_id = Improve_livability 
+		position = { x=-2 y=1 }
+		equipment_bonus = {
+			sub_attack = 0.05
+		}
+	}
+
+	trait = {
+		token = More_Anti_sub
+		name = JAP_More_Anti_sub
+		icon = GFX_generic_mio_trait_icon_sub_attack
+
+		
+		all_parents = { CDS_Anti_sub }
+		relative_position_id = CDS_Anti_sub 
+		position = { x=-1 y=1 }
+		equipment_bonus = {
+			sub_attack = 0.15
+			build_cost_ic = 0.05
+			naval_range = -0.1
+		}
+	}
+	trait = {
+		token = CDS_Machine_gun
+		name = JAP_Add_machine_guns
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+		position = { x=3 y=3 }
+		all_parents = { More_Anti_sub Engine_silencing CDS_New_AA_gun Expand_Minesweeps }
+		relative_position_id = Improve_livability 
+
+		equipment_bonus = {
+			anti_air_attack = 0.15
+			build_cost_ic = 0.05
+		}
+	}
+	trait = {
+		token = CDS_Simplified_Design 
+		name = JAP_Simplified_Design
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+		position = { x=2 y=1 }
+		
+		all_parents = { Improve_livability }
+		relative_position_id = Improve_livability 
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
+	trait = {
+		token = CDS_New_AA_gun
+		name = JAP_CDS_New_AA_gun
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+		position = { x=-1 y=1 }
+		relative_position_id = CDS_Simplified_Design 
+		all_parents = { CDS_Simplified_Design }
+
+		equipment_bonus = {
+			anti_air_attack = 0.1
+		}
+	}
+	trait = {
+		token = Expand_Minesweeps
+		name = JAP_Expand_Minesweeps
+		icon = GFX_generic_mio_trait_icon_sub_visibility
+		position = { x=1 y=1 }
+		
+		all_parents = { CDS_Simplified_Design }
+		relative_position_id = CDS_Simplified_Design 
+		equipment_bonus = {
+			build_cost_ic = -0.05
+			mines_sweeping = 0.15
+		}
+	}
+	trait = {
+		token = CDS_Kure_Modular_design
+		name = JAP_Kure_Modular_design
+		icon = GFX_generic_mio_department_icon_ship_screen_ship_production
+
+		position = { x=3 y=3 }
+		all_parents = { More_Anti_sub Engine_silencing CDS_New_AA_gun Expand_Minesweeps }
+		mutually_exclusive = { CDS_More_Simplified_Design }
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
+	trait = {
+		token = Engine_silencing
+		name = JAP_Engine_silencing
+		icon = GFX_generic_mio_trait_icon_sub_detection
+		position = { x=1 y=1 }
+		relative_position_id = CDS_Anti_sub 
+		all_parents = { CDS_Anti_sub }
+
+		limit_to_equipment_type = {  }
+
+		equipment_bonus = {
+			sub_detection = 0.1
+		}
+	}
+	trait = {
+		token = Type_2_12cm_Mortar
+		name = JAP_Type_2_12cm_Mortar
+		icon = GFX_generic_mio_trait_icon_sub_attack
+
+		position = { x=-3 y=3 }
+		all_parents = { More_Anti_sub Engine_silencing CDS_New_AA_gun Expand_Minesweeps }
+		relative_position_id = Improve_livability 
+		limit_to_equipment_type = {  }
+
+		equipment_bonus = {
+			sub_attack = 0.11
+		}
+	}
+	trait = {
+		token = Improve_rate_of_fire
+		name = JAP_Improve_fire_rate
+		icon = GFX_generic_mio_trait_icon_lg_attack
+
+		position = { x=0 y=1 }
+		relative_position_id = CDS_Kure_Modular_design
+		all_parents = { CDS_Kure_Modular_design }
+
+		equipment_bonus = {
+			lg_attack = 0.1
+		}
+	}
+	trait = {
+		token = CDS_More_Simplified_Design 
+		name = JAP_Simplified_Design
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+		position = { x=5 y=3 }
+		mutually_exclusive = { CDS_Kure_Modular_design }
+
+		all_parents = { More_Anti_sub Engine_silencing CDS_New_AA_gun Expand_Minesweeps }
+		equipment_bonus = {
+			build_cost_ic = -0.25
+			fuel_consumption = -0.1
+			naval_range = -0.05
+			reliability = -0.2
+		}
+		production_bonus = {
+			production_resource_penalty_factor = -0.75
+		}
+	}
+	trait = {
+		token = Improve_rough_design
+		name = JAP_Improve_rough_design
+		icon = GFX_generic_mio_trait_icon_reliability
+		position = { x=0 y=1 }
+		relative_position_id = CDS_More_Simplified_Design
+		all_parents = { CDS_More_Simplified_Design }
+		equipment_bonus = {
+			reliability = 0.15
+		}
+
+	}
+}
+#####################
+### Airplane MIOs ###
+#####################

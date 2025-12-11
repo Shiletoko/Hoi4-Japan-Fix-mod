@@ -1,0 +1,435 @@
+﻿##############################
+#### Japanese Country Events ####
+#################################
+
+add_namespace = SEA_japan_foreign_policy_Fixes
+
+
+add_namespace = SEA_imperial_influence_events
+
+# The February 26 Incident - event for Japan, base version of the Kodoha event
+
+
+# Japan Demands our Conditional Surrender - event for SOV
+country_event = { 
+	id = SEA_japan_foreign_policy_Fixes.1
+	title = SEA_japan_foreign_policy_Fixes.1.t
+	desc = SEA_japan_foreign_policy_Fixes.1.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { # We will never surrender!
+		name = SEA_japan_foreign_policy_Fixes.1.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 1.5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 1.5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+		}
+
+		FROM = { # [FROM.GetNameDefCap] Refuses Surrender
+			country_event = { 
+				id = SEA_japan_foreign_policy_Fixes.2
+				hours = 5 
+				random_hours = 5 
+			}
+		}
+		effect_tooltip = {
+			FROM = {
+				add_war_support = 0.05
+				add_command_power = 25
+			}
+		}
+
+
+	}
+
+	option = { # That will be one enemy of our backs
+		name = SEA_japan_foreign_policy_Fixes.1.b
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+		}
+
+		FROM = { # That will be one enemy off our backs
+			country_event = { 
+				id = SEA_japan_foreign_policy_Fixes.3
+				hours = 5 
+				random_hours = 5 
+			}
+		}
+		effect_tooltip = {
+
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_state = {
+				limit = {
+					owner = {
+						has_war_with = FROM
+						is_ally_with = ROOT
+					}
+					OR = {
+						is_owned_by = INS
+						is_owned_by = MAL
+						state = 979
+						state = 523
+						state = 737
+						state = 634
+						state = 733
+						state = 734
+						state = 635
+						state = 636
+						state = 639
+						state = 643
+						state = 725
+						state = 726
+						state = 642
+						state = 641
+						state = 326
+						state = 638
+						state = 632
+						state = 631
+						state = 630
+						state = 629
+						state = 642
+						state = 650
+						state = 727
+					}
+					
+				}
+				transfer_state_to = FROM
+			}	
+			every_state = {
+				limit = {
+					owner = {
+						has_war_with = FROM
+						is_ally_with = ROOT
+					}
+					is_owned_by = PHI
+				}
+				IF = {
+					limit = {
+						PSR = {
+							is_subject_of = FROM
+							exists = yes
+						}
+					}
+					transfer_state_to = PSR
+				}
+				else = {
+					transfer_state_to = FROM
+				}
+			}
+			every_state = {
+				limit = {
+					owner = {
+						has_war_with = FROM
+						is_ally_with = ROOT
+					}
+					is_owned_by = BRM
+				}
+				IF = {
+					limit = {
+						BRM = {
+							is_subject_of = FROM
+							exists = yes
+						}
+					}
+					transfer_state_to = BRM
+				}
+				else = {
+					transfer_state_to = FROM
+				}
+			}
+			IF = {
+				limit = {
+					any_state = {
+						limit = {
+							state = 430
+							OR = {
+								is_controlled_by = FROM
+								controller = { 
+									is_ally_with = FROM
+								}
+							}
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = RAJ
+						NOT = { state = 992 }
+						OR = {
+							is_controlled_by = FROM
+							controller = { 
+								is_ally_with = FROM
+							}
+						}
+					}
+					transfer_state_to = FROM
+				}
+			}
+			IF = {
+				limit = {
+					RAJ = {
+						has_capitulated = yes
+					}
+				}
+				annex_country = {
+					target = RAJ
+				}
+				992 = {
+					transfer_state_to = FROM
+				}
+			}
+			520 = { set_demilitarized_zone = yes }
+			872 = { set_demilitarized_zone = yes }
+			870 = { set_demilitarized_zone = yes }
+			IF = {
+				limit = {
+					AST = {
+						has_capitulated = yes
+					}
+				}
+				FROM = {
+					add_ideas = JAP_Austrarian_resources
+				}
+			}
+
+			every_country = {
+				limit = {
+					has_war_with = FROM
+					OR = {
+						original_tag = ROOT
+						is_in_faction_with = ROOT
+						is_subject_of = ROOT
+					}
+				}
+				white_peace = FROM
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+	}
+}
+
+# [FROM.GetNameDefCap] Refuses Surrender - event for JAP
+country_event = { 
+	id = SEA_japan_foreign_policy_Fixes.2
+	title = SEA_japan_foreign_policy_Fixes.2.t
+	desc = SEA_japan_foreign_policy_Fixes.2.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { # They will fall to our blade!
+		name = SEA_japan_foreign_policy_Fixes.2.a
+
+		add_war_support = 0.05
+		add_command_power = 25
+
+	}
+}
+
+# [FROM.GetNameDefCap] Surrenders the East - event for JAP
+country_event = { 
+	id = SEA_japan_foreign_policy_Fixes.3
+	title = SEA_japan_foreign_policy_Fixes.3.t
+	desc = SEA_japan_foreign_policy_Fixes.3.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { # We have won this day!
+		name = SEA_japan_foreign_policy_Fixes.3.a
+		hidden_effect = {
+			IF = {
+				limit = {
+					AST = {
+						has_capitulated = yes
+					}
+				}
+				ROOT = {
+					add_ideas = JAP_Austrarian_resources
+				}
+			}
+		}
+
+		
+		custom_effect_tooltip = generic_skip_one_line_tt
+		every_state = {
+			limit = {
+				owner = {
+					has_war_with = ROOT
+					is_ally_with = FROM
+				}
+				OR = {
+					is_owned_by = INS
+					is_owned_by = MAL
+					state = 979
+					state = 523
+					state = 737
+					state = 634
+					state = 733
+					state = 734
+					state = 635
+					state = 636
+					state = 639
+					state = 643
+					state = 725
+					state = 726
+					state = 642
+					state = 641
+					state = 326
+					state = 638
+					state = 632
+					state = 631
+					state = 630
+					state = 629
+					state = 642
+					state = 650
+					state = 727
+				}
+			}
+			transfer_state_to = ROOT
+		}
+		every_state = {
+			limit = {
+				owner = {
+					has_war_with = ROOT
+					is_ally_with = FROM
+				}
+				is_owned_by = PHI
+			}
+			IF = {
+				limit = {
+					PSR = {
+						is_subject_of = ROOT
+						exists = yes
+					}
+				}
+				transfer_state_to = PSR
+			}
+			else = {
+				transfer_state_to = ROOT
+			}
+		}
+		every_state = {
+			limit = {
+				owner = {
+					has_war_with = ROOT
+					is_ally_with = FROM
+				}
+				is_owned_by = BRM
+			}
+			IF = {
+				limit = {
+					BRM = {
+						is_subject_of = ROOT
+						exists = yes
+					}
+				}
+				transfer_state_to = BRM
+			}
+			else = {
+				transfer_state_to = ROOT
+			}
+		}
+		IF = {
+			limit = {
+				any_state = {
+					limit = {
+						state = 430
+						is_controlled_by_ROOT_or_ally = yes
+						#OR = {
+						#	is_controlled_by = ROOT
+						#	controller = { 
+						#		is_ally_with = ROOT
+						#	}
+						#}
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_owned_by = RAJ
+					NOT = { state = 992 }
+					is_controlled_by_ROOT_or_ally = yes
+					#OR = {
+					#	is_controlled_by = ROOT
+					#	controller = { 
+					#		is_ally_with = ROOT
+					#	}
+					#}
+				}
+				transfer_state_to = ROOT
+			}
+		}
+		IF = {
+			limit = {
+				RAJ = {
+					has_capitulated = yes
+				}
+			}
+			annex_country = {
+				target = RAJ
+			}
+			992 = {
+				transfer_state_to = FROM
+			}
+		}
+		every_other_country = {
+			limit = {
+				has_war_with = ROOT
+				OR = {
+					original_tag = FROM
+					is_ally_with = FROM
+				}
+			}
+			white_peace = ROOT
+		}
+		
+		520 = { set_demilitarized_zone = yes }
+		872 = { set_demilitarized_zone = yes }
+		870 = { set_demilitarized_zone = yes }
+		IF = {
+			limit = {
+				AST = {
+					has_capitulated = yes
+				}
+			}
+			ROOT = {
+				add_ideas = JAP_Austrarian_resources
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+	}
+}
