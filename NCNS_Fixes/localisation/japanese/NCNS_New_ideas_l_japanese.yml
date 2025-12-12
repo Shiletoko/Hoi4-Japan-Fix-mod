@@ -1,0 +1,8 @@
+﻿l_japanese:
+ ### MISC ###
+ ###################
+ ###### JAPAN ######
+ ###################
+ ### Imperial Influence ###
+ JAP_Austrarian_resources: "オーストラリア産の資源"
+ JAP_Austrarian_resources_desc: "我々は[AST.GetName]から撤退するのと引き換えに、[AST.GetName]領内の資源を採掘することを許可されている。"

@@ -143,9 +143,7 @@ foreign_politics = {
 					}
 					# BRM
 					995 = {
-						owner = {
-							has_capitulated = yes
-						}
+						is_controlled_by_ROOT_or_ally = yes
 					}
 				}
 			}
@@ -155,7 +153,7 @@ foreign_politics = {
 				}
 				IF = {
 					limit = {
-						995 = {
+						327 = {
 							owner = {
 								OR = {
 									original_tag = FROM
@@ -167,9 +165,7 @@ foreign_politics = {
 					}
 					# PHI
 					327 = {
-						owner = {
-							has_capitulated = yes
-						}
+						is_controlled_by_ROOT_or_ally = yes
 					}
 				}
 			}

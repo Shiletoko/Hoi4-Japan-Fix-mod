@@ -12761,18 +12761,18 @@ focus_tree = {
 				 target = FRA
 				 decision = JAP_demand_united_nations_surrender 
 			}
-			activate_targeted_decision = {
-				 target = GER
-				 decision = JAP_demand_united_nations_surrender 
-			}
+			#activate_targeted_decision = {
+			#	 target = GER
+			#	 decision = JAP_demand_united_nations_surrender 
+			#}
 			activate_targeted_decision = {
 				 target = USA
 				 decision = JAP_demand_united_nations_surrender 
 			}
-			activate_targeted_decision = {
-				 target = ITA
-				 decision = JAP_demand_united_nations_surrender 
-			}
+			#activate_targeted_decision = {
+			#	 target = ITA
+			#	 decision = JAP_demand_united_nations_surrender 
+			#}
 
 			navy_experience = 10
 			air_experience = 5
@@ -32100,7 +32100,7 @@ focus_tree = {
 						creator = "JAP"
 						version_name = "Shokaku Class"
 					}
-					name = "Zaikaku"
+					name = "Zuikaku"
 					requested_factories = 1
 					progress = 0.75
 					amount = 1

@@ -352,12 +352,24 @@ country_event = {
 			}
 			IF = {
 				limit = {
-					BRM = {
-						is_subject_of = ROOT
-						exists = yes
+					any_country = {
+						has_cosmetic_tag = BRM_state_of_burma_japanese_splinter_tag
+						is_subject_of = JAP 
 					}
+					
 				}
-				transfer_state_to = BRM
+				every_state = {
+					limit = {
+						owner = {
+							has_war_with = ROOT
+							is_ally_with = FROM
+						}
+						is_owned_by = BRM
+						is_controlled_by_ROOT_or_ally = yes
+						
+					}
+					transfer_state_to = controller
+				}
 			}
 			else = {
 				transfer_state_to = ROOT
@@ -369,28 +381,38 @@ country_event = {
 					limit = {
 						state = 430
 						is_controlled_by_ROOT_or_ally = yes
-						#OR = {
-						#	is_controlled_by = ROOT
-						#	controller = { 
-						#		is_ally_with = ROOT
-						#	}
-						#}
+						
 					}
 				}
 			}
-			every_state = {
+			if = {
 				limit = {
-					is_owned_by = RAJ
-					NOT = { state = 992 }
-					is_controlled_by_ROOT_or_ally = yes
-					#OR = {
-					#	is_controlled_by = ROOT
-					#	controller = { 
-					#		is_ally_with = ROOT
-					#	}
-					#}
+					any_country = {
+						has_cosmetic_tag = RAJ_azad_hind_tag
+						is_subject_of = JAP 
+					}
+					
 				}
-				transfer_state_to = ROOT
+				every_state = {
+					limit = {
+						is_owned_by = RAJ
+						NOT = { state = 992 }
+						is_controlled_by_ROOT_or_ally = yes
+						
+					}
+					transfer_state_to = controller
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						is_owned_by = RAJ
+						NOT = { state = 992 }
+						is_controlled_by_ROOT_or_ally = yes
+						
+					}
+					transfer_state_to = ROOT
+				}
 			}
 		}
 		IF = {
@@ -399,12 +421,44 @@ country_event = {
 					has_capitulated = yes
 				}
 			}
-			annex_country = {
-				target = RAJ
-			}
-			992 = {
+			if = {
+				limit = {
+					any_country = {
+						has_cosmetic_tag = RAJ_azad_hind_tag
+						is_subject_of = JAP 
+					}
+					
+				}
+				random_country = {
+					limit = {
+						has_cosmetic_tag = RAJ_azad_hind_tag
+						is_subject_of = JAP
+					}
+					annex_country = {
+						target = RAJ
+					}
+				
+				}
+				992 = {
 				transfer_state_to = FROM
+				}
 			}
+			else = {
+				annex_country = {
+					target = RAJ
+				}
+				992 = {
+				transfer_state_to = FROM
+				}
+			}
+			
+			
+		}
+		422 = {
+			transfer_state_to = controller
+		}
+		320 = {
+			transfer_state_to = controller
 		}
 		every_other_country = {
 			limit = {

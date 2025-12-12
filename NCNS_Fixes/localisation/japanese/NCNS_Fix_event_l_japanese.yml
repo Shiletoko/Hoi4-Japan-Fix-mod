@@ -1,0 +1,13 @@
+﻿l_japanese:
+ ### MIOs ##################
+ JAP_demand_united_nations_surrender: "[FROM.GetFactionName]に停戦を要請"
+ SEA_japan_foreign_policy_Fixes.1.t: "日本が我々の条件付き降伏を要求"
+ SEA_japan_foreign_policy_Fixes.1.d: "本日、[FROM.GetAdjective]の外交官が最後通牒を突きつけてきた。その内容は、アジア・太平洋地域からの撤退と、条件付き和平への署名を求めるものである。これはつまり、アジアから手を引けということだ。これによって我々はヨーロッパの領土奪還に完全に集中することができ、すべての敵を倒した後に太平洋地域奪還のために戻ってくれば良いのかもしれない。"
+ SEA_japan_foreign_policy_Fixes.1.a: "我々は絶対に降伏しない！"
+ SEA_japan_foreign_policy_Fixes.1.b: "これで敵が一つ減ることになるな"
+ SEA_japan_foreign_policy_Fixes.2.t: "[FROM.GetNameDefCap]が降伏を拒否"
+ SEA_japan_foreign_policy_Fixes.2.desc: "愚かな[FROM.GetFactionName]は我々の当初の要求を拒否した。これにより、彼らの陣営を完全に壊滅させなければならない。"
+ SEA_japan_foreign_policy_Fixes.2.a: "奴らめ、刀の錆にしてくれるわ！"
+ SEA_japan_foreign_policy_Fixes.3.t: "[FROM.GetNameDefCap]が領土を明け渡す"
+ SEA_japan_foreign_policy_Fixes.3.desc: "[FROM.GetLeader]は外交官を通じて尻尾を巻いて降伏した。我々の要求を受け入れ、大東亜の領土は我々に明け渡す予定だ。今日は帝国にとって素晴らしい日だ！"
+ SEA_japan_foreign_policy_Fixes.3.a: "今日は我々の勝利だ！"
