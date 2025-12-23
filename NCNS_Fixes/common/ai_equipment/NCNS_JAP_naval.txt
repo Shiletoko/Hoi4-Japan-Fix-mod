@@ -755,91 +755,8 @@ JAP_naval_capital_battleship = {
 	priority = {
 		factor = 20
 	}
-	
-	
-	capital_battleship_early = { 
-	
-		priority = {
-			factor = 10
-		}
-		role_icon_index = 1
-		
-		history = yes
-		target_variant = {
-			match_value = 1000.0
-			
-			type = ship_hull_heavy_1
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				fixed_ship_armor_slot = ship_armor_bb_1
-				front_1_custom_slot = empty
-				mid_1_custom_slot = empty
-				mid_2_custom_slot = ship_airplane_launcher_1
-				rear_1_custom_slot = ship_heavy_battery_1
-			}
-		}
-		
-		allowed_modules = {
-			ship_anti_air
-			ship_heavy_battery
-			ship_radar
-			ship_fire_control_system
-			ship_heavy_armor
-			ship_secondaries
-			ship_airplane_launcher
-		}
-	}
-	capital_battleship_early_aa_upgrade = { 
-	
-		priority = {
-			factor = 10
-			modifier = {
-				factor = 20
-				has_war = yes
-				any_enemy_country = {
-					is_major = yes
-				}
-			}
-		}
-		role_icon_index = 1
-		
-		history = yes
-		target_variant = {
-			match_value = 1100.0
-			
-			type = ship_hull_heavy_1
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air
-				fixed_ship_fire_control_system_slot = ship_fire_control_system
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries
-				fixed_ship_armor_slot = ship_armor_bb_1
-				front_1_custom_slot = ship_anti_air
-				mid_1_custom_slot = ship_secondaries
-				mid_2_custom_slot = ship_airplane_launcher
-				rear_1_custom_slot = ship_heavy_battery_1
-			}
-		}
-		
-		allowed_modules = {
-			ship_anti_air
-			ship_heavy_battery
-			ship_radar
-			ship_fire_control_system
-			ship_heavy_armor
-			ship_secondaries
-			ship_airplane_launcher
-		}
-	}
 
-	capital_battleship_basic = { #Nagato
+	Nagato_class = { #Nagato
 	
 		priority = {
 			factor = 20
@@ -883,141 +800,6 @@ JAP_naval_capital_battleship = {
 			ship_airplane_launcher
 		}
 	}
-
-	capital_battleship_basic_aa_upgrade = {
-	
-		priority = {
-			factor = 20
-			modifier = {
-				factor = 200
-				has_war = yes
-				any_enemy_country = {
-					is_major = yes
-				}
-			}
-		}
-		role_icon_index = 1
-		
-		history = yes
-		target_variant = {
-			match_value = 2200.0
-			
-			type = ship_hull_heavy_1
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air
-				fixed_ship_fire_control_system_slot = ship_fire_control_system
-				fixed_ship_radar_slot = ship_radar
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_dp_secondaries
-				fixed_ship_armor_slot = ship_armor_bb_2
-				front_1_custom_slot = ship_heavy_battery_2
-				mid_1_custom_slot = ship_anti_air
-				mid_2_custom_slot = ship_secondaries
-				rear_1_custom_slot = ship_anti_air
-			}
-		}
-		
-		allowed_modules = {
-			ship_anti_air
-			ship_heavy_battery
-			ship_radar
-			ship_dp_secondaries
-			ship_fire_control_system
-			ship_heavy_armor
-			ship_secondaries
-			ship_airplane_launcher
-		}
-	}
-	capital_battleship_improved = { #Kongo mod
-	
-		priority = {
-			factor = 30
-			modifier = {
-				factor = 20
-				has_war = yes
-				any_enemy_country = {
-					is_major = yes
-				}
-			}
-		}
-		role_icon_index = 1
-		
-		history = yes
-		target_variant = {
-			match_value = 3000.0
-			
-			type = ship_hull_heavy_1
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				fixed_ship_armor_slot = ship_armor_bc_2
-				front_1_custom_slot = ship_anti_air_1
-				mid_1_custom_slot = ship_dp_secondaries
-				mid_2_custom_slot = ship_airplane_launcher_1
-				rear_1_custom_slot = ship_heavy_battery_1
-			}
-		}
-		
-		allowed_modules = {
-			ship_anti_air
-			ship_secondaries
-			ship_airplane_launcher
-			ship_dp_secondaries
-			ship_heavy_battery
-			ship_radar
-			ship_fire_control_system
-			ship_heavy_armor
-		}
-	}
-	capital_battleship_improved_upgrade = { #Kongo Mod
-	
-		priority = {
-			factor = 30
-			modifier = {
-				factor = 20
-				has_war = yes
-				any_enemy_country = {
-					is_major = yes
-				}
-			}
-		}
-		role_icon_index = 1
-		
-		history = yes
-		target_variant = {
-			match_value = 3300.0
-			
-			type = ship_hull_heavy_1
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air
-				fixed_ship_fire_control_system_slot = ship_fire_control_system
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries
-				fixed_ship_armor_slot = ship_armor_bc_2
-				front_1_custom_slot = ship_anti_air
-				mid_1_custom_slot = ship_dp_secondaries
-				mid_2_custom_slot = ship_airplane_launcher
-				rear_1_custom_slot = ship_heavy_battery_1
-			}
-		}
-		
-		allowed_modules = {
-			ship_anti_air
-			ship_secondaries
-			ship_airplane_launcher
-			ship_heavy_battery
-			ship_dp_secondaries
-			ship_radar
-			ship_fire_control_system
-			ship_heavy_armor
-		}
-	}
 	capital_battleship_advanced = { #Kii
 	
 		priority = {
@@ -1031,18 +813,21 @@ JAP_naval_capital_battleship = {
 			
 			type = ship_hull_heavy_3
 			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_3
-				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_battery_slot = ship_heavy_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_2
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
-				fixed_ship_radar_slot = ship_radar
-				fixed_ship_engine_slot > heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_dp_secondaries
-				fixed_ship_armor_slot = ship_heavy_armor
-				front_1_custom_slot = ship_anti_air
-				mid_1_custom_slot = ship_anti_air
-				mid_2_custom_slot = ship_dp_secondaries
-				mid_3_custom_slot = ship_dp_secondaries
-				rear_1_custom_slot = ship_heavy_battery_3
+				fixed_ship_radar_slot = {
+					module = empty
+					module > ship_radar_1
+				}
+				fixed_ship_engine_slot = heavy_ship_engine_3
+				fixed_ship_secondaries_slot = ship_dp_secondaries_3
+				fixed_ship_armor_slot = ship_armor_bc_2
+				front_1_custom_slot = ship_heavy_battery_1
+				mid_1_custom_slot = ship_anti_air_1
+				mid_2_custom_slot = ship_dp_secondaries_3
+				mid_3_custom_slot > ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_1
 			}
 		}
 		

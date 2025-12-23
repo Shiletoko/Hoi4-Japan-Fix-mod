@@ -10651,6 +10651,8 @@ focus_tree = {
 						state = 630
 						state = 642
 						state = 727
+						state = 524
+						is_core_of = KOR
 					}
 				}
 				add_core_of = ROOT

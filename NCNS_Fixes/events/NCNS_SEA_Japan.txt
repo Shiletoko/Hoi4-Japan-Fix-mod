@@ -317,6 +317,7 @@ country_event = {
 					state = 642
 					state = 650
 					state = 727
+					state = 1021
 				}
 			}
 			transfer_state_to = ROOT
@@ -470,7 +471,15 @@ country_event = {
 			}
 			white_peace = ROOT
 		}
-		
+		all_allied_country = {
+			limit = {
+				has_war_with = FROM
+				OR = {
+					is_ally_with = ROOT
+				}
+			}
+			white_peace = FROM
+		}
 		520 = { set_demilitarized_zone = yes }
 		872 = { set_demilitarized_zone = yes }
 		870 = { set_demilitarized_zone = yes }
@@ -485,5 +494,39 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = generic_skip_one_line_tt
+	}
+}
+
+country_event = { 
+	id = SEA_japan_foreign_policy_Fixes.4
+	title = SEA_japan_foreign_policy_Fixes.4.t
+	desc = SEA_japan_foreign_policy_Fixes.4.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { # They will fall to our blade!
+		name = SEA_japan_foreign_policy_Fixes.4.a
+			activate_targeted_decision = {
+				 target = ENG
+				 decision = JAP_demand_united_nations_surrender 
+			}
+			activate_targeted_decision = {
+				 target = FRA
+				 decision = JAP_demand_united_nations_surrender 
+			}
+			#activate_targeted_decision = {
+			#	 target = GER
+			#	 decision = JAP_demand_united_nations_surrender 
+			#}
+			activate_targeted_decision = {
+				 target = USA
+				 decision = JAP_demand_united_nations_surrender 
+			}
+			#activate_targeted_decision = {
+			#	 target = ITA
+			#	 decision = JAP_demand_united_nations_surrender 
+			#}
+
 	}
 }

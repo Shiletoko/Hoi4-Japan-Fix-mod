@@ -120,7 +120,27 @@ characters = {
 		#}
 
 	}
+	
+	JAP_kisaburi_suzuki = {
 
+		name = JAP_kisaburi_suzuki
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Charles_Fujimoto
+				small = GFX_portrait_Charles_Fujimoto_small
+			}
+		}
+
+
+		country_leader = {
+			ideology = conservatism
+			expire = "1989.1.1.1"
+			id = -1
+		}
+
+	}
+	
 	# Yoshio Kodama
 	JAP_yoshio_kodama = {
 		name = JAP_yoshio_kodama
@@ -231,11 +251,6 @@ characters = {
 			}
 		}
 
-		country_leader = {
-			ideology = liberalism
-			expire = "1989.1.1.1"
-			id = -1
-		}
 
 	}
 
@@ -5985,4 +6000,43 @@ characters = {
 		}
 	}
 
+
+	# NEW
+	JAP_mikawa_gunichi={
+		name=JAP_mikawa_gunichi
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Guichi_Mikawa.png"
+				small="gfx/interface/ideas/Portrait_Guichi_Mikawa_small.png"
+			}
+		}
+		navy_leader={
+			traits={ fleet_protector craven blockade_runner cruiser_captain }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=4
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	
+	JAP_kurita_takeo={
+		name=JAP_kurita_takeo
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Takeo_Kurita.png"
+				small="gfx/interface/ideas/Portrait_Takeo_Kurita_small.png"
+			}
+		}
+		navy_leader={
+			traits={ fleet_protector destroyer_leader gunnery_expert craven fly_swatter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=3
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
 }
