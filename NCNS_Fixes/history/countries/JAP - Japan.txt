@@ -2058,6 +2058,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 	name = "Kaichū IV Class"
 	type = ship_hull_submarine_1
+	name_group = JAP_SS_2nd_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
 	parent_version = 0
 	modules = {

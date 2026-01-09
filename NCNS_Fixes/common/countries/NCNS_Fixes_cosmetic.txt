@@ -1,0 +1,4 @@
+BYA_Zabaykal = {
+	color = rgb { 255 255 255 }
+    color_ui = rgb { 242 242 242 }
+}

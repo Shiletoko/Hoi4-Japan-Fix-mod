@@ -1,6 +1,12 @@
 ﻿l_japanese:
- ### MIOs ##################
  JAP_demand_united_nations_surrender: "[FROM.GetFactionName]に停戦を要請"
+ JAP_integrate_mongolia_mengkukuo_decision: "[FROM.GetName]と[MON.GetName]を統合"
+ JAP_transfer_Primorskaya_oblast_to_MAN: "[MAN.GetName]に外満州を譲渡"
+ JAP_transfer_Primorskaya_oblast_to_BYA: "[BYA.GetName]に沿海州を譲渡"
+ JAP_transfer_Primorskaya_oblast_to_FER: "[FER.GetName]に沿海州を譲渡"
+ JAP_establish_zabaykal_republic: "シベリアにセミョーノフ政権を樹立"
+ JAP_transfer_609_to_RNG_decision: "冀察政務委員会の解体"
+ JAP_Sukarno_decision: "スカルノを擁立"
  SEA_japan_foreign_policy_Fixes.1.t: "日本が我々の条件付き降伏を要求"
  SEA_japan_foreign_policy_Fixes.1.d: "本日、[FROM.GetAdjective]の外交官が最後通牒を突きつけてきた。その内容は、アジア・太平洋地域からの撤退と、条件付き和平への署名を求めるものである。これはつまり、アジアから手を引けということだ。これによって我々はヨーロッパの領土奪還に完全に集中することができ、すべての敵を倒した後に太平洋地域奪還のために戻ってくれば良いのかもしれない。"
  SEA_japan_foreign_policy_Fixes.1.a: "我々は絶対に降伏しない！"

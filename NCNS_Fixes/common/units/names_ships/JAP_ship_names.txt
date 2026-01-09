@@ -26,7 +26,8 @@ JAP_DD_HISTORICAL = {
 		#Akizuki (Fuyutsuki)
 		"Fuyutsuki" "Harutsuki" "Yoizuki" "Natsuzuki"
 		#Akizuki (Michitsuki)
-		"Michitsuki" "Hanazuki" "Kiyotsuki" "Otsuki" "Hazuki" "Yamazuki" "Urazuki" "Aogumo" "Benigumo" "Harugumo" "Amagumo" "Yaegumo" "Fuyugumo" "Yukigumo" "Okitsukaze" "Shimokaze" "Asagochi" "Okaze" "Kochi" "Nishikaze" "Hae"
+		"Michitsuki" "Hanazuki" "Kiyotsuki" "Otsuki" "Hazuki" "Yamazuki" "Urazuki" "Aogumo" "Benigumo" "Harugumo" "Amagumo" "Yaegumo" "Fuyugumo" "Yukigumo" "Okitsukaze" 
+		"Shimokaze" "Asagochi" "Okaze" "Kochi" "Nishikaze" "Hae"
 		
 		#Yugumo class (Cancelled)
 		"Umigiri" "Yamagiri" "Tanigiri" "Kawagiri" "Taekaze" "Kiyokaze" "Satokaze" "Murakaze"
@@ -36,7 +37,8 @@ JAP_DD_HISTORICAL = {
 		"Kitakaze" "Hayakaze" "Natsukaze" "Fuyukaze" "Hatsunatsu" "Hatsuaki" "Hayaharu"
 
 		"Yaezakura" "Yatake" "Kuzu" "Saume" "Katsura" "Tobiume"
-		"Fuji" "Wakazakura" "Yamazakura" "Ashi" "Shinodake" "Yomogi" "Aoi" "Shiraume" "Kiku" "Kashiwa" "Kigiku" "Hatsugiku" "Akane" "Shiragiku" "Chigusa" "Wakakusa" "Natsukusa"
+		"Fuji" "Wakazakura" "Yamazakura" "Ashi" "Shinodake" "Yomogi" "Aoi" "Shiraume" "Kiku" "Kashiwa" "Kigiku" "Hatsugiku" "Akane" 
+		"Shiragiku" "Chigusa" "Wakakusa" "Natsukusa"
 		"Akikusa" "Azusa" "Tochi" "Hishi" "Nogiku" "Susuki" "Sakaki"
 		"Sawakaze" "Okikaze" "Shimakaze" "Nadakaze" "Yakaze" "Shiokaze"
 		"Keifuu" "Minewatari" "Hokuki" "Takasei" "Senpuu" "Yokokaze" "Neppuu" "Gyokufuu" "Shokufuu" "Ryokufuu" "Keifuu" "Tsuufuu"
@@ -45,8 +47,8 @@ JAP_DD_HISTORICAL = {
 		"Kirisetsu" "Seisetsu" "Neyuki" "Satoyuki" "Madayuki" "Amesetsu" "Mochiyuki" "Hayashiyuki" "Nigori-yuki" "Zansetsu" "Konayuki" "Bousetsu" "Benisetsu" "Ginkuzu"
 		"Koyuki" "Kasayuki" "Kaifuu" "Watayuki" "Akiyuki" "Botan-yuki" "Usuyuki" "Boseki" "Fuusetsu" "Shimosetsu" "Shimesetsu" "Shukusetsu" "Sanpaku" "Tenka"
 		"Yamagumo" "Minegumo" "Kiri-gumo" "Kasagumo" "Kougumo" "Akatsukigumo" "Ukigumo" "Awagumo"
-		"Keigumo" "Iwashi-gumo" "Hanagumo" "Kouun" "Boun" "Kaigumo" "Shougumo" "Nisshougumo" "Shirokogumo" "Urokogumo" "Oborogumo" "Watagumo" "Takigumo" "Kinugumo" "Chouchougumo" "Akanegumo" "Unpou" "Unkai"
-		"Unami" "Minami"
+		"Keigumo" "Iwashi-gumo" "Hanagumo" "Kouun" "Boun" "Kaigumo" "Shougumo" "Nisshougumo" "Shirokogumo" "Urokogumo" "Oborogumo" "Watagumo" "Takigumo" "Kinugumo" 
+		"Chouchougumo" "Akanegumo" "Unpou" "Unkai" "Unami" "Minami"
 		"Akigiri" "Nagigiri" "Kawagiri" "Unmu" "Usugiri" "Yogiri"
 		"Gyoro" "Uro" "Reiro" "Gero" "Furo" "Yuro" "Gyokuro" "Asatsuyu" "Kikuro" "Shimotsuyu" "Yotsuyu" "Uetsuyu" "Kusabatsuyu"
 		"Shirasame" "Kirisame" "Haraame" "Sekiu" "Kouu" "Asaame" "Karatsuyu" "Kosame" "Ooame" "Sobae"
@@ -127,18 +129,18 @@ JAP_CL_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
 	
-	fallback_name = "Keijun'yokan %d -go"
+	fallback_name = "Dai %d -go Keijun'yokan"
 
 	unique = {
-		"Suzuya" "Kumano" "Katori" "Kashima" "Kashii" "Kashiwara" "Agano" "Noshiro" "Yahagi" "Sakawa" "Oyodo" 
+		"Suzuya" "Kumano" "Katori" "Kashima" "Kashii" "Kashiwara" "Agano" "Noshiro" "Yahagi" "Sakawa" "Oyodo" "Niyodo"
 		# Captured/Converted/Older Models
-		"Ioshima" "Yasoshima" "Yodo" "Hirado" "Yahagi" 
-		"Tenryu" "Tatsuta" "Kuma" "Tama" "Kitakami" "Oi" "Kiso" "Nagara" "Isuzu" "Natori" "Yura" "Kinu" "Abukuma" "Yubari" "Sendai" "Jintsu" "Naka" 
-		"Furutaka" "Kako" "Aoba" "Kinugasa" "Myoko" "Nachi" "Haguro" "Ashigara" "Takao" "Atago" "Maya" "Chokai" "Tone" "Chikuma" "Aso" "Tsugaru" "Soya" "Ibuki" "Haogi" "Mogami" "Mikuma"
+		"Ioshima" "Yasoshima" "Yodo" 
 		# Fictional
-		"Iwaki" "Mabechi" "Takase" "Naruse" "Yoneshiro" "Omono" "Koyoshi" "Kuji" "Tsurumi" "Oyabe" "Tedori" "Kano" "Shonai" "Suzuka" "Kumozu" "Kushida" "Maruyama" "Hino"
-		"Takatsu" "Yoshii" "Takahashi" "Ashida" "Yoshino" "Onga" "Yabe" "Matsuura" "Yamakuni" "Chikugo" "Rokkaku" "Kikuchi" "Kase" "Honmyo" "Oita" "Ono" "Ota" "Banjo"
-		"Gokase" "Omaru" "Kimotsuki"
+		"Takase" "Iwaki" "Kuzuryu" "Tsurumi" "Koyoshi" "Shokotsu" "Yoneshiro" "Shimanto" "Oyabe" "Ibi" "Kuji" "Miyase" "Rumoi" "Oze" "Maruyama" "Shiribetsu" "Ishikari"
+		"Kurobe" "Mabechi" "Honmyo" "Tokoro" "Suzuka" "Hime" "Banjo" "Omono" "Tedori" "Karino" "Naruse" "Abashiri" "Yubetsu"
+		"Kano" "Shonai" "Kumozu" "Kushida" "Hino" "Seta" "Gokase" "Omaru" "Kimotsuki" "Teshio"
+		"Takatsu" "Yoshii" "Takahashi" "Ashida" "Yoshino" "Onga" "Yabe" "Matsuura" "Yamakuni" "Chikugo" "Rokkaku" "Kikuchi" "Kase" "Oita" "Ono" "Ota"
+		
 	}
 }
 
@@ -151,7 +153,7 @@ JAP_CA_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
 	
-	fallback_name = "Jujun'yokan %d -go"
+	fallback_name = "Dai %d -go Jujun'yokan"
 
 	unique = {
 		"Tone" "Chikuma" "Aso" "Tsugaru" "Soya" 
@@ -160,7 +162,7 @@ JAP_CA_HISTORICAL = {
 		# Cancelled/not completed
 		"Ibuki" "Haogi" "Mogami" "Mikuma" "Suzuya" "Kumano" 
 		# Fictional
-		"Iwaki" "Iwate" "Asahi" "Zao" "Iide" "Azuma" "Bandai" "Nasu" "Makihata" "Tanigawa" "Takatsuma" "Hotaka"
+		"Iwate" "Asahi" "Zao" "Iide" "Azuma" "Bandai" "Nasu" "Makihata" "Tanigawa" "Takatsuma" "Hotaka"
 		"Asama" "Tsukuba" "Hotaka" "Jonen" "Norikura" "Tateshina" "Mizugaki" "Tanzawa" "Ena" "Shiomi" "Akaishi"
 		"Omine" "Ishizuchi" "Aso" "Kaimon" "Waga" "Kurikoma" "Moriyoshi" "Sumon" "Hakkai" "Iwasuge" "Myogi" "Buko"
 		"Hakuseki" "Ashitaka" "Osuzu" "Ichifusa" "Yufu" "Unzen" "Ariake" "Iizuma"
@@ -202,9 +204,9 @@ JAP_BB_HISTORICAL = {
 	fallback_name = "Senkan %d -go"		
 
 	unique = {
-			"Hiei" "Yamato" "Musashi" "Tosa" "Kii" "Owari" "Iwami" "Sagami" "Suwo" "Hizen" "Tango" "Iki" 
+			"Hiei" "Yamato" "Musashi" "Shinano" "Kii" "Tosa" "Owari" "Iwami" "Sagami" "Suwo" "Hizen" "Tango" "Iki" 
 			# Captured/Converted/Older Models
-			"Fuso" "Yamashiro" "Ise" "Hyuga" "Nagato" "Mutsu" "Haruna" "Kirishima" "Kaga" "Shinano" 
+			"Fuso" "Yamashiro" "Ise" "Hyuga" "Nagato" "Mutsu" "Haruna" "Kirishima" "Kaga"  
 			# Fictional
 			"Dewa" "Hitachi" "Noto" "Hida" "Mino" "Mikawa" "Suruga" "Kai" "Izumi" "Kawachi" "Iga" "Tanba" "Sanuki" "Awa" "Satsuma"
 			"Osumi" "Aki" "Settsu" "Tajima" "Iyo" "Omi"
@@ -281,60 +283,7 @@ JAP_SS_HISTORICAL = {
 	fallback_name = "I-%d"
 	
 	ordered = {
-		51 = {"I-%d"}
-		52 = {"I-%d"}
-		1 = {"I-%d"}
-		2 = {"I-%d"} 
-		3 = {"I-%d"} 
-		4 = {"I-%d"} 
-		53 = {"I-%d"}
-		54 = {"I-%d"}
-		55 = {"I-%d"}
-		58 = {"I-%d"}
-		121 = {"I-%d"}
-		122 = {"I-%d"}
-		123 = {"I-%d"}
-		124 = {"I-%d"}
-		56 = {"I-%d"}
-		57 = {"I-%d"}
-		59 = {"I-%d"}
-		60 = {"I-%d"}
-		63 = {"I-%d"}
-		61 = {"I-%d"}
-		62 = {"I-%d"}
-		64 = {"I-%d"}
-		65 = {"I-%d"}
-		66 = {"I-%d"}
-		67 = {"I-%d"}
-		5 = {"I-%d"} 
-		68 = {"I-%d"}
-		69 = {"I-%d"}
-		70 = {"I-%d"}
-		71 = {"I-%d"}
-		72 = {"I-%d"}
-		73 = {"I-%d"}
-		6 = {"I-%d"} 
-		7 = {"I-%d"} 
-		8 = {"I-%d"} 
-		74 = {"I-%d"}
-		75 = {"I-%d"}
-		9 = {"I-%d"} 
-		10 = {"I-%d"}
-		11 = {"I-%d"} 
-		12 = {"I-%d"}
-		13 = {"I-%d"}
-		14 = {"I-%d"}
-		15 = {"I-%d"}
-		16 = {"I-%d"}
-		17 = {"I-%d"}
-		18 = {"I-%d"}
-		19 = {"I-%d"}
-		20 = {"I-%d"}
-		21 = {"I-%d"}
-		22 = {"I-%d"}
-		23 = {"I-%d"}
-		24 = {"I-%d"}
-		25 = {"I-%d"}
+		51 = {"I-%d"}52 = {"I-%d"}53 = {"I-%d"}54 = {"I-%d"}55 = {"I-%d"}
 	}
 }
 
@@ -350,40 +299,199 @@ JAP_SS_2nd_HISTORICAL = {
 	fallback_name = "Ro-%d"
 	
 	ordered = {
-		1 = {"Ro-%d"}
-		2 = {"Ro-%d"}
-		3 = {"Ro-%d"}
-		4 = {"Ro-%d"} 
-		5 = {"Ro-%d"}
-		6 = {"Ro-%d"} 
-		7 = {"Ro-%d"}
-		8 = {"Ro-%d"}
-		9 = {"Ro-%d"}
-		10 = {"Ro-%d"}
-		11 = {"Ro-%d"}
-		12 = {"Ro-%d"}
-		13 = {"Ro-%d"}
-		14 = {"Ro-%d"}
-		15 = {"Ro-%d"}
-		16 = {"Ro-%d"}
-		17 = {"Ro-%d"}
-		18 = {"Ro-%d"}
-		19 = {"Ro-%d"}
-		20 = {"Ro-%d"}
-		21 = {"Ro-%d"}
-		22 = {"Ro-%d"}
-		23 = {"Ro-%d"}
-		24 = {"Ro-%d"}
-		25 = {"Ro-%d"}
-		26 = {"Ro-%d"}
-		27 = {"Ro-%d"}
-		28 = {"Ro-%d"}
-		29 = {"Ro-%d"}
-		30 = {"Ro-%d"}
-		31 = {"Ro-%d"}
-		32 = {"Ro-%d"}
-		33 = {"Ro-%d"}
-		34 = {"Ro-%d"} 
+		34 = {"Ro-%d"}35 = {"Ro-%d"}36 = {"Ro-%d"}37 = {"Ro-%d"}38 = {"Ro-%d"}39 = {"Ro-%d"}40 = {"Ro-%d"}
+		41 = {"Ro-%d"}42 = {"Ro-%d"}43 = {"Ro-%d"}44 = {"Ro-%d"}45 = {"Ro-%d"}
+		46 = {"Ro-%d"}47 = {"Ro-%d"}48 = {"Ro-%d"}49 = {"Ro-%d"}50 = {"Ro-%d"}
+		51 = {"Ro-%d"}52 = {"Ro-%d"}53 = {"Ro-%d"}54 = {"Ro-%d"}55 = {"Ro-%d"}
+		56 = {"Ro-%d"}57 = {"Ro-%d"}58 = {"Ro-%d"}59 = {"Ro-%d"}60 = {"Ro-%d"}
+		61 = {"Ro-%d"}62 = {"Ro-%d"}63 = {"Ro-%d"}64 = {"Ro-%d"}65 = {"Ro-%d"}
+		66 = {"Ro-%d"}67 = {"Ro-%d"}68 = {"Ro-%d"}69 = {"Ro-%d"}70 = {"Ro-%d"}
+		71 = {"Ro-%d"}72 = {"Ro-%d"}73 = {"Ro-%d"}74 = {"Ro-%d"}75 = {"Ro-%d"}
+		76 = {"Ro-%d"}77 = {"Ro-%d"}78 = {"Ro-%d"}79 = {"Ro-%d"}80 = {"Ro-%d"}
+		81 = {"Ro-%d"}82 = {"Ro-%d"}83 = {"Ro-%d"}84 = {"Ro-%d"}85 = {"Ro-%d"}
+		86 = {"Ro-%d"}87 = {"Ro-%d"}88 = {"Ro-%d"}89 = {"Ro-%d"}90 = {"Ro-%d"}
+		91 = {"Ro-%d"}92 = {"Ro-%d"}93 = {"Ro-%d"}94 = {"Ro-%d"}95 = {"Ro-%d"}
+		96 = {"Ro-%d"}97 = {"Ro-%d"}98 = {"Ro-%d"}99 = {"Ro-%d"}100 = {"Ro-%d"}
+		101 = {"Ro-%d"}102 = {"Ro-%d"}103 = {"Ro-%d"}104 = {"Ro-%d"}105 = {"Ro-%d"}
+		106 = {"Ro-%d"}107 = {"Ro-%d"}108 = {"Ro-%d"}109 = {"Ro-%d"}110 = {"Ro-%d"}
+		111 = {"Ro-%d"}112 = {"Ro-%d"}113 = {"Ro-%d"}114 = {"Ro-%d"}115 = {"Ro-%d"}
+		116 = {"Ro-%d"}117 = {"Ro-%d"}118 = {"Ro-%d"}119 = {"Ro-%d"}120 = {"Ro-%d"}
+		121 = {"Ro-%d"}122 = {"Ro-%d"}123 = {"Ro-%d"}124 = {"Ro-%d"}125 = {"Ro-%d"}
+		126 = {"Ro-%d"}127 = {"Ro-%d"}128 = {"Ro-%d"}129 = {"Ro-%d"}130 = {"Ro-%d"}
+		131 = {"Ro-%d"}132 = {"Ro-%d"}133 = {"Ro-%d"}134 = {"Ro-%d"}135 = {"Ro-%d"}
+		136 = {"Ro-%d"}137 = {"Ro-%d"}138 = {"Ro-%d"}139 = {"Ro-%d"}140 = {"Ro-%d"}
+		141 = {"Ro-%d"}142 = {"Ro-%d"}143 = {"Ro-%d"}144 = {"Ro-%d"}145 = {"Ro-%d"}
+		146 = {"Ro-%d"}147 = {"Ro-%d"}148 = {"Ro-%d"}149 = {"Ro-%d"}150 = {"Ro-%d"}
+		151 = {"Ro-%d"}152 = {"Ro-%d"}153 = {"Ro-%d"}154 = {"Ro-%d"}155 = {"Ro-%d"}
+		156 = {"Ro-%d"}157 = {"Ro-%d"}158 = {"Ro-%d"}159 = {"Ro-%d"}160 = {"Ro-%d"}
+		161 = {"Ro-%d"}162 = {"Ro-%d"}163 = {"Ro-%d"}164 = {"Ro-%d"}165 = {"Ro-%d"}
+		166 = {"Ro-%d"}167 = {"Ro-%d"}168 = {"Ro-%d"}169 = {"Ro-%d"}170 = {"Ro-%d"}
+		171 = {"Ro-%d"}172 = {"Ro-%d"}173 = {"Ro-%d"}174 = {"Ro-%d"}175 = {"Ro-%d"}
+		176 = {"Ro-%d"}177 = {"Ro-%d"}178 = {"Ro-%d"}179 = {"Ro-%d"}180 = {"Ro-%d"}
+		181 = {"Ro-%d"}182 = {"Ro-%d"}183 = {"Ro-%d"}184 = {"Ro-%d"}185 = {"Ro-%d"}
+		186 = {"Ro-%d"}187 = {"Ro-%d"}188 = {"Ro-%d"}189 = {"Ro-%d"}190 = {"Ro-%d"}
+		191 = {"Ro-%d"}192 = {"Ro-%d"}193 = {"Ro-%d"}194 = {"Ro-%d"}195 = {"Ro-%d"}
+		196 = {"Ro-%d"}197 = {"Ro-%d"}198 = {"Ro-%d"}199 = {"Ro-%d"}200 = {"Ro-%d"}
+		201 = {"Ro-%d"}202 = {"Ro-%d"}203 = {"Ro-%d"}204 = {"Ro-%d"}205 = {"Ro-%d"}
+		206 = {"Ro-%d"}207 = {"Ro-%d"}208 = {"Ro-%d"}209 = {"Ro-%d"}210 = {"Ro-%d"}
+		211 = {"Ro-%d"}212 = {"Ro-%d"}213 = {"Ro-%d"}214 = {"Ro-%d"}215 = {"Ro-%d"}
+		216 = {"Ro-%d"}217 = {"Ro-%d"}218 = {"Ro-%d"}219 = {"Ro-%d"}220 = {"Ro-%d"}
+		221 = {"Ro-%d"}222 = {"Ro-%d"}223 = {"Ro-%d"}224 = {"Ro-%d"}225 = {"Ro-%d"}
+		226 = {"Ro-%d"}227 = {"Ro-%d"}228 = {"Ro-%d"}229 = {"Ro-%d"}230 = {"Ro-%d"}
+		231 = {"Ro-%d"}232 = {"Ro-%d"}233 = {"Ro-%d"}234 = {"Ro-%d"}235 = {"Ro-%d"}
+		236 = {"Ro-%d"}237 = {"Ro-%d"}238 = {"Ro-%d"}239 = {"Ro-%d"}240 = {"Ro-%d"}
+		241 = {"Ro-%d"}242 = {"Ro-%d"}243 = {"Ro-%d"}244 = {"Ro-%d"}245 = {"Ro-%d"}
+		246 = {"Ro-%d"}247 = {"Ro-%d"}248 = {"Ro-%d"}249 = {"Ro-%d"}250 = {"Ro-%d"}
+		251 = {"Ro-%d"}252 = {"Ro-%d"}253 = {"Ro-%d"}254 = {"Ro-%d"}255 = {"Ro-%d"}
+		256 = {"Ro-%d"}257 = {"Ro-%d"}258 = {"Ro-%d"}259 = {"Ro-%d"}260 = {"Ro-%d"}
+		261 = {"Ro-%d"}262 = {"Ro-%d"}263 = {"Ro-%d"}264 = {"Ro-%d"}265 = {"Ro-%d"}
+		266 = {"Ro-%d"}267 = {"Ro-%d"}268 = {"Ro-%d"}269 = {"Ro-%d"}270 = {"Ro-%d"}
+		271 = {"Ro-%d"}272 = {"Ro-%d"}273 = {"Ro-%d"}274 = {"Ro-%d"}275 = {"Ro-%d"}
+		276 = {"Ro-%d"}277 = {"Ro-%d"}278 = {"Ro-%d"}279 = {"Ro-%d"}280 = {"Ro-%d"}
+		281 = {"Ro-%d"}282 = {"Ro-%d"}283 = {"Ro-%d"}284 = {"Ro-%d"}285 = {"Ro-%d"}
+		286 = {"Ro-%d"}287 = {"Ro-%d"}288 = {"Ro-%d"}289 = {"Ro-%d"}290 = {"Ro-%d"}
+		291 = {"Ro-%d"}292 = {"Ro-%d"}293 = {"Ro-%d"}294 = {"Ro-%d"}295 = {"Ro-%d"}
+		296 = {"Ro-%d"}297 = {"Ro-%d"}298 = {"Ro-%d"}299 = {"Ro-%d"}300 = {"Ro-%d"}
+		301 = {"Ro-%d"}302 = {"Ro-%d"}303 = {"Ro-%d"}304 = {"Ro-%d"}305 = {"Ro-%d"}
+		306 = {"Ro-%d"}307 = {"Ro-%d"}308 = {"Ro-%d"}309 = {"Ro-%d"}310 = {"Ro-%d"}
+		311 = {"Ro-%d"}312 = {"Ro-%d"}313 = {"Ro-%d"}314 = {"Ro-%d"}315 = {"Ro-%d"}
+		316 = {"Ro-%d"}317 = {"Ro-%d"}318 = {"Ro-%d"}319 = {"Ro-%d"}320 = {"Ro-%d"}
+		321 = {"Ro-%d"}322 = {"Ro-%d"}323 = {"Ro-%d"}324 = {"Ro-%d"}325 = {"Ro-%d"}
+		326 = {"Ro-%d"}327 = {"Ro-%d"}328 = {"Ro-%d"}329 = {"Ro-%d"}330 = {"Ro-%d"}
+		331 = {"Ro-%d"}332 = {"Ro-%d"}333 = {"Ro-%d"}334 = {"Ro-%d"}335 = {"Ro-%d"}
+		336 = {"Ro-%d"}337 = {"Ro-%d"}338 = {"Ro-%d"}339 = {"Ro-%d"}340 = {"Ro-%d"}
+		341 = {"Ro-%d"}342 = {"Ro-%d"}343 = {"Ro-%d"}344 = {"Ro-%d"}345 = {"Ro-%d"}
+		346 = {"Ro-%d"}347 = {"Ro-%d"}348 = {"Ro-%d"}349 = {"Ro-%d"}350 = {"Ro-%d"}
+		351 = {"Ro-%d"}352 = {"Ro-%d"}353 = {"Ro-%d"}354 = {"Ro-%d"}355 = {"Ro-%d"}
+		356 = {"Ro-%d"}357 = {"Ro-%d"}358 = {"Ro-%d"}359 = {"Ro-%d"}360 = {"Ro-%d"}
+		361 = {"Ro-%d"}362 = {"Ro-%d"}363 = {"Ro-%d"}364 = {"Ro-%d"}365 = {"Ro-%d"}
+		366 = {"Ro-%d"}367 = {"Ro-%d"}368 = {"Ro-%d"}369 = {"Ro-%d"}370 = {"Ro-%d"}
+		371 = {"Ro-%d"}372 = {"Ro-%d"}373 = {"Ro-%d"}374 = {"Ro-%d"}375 = {"Ro-%d"}
+		376 = {"Ro-%d"}377 = {"Ro-%d"}378 = {"Ro-%d"}379 = {"Ro-%d"}380 = {"Ro-%d"}
+		381 = {"Ro-%d"}382 = {"Ro-%d"}383 = {"Ro-%d"}384 = {"Ro-%d"}385 = {"Ro-%d"}
+		386 = {"Ro-%d"}387 = {"Ro-%d"}388 = {"Ro-%d"}389 = {"Ro-%d"}390 = {"Ro-%d"}
+		391 = {"Ro-%d"}392 = {"Ro-%d"}393 = {"Ro-%d"}394 = {"Ro-%d"}395 = {"Ro-%d"}
+		396 = {"Ro-%d"}397 = {"Ro-%d"}398 = {"Ro-%d"}399 = {"Ro-%d"}400 = {"Ro-%d"}
+		401 = {"Ro-%d"}402 = {"Ro-%d"}403 = {"Ro-%d"}404 = {"Ro-%d"}405 = {"Ro-%d"}
+		406 = {"Ro-%d"}407 = {"Ro-%d"}408 = {"Ro-%d"}409 = {"Ro-%d"}410 = {"Ro-%d"}
+		411 = {"Ro-%d"}412 = {"Ro-%d"}413 = {"Ro-%d"}414 = {"Ro-%d"}415 = {"Ro-%d"}
+		416 = {"Ro-%d"}417 = {"Ro-%d"}418 = {"Ro-%d"}419 = {"Ro-%d"}420 = {"Ro-%d"}
+		421 = {"Ro-%d"}422 = {"Ro-%d"}423 = {"Ro-%d"}424 = {"Ro-%d"}425 = {"Ro-%d"}
+		426 = {"Ro-%d"}427 = {"Ro-%d"}428 = {"Ro-%d"}429 = {"Ro-%d"}430 = {"Ro-%d"}
+		431 = {"Ro-%d"}432 = {"Ro-%d"}433 = {"Ro-%d"}434 = {"Ro-%d"}435 = {"Ro-%d"}
+		436 = {"Ro-%d"}437 = {"Ro-%d"}438 = {"Ro-%d"}439 = {"Ro-%d"}440 = {"Ro-%d"}
+		441 = {"Ro-%d"}442 = {"Ro-%d"}443 = {"Ro-%d"}444 = {"Ro-%d"}445 = {"Ro-%d"}
+		446 = {"Ro-%d"}447 = {"Ro-%d"}448 = {"Ro-%d"}449 = {"Ro-%d"}450 = {"Ro-%d"}
+		451 = {"Ro-%d"}452 = {"Ro-%d"}453 = {"Ro-%d"}454 = {"Ro-%d"}455 = {"Ro-%d"}
+		456 = {"Ro-%d"}457 = {"Ro-%d"}458 = {"Ro-%d"}459 = {"Ro-%d"}460 = {"Ro-%d"}
+		461 = {"Ro-%d"}462 = {"Ro-%d"}463 = {"Ro-%d"}464 = {"Ro-%d"}465 = {"Ro-%d"}
+		466 = {"Ro-%d"}467 = {"Ro-%d"}468 = {"Ro-%d"}469 = {"Ro-%d"}470 = {"Ro-%d"}
+		471 = {"Ro-%d"}472 = {"Ro-%d"}473 = {"Ro-%d"}474 = {"Ro-%d"}475 = {"Ro-%d"}
+		476 = {"Ro-%d"}477 = {"Ro-%d"}478 = {"Ro-%d"}479 = {"Ro-%d"}480 = {"Ro-%d"}
+		481 = {"Ro-%d"}482 = {"Ro-%d"}483 = {"Ro-%d"}484 = {"Ro-%d"}485 = {"Ro-%d"}
+		486 = {"Ro-%d"}487 = {"Ro-%d"}488 = {"Ro-%d"}489 = {"Ro-%d"}490 = {"Ro-%d"}
+		491 = {"Ro-%d"}492 = {"Ro-%d"}493 = {"Ro-%d"}494 = {"Ro-%d"}495 = {"Ro-%d"}
+		496 = {"Ro-%d"}497 = {"Ro-%d"}498 = {"Ro-%d"}499 = {"Ro-%d"}500 = {"Ro-%d"}
+		501 = {"Ro-%d"}502 = {"Ro-%d"}503 = {"Ro-%d"}504 = {"Ro-%d"}505 = {"Ro-%d"}
+		506 = {"Ro-%d"}507 = {"Ro-%d"}508 = {"Ro-%d"}509 = {"Ro-%d"}510 = {"Ro-%d"}
+		511 = {"Ro-%d"}512 = {"Ro-%d"}513 = {"Ro-%d"}514 = {"Ro-%d"}515 = {"Ro-%d"}
+		516 = {"Ro-%d"}517 = {"Ro-%d"}518 = {"Ro-%d"}519 = {"Ro-%d"}520 = {"Ro-%d"}
+		521 = {"Ro-%d"}522 = {"Ro-%d"}523 = {"Ro-%d"}524 = {"Ro-%d"}525 = {"Ro-%d"}
+		526 = {"Ro-%d"}527 = {"Ro-%d"}528 = {"Ro-%d"}529 = {"Ro-%d"}530 = {"Ro-%d"}
+		531 = {"Ro-%d"}532 = {"Ro-%d"}533 = {"Ro-%d"}534 = {"Ro-%d"}535 = {"Ro-%d"}
+		536 = {"Ro-%d"}537 = {"Ro-%d"}538 = {"Ro-%d"}539 = {"Ro-%d"}540 = {"Ro-%d"}
+		541 = {"Ro-%d"}542 = {"Ro-%d"}543 = {"Ro-%d"}544 = {"Ro-%d"}545 = {"Ro-%d"}
+		546 = {"Ro-%d"}547 = {"Ro-%d"}548 = {"Ro-%d"}549 = {"Ro-%d"}550 = {"Ro-%d"}
+		551 = {"Ro-%d"}552 = {"Ro-%d"}553 = {"Ro-%d"}554 = {"Ro-%d"}555 = {"Ro-%d"}
+		556 = {"Ro-%d"}557 = {"Ro-%d"}558 = {"Ro-%d"}559 = {"Ro-%d"}560 = {"Ro-%d"}
+		561 = {"Ro-%d"}562 = {"Ro-%d"}563 = {"Ro-%d"}564 = {"Ro-%d"}565 = {"Ro-%d"}
+		566 = {"Ro-%d"}567 = {"Ro-%d"}568 = {"Ro-%d"}569 = {"Ro-%d"}570 = {"Ro-%d"}
+		571 = {"Ro-%d"}572 = {"Ro-%d"}573 = {"Ro-%d"}574 = {"Ro-%d"}575 = {"Ro-%d"}
+		576 = {"Ro-%d"}577 = {"Ro-%d"}578 = {"Ro-%d"}579 = {"Ro-%d"}580 = {"Ro-%d"}
+		581 = {"Ro-%d"}582 = {"Ro-%d"}583 = {"Ro-%d"}584 = {"Ro-%d"}585 = {"Ro-%d"}
+		586 = {"Ro-%d"}587 = {"Ro-%d"}588 = {"Ro-%d"}589 = {"Ro-%d"}590 = {"Ro-%d"}
+		591 = {"Ro-%d"}592 = {"Ro-%d"}593 = {"Ro-%d"}594 = {"Ro-%d"}595 = {"Ro-%d"}
+		596 = {"Ro-%d"}597 = {"Ro-%d"}598 = {"Ro-%d"}599 = {"Ro-%d"}600 = {"Ro-%d"}
+		601 = {"Ro-%d"}602 = {"Ro-%d"}603 = {"Ro-%d"}604 = {"Ro-%d"}605 = {"Ro-%d"}
+		606 = {"Ro-%d"}607 = {"Ro-%d"}608 = {"Ro-%d"}609 = {"Ro-%d"}610 = {"Ro-%d"}
+		611 = {"Ro-%d"}612 = {"Ro-%d"}613 = {"Ro-%d"}614 = {"Ro-%d"}615 = {"Ro-%d"}
+		616 = {"Ro-%d"}617 = {"Ro-%d"}618 = {"Ro-%d"}619 = {"Ro-%d"}620 = {"Ro-%d"}
+		621 = {"Ro-%d"}622 = {"Ro-%d"}623 = {"Ro-%d"}624 = {"Ro-%d"}625 = {"Ro-%d"}
+		626 = {"Ro-%d"}627 = {"Ro-%d"}628 = {"Ro-%d"}629 = {"Ro-%d"}630 = {"Ro-%d"}
+		631 = {"Ro-%d"}632 = {"Ro-%d"}633 = {"Ro-%d"}634 = {"Ro-%d"}635 = {"Ro-%d"}
+		636 = {"Ro-%d"}637 = {"Ro-%d"}638 = {"Ro-%d"}639 = {"Ro-%d"}640 = {"Ro-%d"}
+		641 = {"Ro-%d"}642 = {"Ro-%d"}643 = {"Ro-%d"}644 = {"Ro-%d"}645 = {"Ro-%d"}
+		646 = {"Ro-%d"}647 = {"Ro-%d"}648 = {"Ro-%d"}649 = {"Ro-%d"}650 = {"Ro-%d"}
+		651 = {"Ro-%d"}652 = {"Ro-%d"}653 = {"Ro-%d"}654 = {"Ro-%d"}655 = {"Ro-%d"}
+		656 = {"Ro-%d"}657 = {"Ro-%d"}658 = {"Ro-%d"}659 = {"Ro-%d"}660 = {"Ro-%d"}
+		661 = {"Ro-%d"}662 = {"Ro-%d"}663 = {"Ro-%d"}664 = {"Ro-%d"}665 = {"Ro-%d"}
+		666 = {"Ro-%d"}667 = {"Ro-%d"}668 = {"Ro-%d"}669 = {"Ro-%d"}670 = {"Ro-%d"}
+		671 = {"Ro-%d"}672 = {"Ro-%d"}673 = {"Ro-%d"}674 = {"Ro-%d"}675 = {"Ro-%d"}
+		676 = {"Ro-%d"}677 = {"Ro-%d"}678 = {"Ro-%d"}679 = {"Ro-%d"}680 = {"Ro-%d"}
+		681 = {"Ro-%d"}682 = {"Ro-%d"}683 = {"Ro-%d"}684 = {"Ro-%d"}685 = {"Ro-%d"}
+		686 = {"Ro-%d"}687 = {"Ro-%d"}688 = {"Ro-%d"}689 = {"Ro-%d"}690 = {"Ro-%d"}
+		691 = {"Ro-%d"}692 = {"Ro-%d"}693 = {"Ro-%d"}694 = {"Ro-%d"}695 = {"Ro-%d"}
+		696 = {"Ro-%d"}697 = {"Ro-%d"}698 = {"Ro-%d"}699 = {"Ro-%d"}700 = {"Ro-%d"}
+		701 = {"Ro-%d"}702 = {"Ro-%d"}703 = {"Ro-%d"}704 = {"Ro-%d"}705 = {"Ro-%d"}
+		706 = {"Ro-%d"}707 = {"Ro-%d"}708 = {"Ro-%d"}709 = {"Ro-%d"}710 = {"Ro-%d"}
+		711 = {"Ro-%d"}712 = {"Ro-%d"}713 = {"Ro-%d"}714 = {"Ro-%d"}715 = {"Ro-%d"}
+		716 = {"Ro-%d"}717 = {"Ro-%d"}718 = {"Ro-%d"}719 = {"Ro-%d"}720 = {"Ro-%d"}
+		721 = {"Ro-%d"}722 = {"Ro-%d"}723 = {"Ro-%d"}724 = {"Ro-%d"}725 = {"Ro-%d"}
+		726 = {"Ro-%d"}727 = {"Ro-%d"}728 = {"Ro-%d"}729 = {"Ro-%d"}730 = {"Ro-%d"}
+		731 = {"Ro-%d"}732 = {"Ro-%d"}733 = {"Ro-%d"}734 = {"Ro-%d"}735 = {"Ro-%d"}
+		736 = {"Ro-%d"}737 = {"Ro-%d"}738 = {"Ro-%d"}739 = {"Ro-%d"}740 = {"Ro-%d"}
+		741 = {"Ro-%d"}742 = {"Ro-%d"}743 = {"Ro-%d"}744 = {"Ro-%d"}745 = {"Ro-%d"}
+		746 = {"Ro-%d"}747 = {"Ro-%d"}748 = {"Ro-%d"}749 = {"Ro-%d"}750 = {"Ro-%d"}
+		751 = {"Ro-%d"}752 = {"Ro-%d"}753 = {"Ro-%d"}754 = {"Ro-%d"}755 = {"Ro-%d"}
+		756 = {"Ro-%d"}757 = {"Ro-%d"}758 = {"Ro-%d"}759 = {"Ro-%d"}760 = {"Ro-%d"}
+		761 = {"Ro-%d"}762 = {"Ro-%d"}763 = {"Ro-%d"}764 = {"Ro-%d"}765 = {"Ro-%d"}
+		766 = {"Ro-%d"}767 = {"Ro-%d"}768 = {"Ro-%d"}769 = {"Ro-%d"}770 = {"Ro-%d"}
+		771 = {"Ro-%d"}772 = {"Ro-%d"}773 = {"Ro-%d"}774 = {"Ro-%d"}775 = {"Ro-%d"}
+		776 = {"Ro-%d"}777 = {"Ro-%d"}778 = {"Ro-%d"}779 = {"Ro-%d"}780 = {"Ro-%d"}
+		781 = {"Ro-%d"}782 = {"Ro-%d"}783 = {"Ro-%d"}784 = {"Ro-%d"}785 = {"Ro-%d"}
+		786 = {"Ro-%d"}787 = {"Ro-%d"}788 = {"Ro-%d"}789 = {"Ro-%d"}790 = {"Ro-%d"}
+		791 = {"Ro-%d"}792 = {"Ro-%d"}793 = {"Ro-%d"}794 = {"Ro-%d"}795 = {"Ro-%d"}
+		796 = {"Ro-%d"}797 = {"Ro-%d"}798 = {"Ro-%d"}799 = {"Ro-%d"}800 = {"Ro-%d"}
+		801 = {"Ro-%d"}802 = {"Ro-%d"}803 = {"Ro-%d"}804 = {"Ro-%d"}805 = {"Ro-%d"}
+		806 = {"Ro-%d"}807 = {"Ro-%d"}808 = {"Ro-%d"}809 = {"Ro-%d"}810 = {"Ro-%d"}
+		811 = {"Ro-%d"}812 = {"Ro-%d"}813 = {"Ro-%d"}814 = {"Ro-%d"}815 = {"Ro-%d"}
+		816 = {"Ro-%d"}817 = {"Ro-%d"}818 = {"Ro-%d"}819 = {"Ro-%d"}820 = {"Ro-%d"}
+		821 = {"Ro-%d"}822 = {"Ro-%d"}823 = {"Ro-%d"}824 = {"Ro-%d"}825 = {"Ro-%d"}
+		826 = {"Ro-%d"}827 = {"Ro-%d"}828 = {"Ro-%d"}829 = {"Ro-%d"}830 = {"Ro-%d"}
+		831 = {"Ro-%d"}832 = {"Ro-%d"}833 = {"Ro-%d"}834 = {"Ro-%d"}835 = {"Ro-%d"}
+		836 = {"Ro-%d"}837 = {"Ro-%d"}838 = {"Ro-%d"}839 = {"Ro-%d"}840 = {"Ro-%d"}
+		841 = {"Ro-%d"}842 = {"Ro-%d"}843 = {"Ro-%d"}844 = {"Ro-%d"}845 = {"Ro-%d"}
+		846 = {"Ro-%d"}847 = {"Ro-%d"}848 = {"Ro-%d"}849 = {"Ro-%d"}850 = {"Ro-%d"}
+		851 = {"Ro-%d"}852 = {"Ro-%d"}853 = {"Ro-%d"}854 = {"Ro-%d"}855 = {"Ro-%d"}
+		856 = {"Ro-%d"}857 = {"Ro-%d"}858 = {"Ro-%d"}859 = {"Ro-%d"}860 = {"Ro-%d"}
+		861 = {"Ro-%d"}862 = {"Ro-%d"}863 = {"Ro-%d"}864 = {"Ro-%d"}865 = {"Ro-%d"}
+		866 = {"Ro-%d"}867 = {"Ro-%d"}868 = {"Ro-%d"}869 = {"Ro-%d"}870 = {"Ro-%d"}
+		871 = {"Ro-%d"}872 = {"Ro-%d"}873 = {"Ro-%d"}874 = {"Ro-%d"}875 = {"Ro-%d"}
+		876 = {"Ro-%d"}877 = {"Ro-%d"}878 = {"Ro-%d"}879 = {"Ro-%d"}880 = {"Ro-%d"}
+		881 = {"Ro-%d"}882 = {"Ro-%d"}883 = {"Ro-%d"}884 = {"Ro-%d"}885 = {"Ro-%d"}
+		886 = {"Ro-%d"}887 = {"Ro-%d"}888 = {"Ro-%d"}889 = {"Ro-%d"}890 = {"Ro-%d"}
+		891 = {"Ro-%d"}892 = {"Ro-%d"}893 = {"Ro-%d"}894 = {"Ro-%d"}895 = {"Ro-%d"}
+		896 = {"Ro-%d"}897 = {"Ro-%d"}898 = {"Ro-%d"}899 = {"Ro-%d"}900 = {"Ro-%d"}
+		901 = {"Ro-%d"}902 = {"Ro-%d"}903 = {"Ro-%d"}904 = {"Ro-%d"}905 = {"Ro-%d"}
+		906 = {"Ro-%d"}907 = {"Ro-%d"}908 = {"Ro-%d"}909 = {"Ro-%d"}910 = {"Ro-%d"}
+		911 = {"Ro-%d"}912 = {"Ro-%d"}913 = {"Ro-%d"}914 = {"Ro-%d"}915 = {"Ro-%d"}
+		916 = {"Ro-%d"}917 = {"Ro-%d"}918 = {"Ro-%d"}919 = {"Ro-%d"}920 = {"Ro-%d"}
+		921 = {"Ro-%d"}922 = {"Ro-%d"}923 = {"Ro-%d"}924 = {"Ro-%d"}925 = {"Ro-%d"}
+		926 = {"Ro-%d"}927 = {"Ro-%d"}928 = {"Ro-%d"}929 = {"Ro-%d"}930 = {"Ro-%d"}
+		931 = {"Ro-%d"}932 = {"Ro-%d"}933 = {"Ro-%d"}934 = {"Ro-%d"}935 = {"Ro-%d"}
+		936 = {"Ro-%d"}937 = {"Ro-%d"}938 = {"Ro-%d"}939 = {"Ro-%d"}940 = {"Ro-%d"}
+		941 = {"Ro-%d"}942 = {"Ro-%d"}943 = {"Ro-%d"}944 = {"Ro-%d"}945 = {"Ro-%d"}
+		946 = {"Ro-%d"}947 = {"Ro-%d"}948 = {"Ro-%d"}949 = {"Ro-%d"}950 = {"Ro-%d"}
+		951 = {"Ro-%d"}952 = {"Ro-%d"}953 = {"Ro-%d"}954 = {"Ro-%d"}955 = {"Ro-%d"}
+		956 = {"Ro-%d"}957 = {"Ro-%d"}958 = {"Ro-%d"}959 = {"Ro-%d"}960 = {"Ro-%d"}
+		961 = {"Ro-%d"}962 = {"Ro-%d"}963 = {"Ro-%d"}964 = {"Ro-%d"}965 = {"Ro-%d"}
+		966 = {"Ro-%d"}967 = {"Ro-%d"}968 = {"Ro-%d"}969 = {"Ro-%d"}970 = {"Ro-%d"}
+		971 = {"Ro-%d"}972 = {"Ro-%d"}973 = {"Ro-%d"}974 = {"Ro-%d"}975 = {"Ro-%d"}
+		976 = {"Ro-%d"}977 = {"Ro-%d"}978 = {"Ro-%d"}979 = {"Ro-%d"}980 = {"Ro-%d"}
+		981 = {"Ro-%d"}982 = {"Ro-%d"}983 = {"Ro-%d"}984 = {"Ro-%d"}985 = {"Ro-%d"}
+		986 = {"Ro-%d"}987 = {"Ro-%d"}988 = {"Ro-%d"}989 = {"Ro-%d"}990 = {"Ro-%d"}
+		991 = {"Ro-%d"}992 = {"Ro-%d"}993 = {"Ro-%d"}994 = {"Ro-%d"}995 = {"Ro-%d"}
+		996 = {"Ro-%d"}997 = {"Ro-%d"}998 = {"Ro-%d"}999 = {"Ro-%d"}1000 = {"Ro-%d"}
 	}
 }
 ### THEME: JAPANESE PREFECTURES ###

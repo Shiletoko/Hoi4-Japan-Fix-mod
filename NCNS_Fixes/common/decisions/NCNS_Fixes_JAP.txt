@@ -6,6 +6,41 @@
 #Category allowed for JAP
 
 foreign_politics = {
+	RNG_set_capital_decision  = {
+		priority = 5
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+		#targets = { RNG }
+		ai_will_do = {
+			base = 100000
+		}
+	
+		allowed = {  
+			tag = RNG
+		}
+
+		visible = { 
+			#owns_state = 1035
+		}
+	
+		available = {
+			owns_state = 1035
+		}
+
+		days_remove = 0
+
+		
+
+		cost = 0
+
+
+		complete_effect = { 
+			RNG = {
+				#add_state_core = 1035
+				set_capital = { state = 1035 }
+			}	
+		}
+	}
+	
 	JAP_demand_united_nations_surrender = {
 
 		allowed = {
@@ -74,7 +109,7 @@ foreign_politics = {
 				}
 				# MAL
 				1021 = {
-					is_controlled_by = ROOT
+					is_controlled_by_ROOT_or_ally = yes
 				}
 			}
 			IF = {
@@ -368,23 +403,9 @@ foreign_politics = {
 						is_controlled_by_ROOT_or_ally = yes
 					}
 				}
-				IF = {
-					limit = {
-						642 = {
-							owner = {
-								OR = {
-									original_tag = FROM
-									is_subject_of = FROM
-									is_in_faction_with = FROM
-								}
-							}
-						}
-					}
-					# Phoenix Island
-					642 = {
-						is_controlled_by_ROOT_or_ally = yes
-					}
-				}
+			
+				# Phoenix Island 642
+					
 				IF = {
 					limit = {
 						650 = {
@@ -422,4 +443,564 @@ foreign_politics = {
 			}
 		}
 	}
+	# Establish Zabaykal Republic
+	JAP_establish_zabaykal_republic = {
+	
+		priority = 50
+	
+		icon = GFX_decision_generic_nationalism
+	
+		ai_will_do = {
+			base = 800
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 563
+			}
+		}
+	
+		allowed = {  
+			original_tag = JAP
+		}
+	
+		visible = { 
+			NOT = { has_ideology_group = communism }
+			NOT = { has_country_flag = Zabaykal_Established }
+			OR = {
+				has_completed_focus = JAP_strike_the_soviets
+				has_completed_focus = JAP_hokushin_ron
+			}
+		} 
+	
+		available = {
+			owns_state = 563
+			has_war = no
+			BYA = {
+				exists = no
+			}
+		}
+	
+		cost = 25
+
+		complete_effect = {
+
+			IF = {
+				limit = {
+					BYA = {
+						exists = no
+					}
+				}
+				563 = {
+					transfer_state_to = BYA
+					add_core_of = BYA
+				}
+				every_owned_state = {
+					limit = {
+						is_controlled_by_ROOT_or_subject = yes
+						is_core_of = SOV
+						NOT = { is_core_of = FER }
+						NOT = { state = 655 }
+					}
+					transfer_state_to = BYA
+					add_core_of = BYA
+				}
+				set_autonomy = {
+					target = BYA
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+				BYA = {
+					set_capital = {
+						state = 563
+						remember_old_capital = no
+					}
+					set_cosmetic_tag = BYA_Zabaykal
+					create_country_leader = {
+						name = SOV_grigory_semyonov
+						desc = ""
+						picture = GFX_portrait_SOV_grigory_semyonov
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+						}
+					}
+					create_country_leader = {
+						name = SOV_grigory_semyonov
+						desc = ""
+						picture = GFX_portrait_SOV_grigory_semyonov
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+						}
+					}
+					add_popularity = {
+						ideology = neutrality 
+						popularity = 1
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+						last_election = "1935.12.17"
+						long_name = BYA_Zabaykal_party_long
+						name = BYA_Zabaykal_party
+					}
+					set_global_flag = form_siberian_republic_flag
+				}
+				
+			}
+			set_country_flag = Zabaykal_Established
+
+		}
+	
+	}
+	# transfer Primorskaya Oblast to MAN
+	JAP_transfer_Primorskaya_oblast_to_MAN = {
+	
+		priority = 50
+	
+		icon = GFX_decision_generic_nationalism
+	
+		ai_will_do = {
+			base = 800
+		}
+		fire_only_once = yes
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 408
+				state = 409
+				state = 560
+				state = 561
+				state = 657
+			}
+		}
+	
+		allowed = {  
+			original_tag = JAP
+		}
+	
+		visible = { 
+			NOT = { has_ideology_group = communism }
+			has_country_flag = Zabaykal_Established
+			NOT = { has_country_flag = Primorskaya_Oblast_decided }
+			has_subject = MAN
+			any_owned_state = {
+				limit = {
+					OR = {
+						state = 408
+						state = 409
+						state = 560
+						state = 561
+						state = 657
+					}
+				}
+				is_owned_by = ROOT
+			}
+		}
+	
+		available = {
+			#has_country_flag = Zabaykal_Established
+		}
+	
+		cost = 0
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 408
+						state = 409
+						state = 560
+						state = 561
+						state = 657
+					}
+				}
+				transfer_state_to = MAN
+				add_core_of = MAN
+			}
+
+		}
+	
+	}
+	JAP_transfer_Primorskaya_oblast_to_FER = {
+	
+		priority = 50
+	
+		icon = GFX_decision_generic_nationalism
+	
+		ai_will_do = {
+			base = 0
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 408
+				state = 409
+				state = 560
+				state = 561
+				state = 657
+				state = 562
+				state = 874
+				state = 822
+				state = 637
+			}
+		}
+	
+		allowed = {  
+			original_tag = JAP
+		}
+	
+		visible = { 
+			NOT = { has_ideology_group = communism }
+			has_country_flag = Zabaykal_Established
+			NOT = { has_country_flag = Primorskaya_Oblast_decided }
+			any_owned_state = {
+				limit = {
+					OR = {
+						state = 408
+						state = 409
+						state = 560
+						state = 561
+						state = 657
+						state = 562
+						state = 874
+						state = 822
+						state = 637
+						state = 875
+					}
+				}
+				is_owned_by = ROOT
+			}
+		}
+	
+		available = {
+			#has_country_flag = Zabaykal_Established
+		}
+	
+		cost = 0
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 408
+						state = 409
+						state = 560
+						state = 561
+						state = 657
+						state = 562
+						state = 874
+						state = 822
+						state = 637
+						state = 875
+					}
+				}
+				transfer_state_to = FER
+				add_core_of = FER
+				
+			}
+			set_autonomy = {
+				target = FER
+				autonomous_state = autonomy_wtt_imperial_protectorate
+				end_wars = no
+				end_civil_wars = no
+			}
+			JAP_shigeru_honjo = {
+				retire = yes
+			}
+			FER = {
+				set_cosmetic_tag = FER_JPSUB
+				create_country_leader = {
+					name = JAP_shigeru_honjo
+					desc = ""
+					picture = GFX_portrait_JAP_shigeru_honjo
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+					}
+				}
+				create_country_leader = {
+					name = JAP_shigeru_honjo
+					desc = ""
+					picture = GFX_portrait_JAP_shigeru_honjo
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+					}
+				}
+				add_popularity = {
+					ideology = neutrality 
+					popularity = 1
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1935.12.17"
+					long_name = FER_JPSUB_party_long
+					name = FER_JPSUB_party
+				}
+				
+				set_global_flag = form_siberian_republic_flag
+			}
+			set_country_flag = Primorskaya_Oblast_decided
+		}
+	}
+	
+	JAP_transfer_Primorskaya_oblast_to_BYA = {
+	
+		priority = 50
+	
+		icon = GFX_decision_generic_nationalism
+	
+		ai_will_do = {
+			base = 750
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 408
+				state = 409
+				state = 560
+				state = 561
+				state = 657
+				state = 562
+				state = 874
+				state = 822
+				state = 637
+				state = 875
+			}
+		}
+	
+		allowed = {  
+			original_tag = JAP
+		}
+	
+		visible = { 
+			NOT = { has_ideology_group = communism }
+			has_country_flag = Zabaykal_Established
+			NOT = { has_country_flag = Primorskaya_Oblast_decided }
+			has_subject = BYA
+			any_owned_state = {
+				limit = {
+					OR = {
+						state = 408
+						state = 409
+						state = 560
+						state = 561
+						state = 657
+						state = 562
+						state = 874
+						state = 822
+						state = 637
+						state = 875
+					}
+				}
+				is_owned_by = ROOT
+			}
+		}
+	
+		available = {
+			#has_country_flag = Zabaykal_Established
+		}
+	
+		cost = 0
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 408
+						state = 409
+						state = 560
+						state = 561
+						state = 657
+						state = 562
+						state = 874
+						state = 822
+						state = 637
+						state = 875
+					}
+				}
+				transfer_state_to = BYA
+				add_core_of = BYA
+			}
+			set_country_flag = Primorskaya_Oblast_decided
+		}
+	}
+	JAP_integrate_mongolia_mengkukuo_decision  = {
+
+		priority = 5
+
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+		targets = { MEN }
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {  
+			original_tag = JAP 
+		}
+
+		visible = { 
+			has_subject = MEN
+		}
+	
+		available = {
+			has_subject = MEN
+			has_subject = MON
+		}
+
+		#days_remove = 70
+
+		
+
+		cost = 15
+
+
+		complete_effect = { 
+
+			FROM = {
+				annex_country = {
+					target = MON
+					transfer_troops = yes
+				}
+			}	
+			
+
+		}
+		fire_only_once = no
+	}
+	
+}
+JAP_the_co_prosperity_sphere_decisions = {
+	JAP_Sukarno_decision  = {
+
+		priority = 5
+
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+		targets = { INS }
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {  
+			original_tag = JAP 
+		}
+
+		visible = { 
+			has_completed_focus = JAP_strike_the_southern_road
+		}
+	
+		available = {
+			OR = {
+				INS = { 
+					is_subject_of = JAP
+				}
+				INS = { 
+					exists = no
+					any_state = { 
+						is_core_of = INS
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+			}
+		}
+		fire_only_once = no
+		#days_remove = 70
+
+		
+
+		cost = 10
+
+
+		complete_effect = { 
+			IF = {
+				limit = {
+					FROM = {
+						exists = no
+					}
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = INS
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					transfer_state_to = FROM
+				}
+				set_autonomy = {
+					target = INS
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			FROM = {
+				drop_cosmetic_tag = yes
+				create_country_leader = {
+					name = INS_Sukarno_NCNS
+					desc = ""
+					picture = "gfx/leaders/INS/Portrait_Sukarno.png"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						expert_unifier
+					}
+				}
+				add_popularity = {
+					ideology = neutrality 
+					popularity = 0.4
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1935.12.17"
+					long_name = INS_democratic_party
+					name = INS_democratic_party
+				}
+				JAP_setup_faction_wide_aoe_effects_root_this = yes
+			}	
+			
+
+		}
+	}
+	JAP_transfer_609_to_RNG_decision  = {
+
+		priority = 5
+
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+		targets = { RNG }
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {  
+			original_tag = JAP 
+		}
+
+		visible = { 
+			has_subject = RNG
+		}
+	
+		available = {
+			has_subject = RNG
+			owns_state = 609
+		}
+
+		days_remove = 35
+
+		
+
+		cost = 0
+
+
+		remove_effect = { 
+
+			RNG = {
+				transfer_state = 609
+			}	
+		}
+	}
+	
 }

@@ -123,11 +123,11 @@ country_event = {
 						state = 642
 						state = 650
 						state = 727
+						state = 1021
 					}
-					
 				}
 				transfer_state_to = FROM
-			}	
+			}
 			every_state = {
 				limit = {
 					owner = {
@@ -159,12 +159,24 @@ country_event = {
 				}
 				IF = {
 					limit = {
-						BRM = {
-							is_subject_of = FROM
-							exists = yes
+						any_country = {
+							has_cosmetic_tag = BRM_state_of_burma_japanese_splinter_tag
+							is_subject_of = JAP 
 						}
+						
 					}
-					transfer_state_to = BRM
+					every_state = {
+						limit = {
+							owner = {
+								has_war_with = FROM
+								is_ally_with = ROOT
+							}
+							is_owned_by = BRM
+							is_controlled_by_ROOT_or_ally = yes
+							
+						}
+						transfer_state_to = controller
+					}
 				}
 				else = {
 					transfer_state_to = FROM
@@ -172,69 +184,140 @@ country_event = {
 			}
 			IF = {
 				limit = {
-					any_state = {
-						limit = {
-							state = 430
-							OR = {
-								is_controlled_by = FROM
-								controller = { 
-									is_ally_with = FROM
-								}
-							}
-						}
-					}
-				}
-				every_state = {
-					limit = {
-						is_owned_by = RAJ
-						NOT = { state = 992 }
-						OR = {
-							is_controlled_by = FROM
-							controller = { 
-								is_ally_with = FROM
-							}
-						}
-					}
-					transfer_state_to = FROM
-				}
-			}
-			IF = {
-				limit = {
 					RAJ = {
 						has_capitulated = yes
+						has_war_with = FROM
 					}
 				}
-				annex_country = {
-					target = RAJ
+				if = {
+					limit = {
+						any_country = {
+							has_cosmetic_tag = RAJ_azad_hind_tag
+							is_subject_of = JAP 
+						}
+						
+					}
+					random_country = {
+						limit = {
+							has_cosmetic_tag = RAJ_azad_hind_tag
+							is_subject_of = JAP
+						}
+						annex_country = {
+							target = RAJ
+						}
+					
+					}
+					992 = {
+						transfer_state_to = ROOT
+					}
 				}
-				992 = {
-					transfer_state_to = FROM
+				else = {
+					annex_country = {
+						target = RAJ
+					}
+					992 = {
+						transfer_state_to = ROOT
+					}
 				}
 			}
-			520 = { set_demilitarized_zone = yes }
-			872 = { set_demilitarized_zone = yes }
-			870 = { set_demilitarized_zone = yes }
-			IF = {
+			else_if  = {
 				limit = {
-					AST = {
-						has_capitulated = yes
+					430 = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+					430.owner = { has_war_with = FROM }
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_cosmetic_tag = RAJ_azad_hind_tag
+							is_subject_of = JAP 
+						}
+						
+					}
+					every_state = {
+						limit = {
+							is_owned_by = RAJ
+							NOT = { state = 992 }
+							is_controlled_by_ROOT_or_ally = yes
+							
+						}
+						transfer_state_to = PREV
 					}
 				}
-				FROM = {
-					add_ideas = JAP_Austrarian_resources
+				else = {
+					every_state = {
+						limit = {
+							is_owned_by = RAJ
+							NOT = { state = 992 }
+							is_controlled_by_ROOT_or_ally = yes
+							
+						}
+						transfer_state_to = FROM
+					}
 				}
 			}
-
-			every_country = {
+			IF = {
+				limit = { 
+					422.owner = { 
+						has_war_with = FROM
+						is_ally_with = ROOT
+					}
+				}
+				422.controller = {
+					transfer_state = 422
+				}
+			}
+			IF = {
+				limit = { 
+					320.owner = { 
+						has_war_with = FROM
+						is_ally_with = ROOT
+					}
+				}
+				320.controller = {
+					transfer_state = 320
+				}
+			}
+			every_other_country = {
 				limit = {
 					has_war_with = FROM
 					OR = {
 						original_tag = ROOT
-						is_in_faction_with = ROOT
-						is_subject_of = ROOT
+						is_ally_with = ROOT
 					}
 				}
 				white_peace = FROM
+			}
+			all_allied_country = {
+				limit = {
+					has_war_with = ROOT
+					OR = {
+						is_ally_with = FROM
+						original_tag = FROM
+					}
+				}
+				white_peace = ROOT
+			}
+			IF = {
+				limit = {
+					AST = {
+						is_ally_with = ROOT
+					}
+				}
+				520 = { set_demilitarized_zone = yes }
+				872 = { set_demilitarized_zone = yes }
+				870 = { set_demilitarized_zone = yes }
+				IF = {
+					limit = {
+						AST = {
+							has_capitulated = yes
+						}
+					}
+					FROM = {
+						add_ideas = JAP_Austrarian_resources
+					}
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 		}
@@ -378,48 +461,10 @@ country_event = {
 		}
 		IF = {
 			limit = {
-				any_state = {
-					limit = {
-						state = 430
-						is_controlled_by_ROOT_or_ally = yes
-						
-					}
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						has_cosmetic_tag = RAJ_azad_hind_tag
-						is_subject_of = JAP 
-					}
-					
-				}
-				every_state = {
-					limit = {
-						is_owned_by = RAJ
-						NOT = { state = 992 }
-						is_controlled_by_ROOT_or_ally = yes
-						
-					}
-					transfer_state_to = controller
-				}
-			}
-			else = {
-				every_state = {
-					limit = {
-						is_owned_by = RAJ
-						NOT = { state = 992 }
-						is_controlled_by_ROOT_or_ally = yes
-						
-					}
-					transfer_state_to = ROOT
-				}
-			}
-		}
-		IF = {
-			limit = {
 				RAJ = {
 					has_capitulated = yes
+					has_war_with = ROOT
+					is_subject_of = FROM 
 				}
 			}
 			if = {
@@ -438,10 +483,11 @@ country_event = {
 					annex_country = {
 						target = RAJ
 					}
+					set_capital = { state = 439 }
 				
 				}
 				992 = {
-				transfer_state_to = FROM
+					transfer_state_to = FROM
 				}
 			}
 			else = {
@@ -449,17 +495,79 @@ country_event = {
 					target = RAJ
 				}
 				992 = {
-				transfer_state_to = FROM
+					transfer_state_to = FROM
 				}
 			}
-			
-			
 		}
-		422 = {
-			transfer_state_to = controller
+		else_if  = {
+			limit = {
+				430 = {
+					is_controlled_by_ROOT_or_ally = yes
+				}
+				430.owner = { has_war_with = ROOT }
+			}
+			if = {
+				limit = {
+					any_country = {
+						has_cosmetic_tag = RAJ_azad_hind_tag
+						is_subject_of = JAP 
+					}
+					
+				}
+				every_state = {
+					limit = {
+						is_owned_by = RAJ
+						NOT = { state = 992 }
+						is_controlled_by_ROOT_or_ally = yes
+						
+					}
+					transfer_state_to = PREV
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						is_owned_by = RAJ
+						NOT = { state = 992 }
+						is_controlled_by_ROOT_or_ally = yes
+						
+					}
+					transfer_state_to = ROOT
+				}
+			}
 		}
-		320 = {
-			transfer_state_to = controller
+		IF = {
+			limit = { 
+				any_country = { 
+					owns_state = 422
+					has_war_with = ROOT
+					OR = {
+						is_ally_with = FROM
+						original_tag = FROM
+					}
+				}
+			}
+			log = "422 owner Joken Tassei"
+			422 = {
+				transfer_state_to = controller
+			}
+		}
+		log = "Test"
+		IF = {
+			limit = { 
+				any_country = { 
+					owns_state = 320
+					has_war_with = ROOT
+					OR = {
+						is_ally_with = FROM
+						original_tag = FROM
+					}
+				}
+			}
+			log = "320 owner Joken Tassei"
+			320 = {
+				transfer_state_to = controller
+			}
 		}
 		every_other_country = {
 			limit = {
@@ -476,23 +584,32 @@ country_event = {
 				has_war_with = FROM
 				OR = {
 					is_ally_with = ROOT
+					original_tag = ROOT
 				}
 			}
 			white_peace = FROM
 		}
-		520 = { set_demilitarized_zone = yes }
-		872 = { set_demilitarized_zone = yes }
-		870 = { set_demilitarized_zone = yes }
 		IF = {
 			limit = {
 				AST = {
-					has_capitulated = yes
+					is_ally_with = FROM
 				}
 			}
-			ROOT = {
-				add_ideas = JAP_Austrarian_resources
+			520 = { set_demilitarized_zone = yes }
+			872 = { set_demilitarized_zone = yes }
+			870 = { set_demilitarized_zone = yes }
+			IF = {
+				limit = {
+					AST = {
+						has_capitulated = yes
+					}
+				}
+				ROOT = {
+					add_ideas = JAP_Austrarian_resources
+				}
 			}
 		}
+		
 		custom_effect_tooltip = generic_skip_one_line_tt
 	}
 }

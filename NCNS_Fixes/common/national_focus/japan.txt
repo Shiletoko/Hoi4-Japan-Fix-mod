@@ -7204,7 +7204,13 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			activate_mission = JAP_kwantung_army_impatience
-				
+			JAP_tomoyuki_yamashita = {
+				remove_unit_leader_trait = politically_connected
+				add_timed_unit_leader_trait = {
+					trait = demoted_general
+					days = 2920
+				}
+			}
 			hidden_effect = {
 				IF = {
 					limit = {
@@ -32230,7 +32236,7 @@ focus_tree = {
 							creator = "JAP" 
 							version_name = "Yamato Class"
 						}
-						name = "Nara" 
+						name = "Kii" 
 						requested_factories = 1
 						progress = 0.5
 						amount = 1
