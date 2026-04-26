@@ -51,12 +51,16 @@ foreign_politics = {
 
 		visible = {
 			FROM = { 
-				OR = {
+				IF = {
+					limit = { is_in_faction = yes }
 					is_faction_leader = yes
-					is_in_faction = no
 				}
+				
 				is_subject = no
-				is_major = yes
+				#is_major = yes
+				NOT = { original_tag = JAP }
+				NOT = { original_tag = SOV }
+				NOT = { original_tag = CHI }
 			}
 			is_subject = no
 			OR = {
@@ -68,31 +72,32 @@ foreign_politics = {
 		target_array = enemies
 
 		target_trigger = {
-			all_country = {
-				limit = {
-					AND = {
-						OR = {
-							is_faction_leader = yes
-							is_in_faction = no
-						}
-						exists = yes 
-						is_subject = no
-						is_major = yes
-						NOT = { original_tag = JAP }
-					}
+			any_other_country = {
+				IF = {
+					limit = { is_in_faction = yes }
+					is_faction_leader = yes
 				}
+				exists = yes 
+				is_subject = no
+				#is_major = yes
+				#NOT = { is_on_continent = asia }
+				NOT = { original_tag = JAP }
+				NOT = { original_tag = SOV }
+				NOT = { original_tag = CHI }
+				
 			}
 		}
 
 		available = {
-			FROM = {
+			has_war_with = FROM
+			any_other_country = {
 				exists = yes 
 				is_subject = no
-				has_war_with = ROOT
-				OR = {
+				IF = {
+					limit = { is_in_faction = yes }
 					is_faction_leader = yes
-					is_in_faction = no
 				}
+				NOT = { is_on_continent = asia }
 			}
 
 			IF = {
@@ -465,7 +470,7 @@ foreign_politics = {
 		}
 	
 		visible = { 
-			NOT = { has_ideology_group = communism }
+			owner = { NOT = { has_ideology_group = communism } }
 			NOT = { has_country_flag = Zabaykal_Established }
 			OR = {
 				has_completed_focus = JAP_strike_the_soviets
@@ -582,7 +587,7 @@ foreign_politics = {
 		}
 	
 		visible = { 
-			NOT = { has_ideology_group = communism }
+			owner = { NOT = { has_ideology_group = communism } }
 			has_country_flag = Zabaykal_Established
 			NOT = { has_country_flag = Primorskaya_Oblast_decided }
 			has_subject = MAN
@@ -653,7 +658,7 @@ foreign_politics = {
 		}
 	
 		visible = { 
-			NOT = { has_ideology_group = communism }
+			owner = { NOT = { has_ideology_group = communism } }
 			has_country_flag = Zabaykal_Established
 			NOT = { has_country_flag = Primorskaya_Oblast_decided }
 			any_owned_state = {
@@ -778,7 +783,7 @@ foreign_politics = {
 		}
 	
 		visible = { 
-			NOT = { has_ideology_group = communism }
+			owner = { NOT = { has_ideology_group = communism } }
 			has_country_flag = Zabaykal_Established
 			NOT = { has_country_flag = Primorskaya_Oblast_decided }
 			has_subject = BYA
@@ -874,133 +879,1028 @@ foreign_politics = {
 	}
 	
 }
-JAP_the_co_prosperity_sphere_decisions = {
-	JAP_Sukarno_decision  = {
+JAP_conversion_carrier_cat = {
 
-		priority = 5
+	JAP_build_zuiho = { 
 
-		icon = GFX_decision_SWI_support_humanitarian_efforts
-		targets = { INS }
-		ai_will_do = {
-			base = 100
-		}
-	
-		allowed = {  
-			original_tag = JAP 
-		}
-
-		visible = { 
-			has_completed_focus = JAP_strike_the_southern_road
-		}
-	
-		available = {
-			OR = {
-				INS = { 
-					is_subject_of = JAP
-				}
-				INS = { 
-					exists = no
-					any_state = { 
-						is_core_of = INS
-						is_controlled_by_ROOT_or_subject = yes
-					}
-				}
-			}
-		}
-		fire_only_once = no
-		#days_remove = 70
-
+		icon = generic_naval
 		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
 
 		cost = 10
+		days_remove = 60
 
+		modifier = {
+			civilian_factory_use = 3
+		}
 
-		complete_effect = { 
-			IF = {
-				limit = {
-					FROM = {
-						exists = no
-					}
-				}
-				every_owned_state = {
-					limit = {
-						is_core_of = INS
-						is_controlled_by_ROOT_or_subject = yes
-					}
-					transfer_state_to = FROM
-				}
-				set_autonomy = {
-					target = INS
-					autonomous_state = autonomy_wtt_imperial_protectorate
-					end_wars = no
-					end_civil_wars = no
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "瑞鳳型"
+				type = ship_hull_carrier_conversion_ca
+				name_group = JAP_CVL_HISTORICAL
+				design_team = mio:JAP_yokosuka_naval_arsenal_organization
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = carrier_ship_engine_2
+					fixed_ship_secondaries_slot = dp_ship_secondaries_1
 				}
 			}
-			FROM = {
-				drop_cosmetic_tag = yes
-				create_country_leader = {
-					name = INS_Sukarno_NCNS
-					desc = ""
-					picture = "gfx/leaders/INS/Portrait_Sukarno.png"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						expert_unifier
-					}
-				}
-				add_popularity = {
-					ideology = neutrality 
-					popularity = 0.4
-				}
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-					last_election = "1935.12.17"
-					long_name = INS_democratic_party
-					name = INS_democratic_party
-				}
-				JAP_setup_faction_wide_aoe_effects_root_this = yes
-			}	
-			
-
-		}
-	}
-	JAP_transfer_609_to_RNG_decision  = {
-
-		priority = 5
-
-		icon = GFX_decision_SWI_support_humanitarian_efforts
-		targets = { RNG }
-		ai_will_do = {
-			base = 100
-		}
-	
-		allowed = {  
-			original_tag = JAP 
-		}
-
-		visible = { 
-			has_subject = RNG
-		}
-	
-		available = {
-			has_subject = RNG
-			owns_state = 609
-		}
-
-		days_remove = 35
-
+			set_country_flag = zuiho_completed
 		
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_conversion_ca
+					creator = "JAP"
+					version_name = "瑞鳳型"
+				}
+				name = "瑞鳳"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
+				
+			}
+		}
+	}
+	JAP_build_shoho = { 
 
-		cost = 0
+		icon = generic_naval
+		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+			has_country_flag = zuiho_completed
+		}
 
+		visible = {
+		}
 
-		remove_effect = { 
+		fire_only_once = yes
 
-			RNG = {
-				transfer_state = 609
-			}	
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = {
+			set_country_flag = zuiho_completed
+		
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_conversion_ca
+					creator = "JAP"
+					version_name = "瑞鳳型"
+				}
+				name = "祥鳳"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
+				
+			}
+		}
+	}
+	JAP_build_ryuho = { 
+
+		icon = generic_naval
+		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "龍鳳型"
+				type = ship_hull_carrier_conversion_ca
+				name_group = JAP_CVL_HISTORICAL
+				design_team = mio:JAP_yokosuka_naval_arsenal_organization
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = carrier_ship_engine_1
+					fixed_ship_secondaries_slot = dp_ship_secondaries_1
+				}
+			}
+		
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_conversion_ca
+					creator = "JAP"
+					version_name = "龍鳳型"
+				}
+				name = "龍鳳"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
+				
+			}
 		}
 	}
 	
+	JAP_build_chitose = { 
+
+		icon = generic_naval
+		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "千歳型"
+				type = ship_hull_carrier_conversion_ca
+				name_group = JAP_CVL_HISTORICAL
+				design_team = mio:JAP_yokosuka_naval_arsenal_organization
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = carrier_ship_engine_2
+					fixed_ship_secondaries_slot = dp_ship_secondaries_1
+				}
+			}
+			set_country_flag = chitose_completed
+		
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_conversion_ca
+					creator = "JAP"
+					version_name = "千歳型"
+				}
+				name = "千歳"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
+				
+			}
+		}
+	}
+	JAP_build_chiyoda = { 
+
+		icon = generic_naval
+		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+			has_country_flag = chitose_completed
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = {
+		
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_conversion_ca
+					creator = "JAP"
+					version_name = "千歳型"
+				}
+				name = "千代田"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
+				
+			}
+		}
+	}
+	
+	JAP_build_junyo = { 
+
+		icon = generic_naval
+		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+		}
+
+		visible = {
+			has_completed_focus = JAP_conversion_merchant_ship
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "隼鷹型"				
+				type = ship_hull_carrier_1
+				name_group = JAP_CVL_HISTORICAL
+				design_team = mio:JAP_yokosuka_naval_arsenal_organization
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = carrier_ship_engine_1
+					fixed_ship_secondaries_slot = dp_ship_secondaries_1
+					front_1_custom_slot = ship_deck_space
+				}
+			}
+			set_country_flag = junyo_completed
+		
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_1
+					creator = "JAP"
+					version_name = "隼鷹型"
+				}
+				name = "隼鷹"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
+				
+			}
+		}
+	}
+	JAP_build_hiyo = { 
+
+		icon = generic_naval
+		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+			has_country_flag = junyo_completed
+		}
+
+		visible = {
+			has_completed_focus = JAP_conversion_merchant_ship
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = {
+		
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_1
+					creator = "JAP"
+					version_name = "隼鷹型"
+				}
+				name = "飛鷹"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
+				
+			}
+		}
+	}
+	JAP_build_taiyo = { 
+
+		icon = generic_naval
+		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+		}
+
+		visible = {
+			has_completed_focus = JAP_conversion_merchant_ship
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "大鷹型"				
+				type = ship_hull_escort_carrier
+				name_group = JAP_CVL_HISTORICAL
+				#design_team = 
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_escort_deck_space
+					fixed_ship_deck_slot_2 = ship_escort_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_radar_slot = inherit
+					fixed_ship_engine_slot = carrier_ship_engine_1
+					fixed_ship_secondaries_slot = dp_ship_secondaries_1
+					fixed_ship_armor_slot = empty
+					front_1_custom_slot = ship_escort_deck_space
+					mid_1_custom_slot = empty
+				}
+			}
+			set_country_flag = taiyo_completed
+		
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_escort_carrier
+					creator = "JAP"
+					version_name = "大鷹型"
+				}
+				name = "大鷹"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				
+			}
+		}
+	}
+	JAP_build_unyo = { 
+
+		icon = generic_naval
+		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+			has_country_flag = taiyo_completed
+		}
+
+		visible = {
+			has_completed_focus = JAP_conversion_merchant_ship
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_escort_carrier
+					creator = "JAP"
+					version_name = "大鷹型"
+				}
+				name = "雲鷹"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				
+			}
+		}
+	}
+	JAP_build_chuyo = { 
+
+		icon = generic_naval
+		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+			has_country_flag = taiyo_completed
+		}
+
+		visible = {
+			has_completed_focus = JAP_conversion_merchant_ship
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_escort_carrier
+					creator = "JAP"
+					version_name = "大鷹型"
+				}
+				name = "冲鷹"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				
+			}
+		}
+	}
+	
+	JAP_build_kaiyo = { 
+
+		icon = generic_naval
+		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+			has_country_flag = taiyo_completed
+		}
+
+		visible = {
+			has_completed_focus = JAP_conversion_merchant_ship
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_escort_carrier
+					creator = "JAP"
+					version_name = "大鷹型"
+				}
+				name = "海鷹"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				
+			}
+		}
+	}
+	
+	JAP_build_zuiyo = { 
+
+		icon = generic_naval
+		
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = yes
+			has_country_flag = taiyo_completed
+			NOT = { has_country_flag = zuiyo_is_sunk }
+		}
+
+		visible = {
+			has_completed_focus = JAP_conversion_merchant_ship
+		}
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			all_controlled_state = { is_coastal = no }
+		}
+
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = {
+			set_country_flag = zuiyo_safe
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_escort_carrier
+					creator = "JAP"
+					version_name = "大鷹型"
+				}
+				name = "瑞鷹"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				
+			}
+		}
+	}
+	
+}
+prospect_for_resources = {
+	develop_Tangshan_steel_deposits = { #609
+
+		icon = steel
+		
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 609
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			609 = { is_controlled_by_ROOT_or_subject = yes }
+			has_tech = excavation4
+		}
+
+		visible = {
+			
+			check_variable = {
+				Tangshan_Develop > 0
+			}
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			609 = { is_controlled_by_ROOT_or_subject = no }
+		}
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = Tangshan_Develop
+				value = 1
+			}
+		}
+		remove_effect = {
+			609 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}	
+	}
+	develop_Tangshan_coal_deposits = { #609
+
+		icon = coal
+		
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 609
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			609 = { is_controlled_by_ROOT_or_subject = yes }
+			has_tech = excavation3
+		}
+
+		visible = {
+			
+			check_variable = {
+				Tangshan_Develop_coal > 0
+			}
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			609 = { is_controlled_by_ROOT_or_subject = no }
+		}
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = Tangshan_Develop_coal
+				value = 1
+			}
+		}
+		remove_effect = {
+			609 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+		}	
+	}
+	develop_Anhui_steel_deposits = { #606
+
+		icon = steel
+		
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 606
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			606 = { is_controlled_by_ROOT_or_subject = yes }
+			has_tech = excavation2
+		}
+
+		visible = {
+			
+			check_variable = {
+				Tangshan_Develop_ > 0
+			}
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			606 = { is_controlled_by_ROOT_or_subject = no }
+		}
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = Anhui_Develop
+				value = 1
+			}
+		}
+		remove_effect = {
+			606 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}	
+	}
+	develop_1028_steel_deposits = { #1028
+
+		icon = steel
+		
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1028
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			1028 = { is_controlled_by_ROOT_or_subject = yes }
+			has_tech = excavation4
+		}
+
+		visible = {
+			
+			check_variable = {
+				1028_Develop > 0
+			}
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			1028 = { is_controlled_by_ROOT_or_subject = no }
+		}
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = 1028_Develop
+				value = 1
+			}
+		}
+		remove_effect = {
+			1028 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}	
+	}
+	develop_527_steel_deposits = { #527
+
+		icon = steel
+		
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 527
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			527 = { is_controlled_by_ROOT_or_subject = yes }
+			has_tech = excavation4
+		}
+
+		visible = {
+			
+			check_variable = {
+				527_Develop > 0
+			}
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			527 = { is_controlled_by_ROOT_or_subject = no }
+		}
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = 527_Develop
+				value = 1
+			}
+		}
+		remove_effect = {
+			527 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+		}	
+	}
+	develop_328_steel_deposits = { #328
+
+		icon = steel
+		
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 328
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			328 = { is_controlled_by_ROOT_or_subject = yes }
+			has_tech = excavation2
+		}
+
+		visible = {
+			
+			check_variable = {
+				328_Develop > 0
+			}
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			328 = { is_controlled_by_ROOT_or_subject = no }
+		}
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = 328_Develop
+				value = 1
+			}
+		}
+		remove_effect = {
+			328 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+		}	
+	}
 }

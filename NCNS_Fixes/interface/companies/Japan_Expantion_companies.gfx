@@ -3,7 +3,7 @@ spriteTypes = {
 	### JAP - Japan ###
 	spriteType = {
 		name = "GFX_idea_JAP_Riken"
-		texturefile = "gfx/interface/companies/JAP/JAP_Riken.png"
+		texturefile = "gfx/interface/companies/JAP/Riken_bright_1.png"
 	}
 	
 	spriteType = {

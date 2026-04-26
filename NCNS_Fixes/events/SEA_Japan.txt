@@ -12021,6 +12021,10 @@ country_event = {
 					ruling_only = yes
 					character = JAP_seigo_nakano
 				}	
+				has_country_leader = {
+					ruling_only = yes
+					character = JAP_fumimaro_konoe
+				}	
 			}
 		}
 

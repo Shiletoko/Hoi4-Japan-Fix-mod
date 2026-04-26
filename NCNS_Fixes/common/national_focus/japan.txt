@@ -542,79 +542,79 @@ focus_tree = {
 			
 			hidden_effect = {
 
-				division_template = { name = "Japanese People's Regiment" division_names_group = JAP_INF_01 is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } } }
+				division_template = { name = "日本人民連隊" division_names_group = JAP_INF_01 is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } } }
 
 				532 = {
 					create_unit = { 
-						division = "name = \"1. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第一日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 					create_unit = { 
-						division = "name = \"2. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第二日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 					create_unit = { 
-						division = "name = \"3. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第三日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 					create_unit = { 
-						division = "name = \"4. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第四日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 					create_unit = { 
-						division = "name = \"5. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第五日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 				}
 
 				531 = {
 					create_unit = { 
-						division = "name = \"6. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第六日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 					create_unit = { 
-						division = "name = \"7. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第七日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 					create_unit = { 
-						division = "name = \"8. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第八日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 					create_unit = { 
-						division = "name = \"9. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第九日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 					create_unit = { 
-						division = "name = \"10. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第十日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 				}
 
 				534 = {
 					create_unit = { 
-						division = "name = \"11. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第十一日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 					create_unit = { 
-						division = "name = \"12. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第十二日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 				}
 
 				535 = {
 					create_unit = { 
-						division = "name = \"13. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第十三日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 					create_unit = { 
-						division = "name = \"14. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第十四日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 				}
 
 				537 = {
 					create_unit = { 
-						division = "name = \"15. Japanese People's Regiment\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						division = "name = \"第十五日本人民連隊\" division_template = \"日本人民連隊\" start_experience_factor = 0" 
 						owner = ROOT
 					}
 				}
@@ -7200,10 +7200,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = JAP_sea_purge_the_kodoha_faction_tt
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			activate_mission = JAP_kwantung_army_impatience
 			JAP_tomoyuki_yamashita = {
 				remove_unit_leader_trait = politically_connected
 				add_timed_unit_leader_trait = {
@@ -7211,6 +7207,11 @@ focus_tree = {
 					days = 2920
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			activate_mission = JAP_kwantung_army_impatience
+			
 			hidden_effect = {
 				IF = {
 					limit = {
@@ -8889,7 +8890,11 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.2
 			}
-
+			set_party_name = {
+				ideology = democratic
+				long_name = JAP_dokokai_long
+				name = JAP_dokokai_party
+			}	
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			JAP_add_or_modify_showa_statism = yes
@@ -9796,10 +9801,178 @@ focus_tree = {
 		}
 	}
 
+	focus = { #######Modding
+		id = JAP_konoes_premiership
+		icon = GFX_focus_JAP_konoes_first_cabinet
+		mutually_exclusive = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		x = -4
+		y = 2
+		relative_position_id = JAP_ichioku_isshin
+
+		prerequisite = { focus = JAP_ichioku_isshin }
+
+		cost = 5
+		allow_branch = {
+			has_country_flag = JAP_konoe_ima_kampaku
+			IF = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {						
+					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+					has_completed_focus = JAP_okadas_military_purge_speech
+				}
+			}
+		}
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_country_flag = JAP_tohokai_prime_minister_added
+			}
+		}
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_country_flag = JAP_konoe_ima_kampaku
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_IMPERIAL_INFLUENCE }
+
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.05
+			JAP_big_government_faction_gain = yes
+		}
+	}
+
+	focus = { #######Modding
+		id = JAP_Expand_PMs_powers
+		icon = GFX_focus_generic_improve_the_administration
+		x = -1
+		y = 1
+		relative_position_id = JAP_konoes_premiership
+
+		prerequisite = { focus = JAP_konoes_premiership }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_IMPERIAL_INFLUENCE }
+
+		completion_reward = {
+			JAP_small_government_faction_gain = yes
+			add_ideas = JAP_Expanded_PMs_Power_idea
+		}
+	}
+
+	focus = { #######Modding
+		id = JAP_personality_cult
+		icon = GFX_focus_generic_support_the_left_right
+		x = -3
+		y = 1
+		relative_position_id = JAP_konoes_premiership
+
+		prerequisite = { focus = JAP_konoes_premiership }
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_IMPERIAL_INFLUENCE }
+
+		completion_reward = {
+			JAP_small_government_faction_gain = yes
+			remove_country_leader_trait = {
+				character = JAP_fumimaro_konoe
+				trait = ima_kampaku
+			}
+			add_country_leader_trait = {
+				character = JAP_fumimaro_konoe
+				trait = soutou_konoe
+			}
+		}
+	}
+	
+	focus = { #######Modding
+		id = JAP_IRAA_form_party
+		icon = GFX_focus_JAP_imperial_rule_assistance_association
+		x = -2
+		y = 2
+		relative_position_id = JAP_konoes_premiership
+
+		prerequisite = { focus = JAP_personality_cult }
+		prerequisite = { focus = JAP_Expand_PMs_powers }
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_IMPERIAL_INFLUENCE }
+
+		completion_reward = {
+			JAP_big_government_faction_gain = yes
+			country_event = SEA_japan_foreign_policy_Fixes.5
+		}
+	}
+
 	focus = {
 		id = JAP_tojos_premiership
 		icon = GFX_focus_JAP_tojos_premiership
-		mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		mutually_exclusive = { focus = JAP_konoes_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
 		x = -2
 		y = 2
 		relative_position_id = JAP_ichioku_isshin
@@ -9815,7 +9988,13 @@ focus_tree = {
 				has_country_flag = JAP_tohokai_prime_minister_added
 			}
 		}
-
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_country_flag = JAP_konoe_ima_kampaku
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -9879,7 +10058,7 @@ focus_tree = {
 	focus = {
 		id = JAP_yamamotos_premiership
 		icon = GFX_focus_JAP_yamamotos_premiership
-		mutually_exclusive = { focus = JAP_tojos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		mutually_exclusive = { focus = JAP_konoes_premiership focus = JAP_tojos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
 		x = 0
 		y = 2
 		relative_position_id = JAP_ichioku_isshin
@@ -9895,7 +10074,13 @@ focus_tree = {
 				has_country_flag = JAP_tohokai_prime_minister_added
 			}
 		}
-
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_country_flag = JAP_konoe_ima_kampaku
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -9950,7 +10135,7 @@ focus_tree = {
 	focus = {
 		id = JAP_the_crysanthemum_throne
 		icon = GFX_focus_JAP_the_crysanthemum_throne
-		mutually_exclusive = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_solidify_tohokai_rule }
+		mutually_exclusive = { focus = JAP_konoes_premiership focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_solidify_tohokai_rule }
 		x = 2
 		y = 2
 		relative_position_id = JAP_ichioku_isshin
@@ -9966,7 +10151,13 @@ focus_tree = {
 				has_country_flag = JAP_tohokai_prime_minister_added
 			}
 		}
-
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_country_flag = JAP_konoe_ima_kampaku
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -10024,7 +10215,7 @@ focus_tree = {
 	focus = {
 		id = JAP_solidify_tohokai_rule 
 		icon = GFX_focus_JAP_the_tohokai
-		mutually_exclusive = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
+		mutually_exclusive = { focus = JAP_konoes_premiership focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
 		x = 4
 		y = 2
 		relative_position_id = JAP_ichioku_isshin
@@ -10054,7 +10245,13 @@ focus_tree = {
 				has_country_flag = JAP_tohokai_prime_minister_added
 			}
 		}
-
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_country_flag = JAP_konoe_ima_kampaku
+			}
+		}
 		cost = 5
 
 		ai_will_do = {
@@ -10153,7 +10350,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_konoes_premiership focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
 
 		cost = 10
 
@@ -10215,7 +10412,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_konoes_premiership focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
 
 		cost = 5
 
@@ -10254,12 +10451,12 @@ focus_tree = {
 			hidden_effect = {
 
 				delete_unit_template_and_units = {
-					division_template = "Kokumin Giyū Sentōtai"
+					division_template = "国民義勇戦闘隊"
 					disband = yes #if yes, will refund equipment/manpower.
 				}
 
 				division_template = {
-					name = "Kokumin Giyū Sentōtai"
+					name = "国民義勇戦闘隊"
 					division_names_group = JAP_MIL_01
 					override_model = JAP_militia_entity
 					role = garrison
@@ -10341,7 +10538,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_konoes_premiership focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
 
 		cost = 5
 
@@ -10384,7 +10581,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_konoes_premiership focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
 
 		cost = 10
 
@@ -10432,7 +10629,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_konoes_premiership focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
 
 		cost = 10
 
@@ -10476,12 +10673,12 @@ focus_tree = {
 	focus = {
 		id = JAP_fund_propaganda_films
 		icon = GFX_focus_JAP_fund_propaganda_films
-		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
+		#mutually_exclusive = { focus = JAP_konoes_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
 		x = 4
 		y = 2
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_konoes_premiership focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
 
 		cost = 5
 
@@ -10675,7 +10872,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_tojos_premiership
 
-		prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
+		prerequisite = { focus = JAP_konoes_premiership focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
 
 		cost = 10
 
@@ -12761,26 +12958,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_IMPERIAL_INFLUENCE }
 
 		completion_reward = {
-			activate_targeted_decision = {
-				 target = ENG
-				 decision = JAP_demand_united_nations_surrender 
-			}
-			activate_targeted_decision = {
-				 target = FRA
-				 decision = JAP_demand_united_nations_surrender 
-			}
-			#activate_targeted_decision = {
-			#	 target = GER
-			#	 decision = JAP_demand_united_nations_surrender 
-			#}
-			activate_targeted_decision = {
-				 target = USA
-				 decision = JAP_demand_united_nations_surrender 
-			}
-			#activate_targeted_decision = {
-			#	 target = ITA
-			#	 decision = JAP_demand_united_nations_surrender 
-			#}
+			custom_effect_tooltip = JAP_peace_out_Non_Asian_nations_dec_tt
+			
 
 			navy_experience = 10
 			air_experience = 5
@@ -14549,12 +14728,12 @@ focus_tree = {
 			hidden_effect = {
 
 				delete_unit_template_and_units = {
-					division_template = "Asano Brigade"
+					division_template = "浅野部隊"
 					disband = yes #if yes, will refund equipment/manpower.
 				}
 
 				division_template = {
-					name = "Asano Brigade"
+					name = "浅野部隊"
 					division_names_group = SOV_CAV_01
 					role = garrison
 					template_counter = 110
@@ -14579,7 +14758,7 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 				}
 				create_unit = {
-				    division = "name = \"Asano Brigade\" division_template = \"Asano Brigade\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+				    division = "name = \"浅野部隊\" division_template = \"浅野部隊\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
 				    owner = ROOT
 				}
 			}
@@ -14942,12 +15121,12 @@ focus_tree = {
 			hidden_effect = {
 
 				delete_unit_template_and_units = {
-					division_template = "Mongoru Dokuritsu-gun"
+					division_template = "モンゴル独立軍"
 					disband = yes #if yes, will refund equipment/manpower.
 				}
 
 				division_template = {
-					name = "Mongoru Dokuritsu-gun"
+					name = "モンゴル独立軍"
 					division_names_group = MON_INF_01
 					role = garrison
 					template_counter = 110
@@ -14972,14 +15151,14 @@ focus_tree = {
 
 			761 = {
 				create_unit = {
-				    division = "name = \"Dai-Ichi Mongoru Dokuritsu-gun\" division_template = \"Mongoru Dokuritsu-gun\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+				    division = "name = \"第一モンゴル独立軍\" division_template = \"モンゴル独立軍\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
 				    owner = ROOT
 				    officer = {
 				    	name = MAN_kanjurjab
 				    }
 				}
 				create_unit = {
-				    division = "name = \"Dai-Ni Mongoru Dokuritsu-gun\" division_template = \"Mongoru Dokuritsu-gun\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+				    division = "name = \"第二モンゴル独立軍\" division_template = \"モンゴル独立軍\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
 				    owner = ROOT
 				    officer = {
 				    	name = MON_navaanneren
@@ -15177,12 +15356,12 @@ focus_tree = {
 			hidden_effect = {
 
 				delete_unit_template_and_units = {
-					division_template = "Ainu Giyū-tai"
+					division_template = "アイヌ義勇隊"
 					disband = yes #if yes, will refund equipment/manpower.
 				}
 
 				division_template = {
-					name = "Ainu Giyū-tai"
+					name = "アイヌ義勇隊"
 					division_names_group = JAP_INF_01
 					role = garrison
 					override_model = JAP_infantry_alt_0_entity
@@ -17159,12 +17338,12 @@ focus_tree = {
 			hidden_effect = {
 
 				delete_unit_template_and_units = {
-					division_template = "Kokumin Giyū Sentōtai"
+					division_template = "国民義勇戦闘隊"
 					disband = yes #if yes, will refund equipment/manpower.
 				}
 
 				division_template = {
-					name = "Kokumin Giyū Sentōtai"
+					name = "国民義勇戦闘隊"
 					division_names_group = JAP_MIL_01
 					role = garrison
 					template_counter = 113
@@ -17185,23 +17364,23 @@ focus_tree = {
 					limit = { is_core_of = ROOT }
 					prioritize = { 282 530 533 }
 					create_unit = {
-						division = "name = \"1. Kokumin Giyū Sentōtai\" division_template = \"Kokumin Giyū Sentōtai\" start_experience_factor = 0.6" 
+						division = "name = \"第一国民義勇戦闘隊\" division_template = \"国民義勇戦闘隊\" start_experience_factor = 0.6" 
 						owner = ROOT
 					}
 					create_unit = {
-						division = "name = \"2. Kokumin Giyū Sentōtai\" division_template = \"Kokumin Giyū Sentōtai\" start_experience_factor = 0.6" 
+						division = "name = \"第二国民義勇戦闘隊\" division_template = \"国民義勇戦闘隊\" start_experience_factor = 0.6" 
 						owner = ROOT
 					}
 					create_unit = {
-						division = "name = \"3. Kokumin Giyū Sentōtai\" division_template = \"Kokumin Giyū Sentōtai\" start_experience_factor = 0.6" 
+						division = "name = \"第三国民義勇戦闘隊\" division_template = \"国民義勇戦闘隊\" start_experience_factor = 0.6" 
 						owner = ROOT
 					}
 					create_unit = {
-						division = "name = \"4. Kokumin Giyū Sentōtai\" division_template = \"Kokumin Giyū Sentōtai\" start_experience_factor = 0.6" 
+						division = "name = \"第四国民義勇戦闘隊\" division_template = \"国民義勇戦闘隊\" start_experience_factor = 0.6" 
 						owner = ROOT
 					}
 					create_unit = {
-						division = "name = \"5. Kokumin Giyū Sentōtai\" division_template = \"Kokumin Giyū Sentōtai\" start_experience_factor = 0.6" 
+						division = "name = \"第五国民義勇戦闘隊\" division_template = \"国民義勇戦闘隊\" start_experience_factor = 0.6" 
 						owner = ROOT
 					}
 				}
@@ -18167,12 +18346,12 @@ focus_tree = {
 
 			hidden_effect = {
 				delete_unit_template_and_units = {
-					division_template = "Ashigaru Levy"
+					division_template = "足軽徴収兵"
 					disband = yes #if yes, will refund equipment/manpower.
 				}
 				set_country_flag = JAP_ashigaru_system_is_active
 				division_template = {
-					name = "Ashigaru Levy"		
+					name = "足軽徴収兵"		
 				    division_names_group = JAP_MIL_02
 				    template_counter = 113
 					role = infantry
@@ -20896,26 +21075,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			activate_targeted_decision = {
-				 target = ENG
-				 decision = JAP_demand_united_nations_surrender 
-			}
-			activate_targeted_decision = {
-				 target = FRA
-				 decision = JAP_demand_united_nations_surrender 
-			}
-			activate_targeted_decision = {
-				 target = GER
-				 decision = JAP_demand_united_nations_surrender 
-			}
-			activate_targeted_decision = {
-				 target = USA
-				 decision = JAP_demand_united_nations_surrender 
-			}
-			activate_targeted_decision = {
-				 target = ITA
-				 decision = JAP_demand_united_nations_surrender 
-			}
+			
 			
 			add_political_power = 100
 
@@ -28677,7 +28837,7 @@ focus_tree = {
 					custom_effect_tooltip = generic_skip_one_line_tt
 					#O-I
 					create_equipment_variant = {
-						name = "O-I"
+						name = "オイ車"
 						type = super_heavy_tank_chassis_1
 						parent_version = 0
 						design_team = mio:JAP_mitsubishi_heavy_industries_organization
@@ -29958,7 +30118,7 @@ focus_tree = {
 			}
 			ELSE = {
 				create_equipment_variant = {
-					name = "A6M Zero-Sen"
+					name = "零式艦上戦闘機"
 					type = cv_small_plane_airframe_2
 					design_team = mio:JAP_mitsubishi_organization
 					allow_without_tech = no
@@ -29972,7 +30132,7 @@ focus_tree = {
 					icon = "GFX_JAP_cv_fighter2_medium"
 				}
 				create_equipment_variant = {
-					name = "Ki-43 Hayabusa"
+					name = "一式戦闘機 隼"
 					type = small_plane_airframe_2
 					design_team = mio:JAP_kawanishi_aircraft_company_organization
 					allow_without_tech = no
@@ -31337,13 +31497,34 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			random_navy_leader = {	
+			if = {
 				limit = {
-					NOT = {
-						has_trait = air_controller
+					any_navy_leader = {	
+						skill > 3
+						NOT = {
+							has_trait = air_controller
+						}
 					}
-				}	
-				add_trait = { trait = air_controller }
+				}
+				random_navy_leader = {	
+					limit = {
+						NOT = {
+							has_trait = air_controller
+						}
+						skill > 3
+					}	
+					add_trait = { trait = air_controller }
+				}
+			}
+			else = {
+				random_navy_leader = {	
+					limit = {
+						NOT = {
+							has_trait = air_controller
+						}
+					}	
+					add_trait = { trait = air_controller }
+				}
 			}
 			
 		}
@@ -31536,23 +31717,67 @@ focus_tree = {
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			random_navy_leader = {	
+			if = {
 				limit = {
-					NOT = {
-						has_trait = air_controller
+					any_navy_leader = {	
+						skill > 3
+						NOT = {
+							has_trait = air_controller
+						}
 					}
-				}	
-				add_trait = { trait = air_controller }
+				}
+				random_navy_leader = {	
+					limit = {
+						NOT = {
+							has_trait = air_controller
+						}
+						skill > 3
+					}	
+					add_trait = { trait = air_controller }
+				}
 			}
-			random_navy_leader = {	
+			else = {
+				random_navy_leader = {	
+					limit = {
+						NOT = {
+							has_trait = air_controller
+						}
+					}	
+					add_trait = { trait = air_controller }
+				}
+			}
+			if = {
 				limit = {
-					NOT = {
-						has_trait = ironside
+					any_navy_leader = {	
+						skill > 3
+						NOT = {
+							has_trait = ironside
+						}
 					}
-				}	
-				add_trait = { trait = ironside }
+				}
+				random_navy_leader = {	
+					limit = {
+						NOT = {
+							has_trait = ironside
+						}
+						skill > 3
+						
+					}	
+					add_trait = { trait = ironside }
+				}
 			}
+			else = {
+				random_navy_leader = {	
+					limit = {
+						NOT = {
+							has_trait = ironside
+						}
+					}	
+					add_trait = { trait = ironside }
+				}
+			}
+			
+			
 
 		}
 
@@ -31626,13 +31851,35 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			random_navy_leader = {	
+			if = {
 				limit = {
-					NOT = {
-						has_trait = ironside
+					any_navy_leader = {	
+						skill > 3
+						NOT = {
+							has_trait = ironside
+						}
 					}
-				}	
-				add_trait = { trait = ironside }
+				}
+				random_navy_leader = {	
+					limit = {
+						NOT = {
+							has_trait = ironside
+						}
+						skill > 3
+						
+					}	
+					add_trait = { trait = ironside }
+				}
+			}
+			else = {
+				random_navy_leader = {	
+					limit = {
+						NOT = {
+							has_trait = ironside
+						}
+					}	
+					add_trait = { trait = ironside }
+				}
 			}
 		}
 
@@ -31659,7 +31906,7 @@ focus_tree = {
 		}
 
 		available = {
-			is_special_project_completed = sp:sp_naval_super_heavy_battleship
+			is_special_project_completed = sp:sp_naval_improved_super_heavy_battleship
 			custom_trigger_tooltip = {
 				tooltip = JAP_expand_hiratsuka_navy_arsenal_tt
 				NOT = {
@@ -31681,25 +31928,25 @@ focus_tree = {
 		completion_reward = {
 
 			create_equipment_variant = {
-				name = "Tsushima Class"
-				type = ship_hull_super_heavy_1
+				name = "改大和型"
+				type = ship_hull_super_heavy_2
 				name_group = JAP_BB_HISTORICAL
 				parent_version = 0
 				allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 				modules = {
-					fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_battery_slot = ship_super_heavy_battery_2
 					fixed_ship_anti_air_slot = ship_anti_air_2
 					fixed_ship_fire_control_system_slot = ship_fire_control_system_2
 					fixed_ship_radar_slot = ship_radar_2
-					fixed_ship_engine_slot = heavy_ship_engine_4
-					fixed_ship_secondaries_slot = ship_secondaries_2
-					fixed_ship_armor_slot = ship_armor_shbb
-					front_1_custom_slot = ship_super_heavy_battery_1
-					front_2_custom_slot = ship_super_heavy_battery_1
+					fixed_ship_engine_slot = heavy_ship_engine_5
+					fixed_ship_secondaries_slot = dp_ship_secondaries_3
+					fixed_ship_armor_slot = ship_armor_shbb_2
+					front_1_custom_slot = ship_super_heavy_battery_2
+					front_2_custom_slot = ship_anti_air_2
 					mid_1_custom_slot = dp_ship_secondaries_3
-					mid_2_custom_slot = ship_secondaries_2
-					mid_3_custom_slot = ship_secondaries_2
-					rear_1_custom_slot = ship_super_heavy_battery_1
+					mid_2_custom_slot = dp_ship_secondaries_3
+					mid_3_custom_slot = dp_ship_secondaries_3
+					rear_1_custom_slot = ship_super_heavy_battery_2
 					rear_2_custom_slot = ship_airplane_launcher_1
 				}
 				design_team = mio:JAP_kure_naval_arsenal_organization
@@ -31707,11 +31954,11 @@ focus_tree = {
 			
 			add_equipment_production = {
 				equipment = {
-					type = ship_hull_super_heavy_1
+					type = ship_hull_super_heavy_2
 					creator = JAP 
-					version_name = "Tsushima Class"
+					version_name = "改大和型"
 				}
-				name = "Tsushima" 
+				#name = "対馬" 
 				requested_factories = 3
 				progress = 0.85
 				amount = 1
@@ -31738,7 +31985,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_form_the_kido_butai focus = JAP_sea_heavier_naval_guns }
 
 		relative_position_id = JAP_form_the_kido_butai
-		x = -2
+		x = -1
 		y = 1
 		
 
@@ -31765,7 +32012,7 @@ focus_tree = {
 		completion_reward = {
 
 			create_equipment_variant = {
-				name = "Akizuki Class"
+				name = "秋月型"
 				name_group = JAP_DD_HISTORICAL
 				allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 				type = ship_hull_light_3
@@ -31788,9 +32035,9 @@ focus_tree = {
 				equipment = {
 					type = ship_hull_light_3
 					creator = "JAP" 
-					version_name = "Akizuki Class"
+					version_name = "秋月型"
 				}
-				name = "Akizuki" 
+				name = "秋月" 
 				requested_factories = 1
 				progress = 0.5
 				amount = 1
@@ -31800,9 +32047,9 @@ focus_tree = {
 				equipment = {
 					type = ship_hull_light_3
 					creator = "JAP" 
-					version_name = "Akizuki Class"
+					version_name = "秋月型"
 				}
-				name = "Teruzuki" 
+				name = "照月" 
 				requested_factories = 1
 				progress = 0.5
 				amount = 1
@@ -31812,9 +32059,9 @@ focus_tree = {
 				equipment = {
 					type = ship_hull_light_3
 					creator = "JAP" 
-					version_name = "Akizuki Class"
+					version_name = "秋月型"
 				}
-				name = "Suzutsuki" 
+				name = "涼月" 
 				requested_factories = 1
 				progress = 0.5
 				amount = 1
@@ -31841,7 +32088,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_focus_on_aircraft_carriers focus = JAP_balanced_naval_approach }
 
 		relative_position_id = JAP_focus_on_aircraft_carriers
-		x = 1
+		x = 0
 		y = 2
 
 		cost = 5
@@ -31889,7 +32136,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_balanced_naval_approach focus = JAP_sea_battleship_initiative }
 
 		relative_position_id = JAP_balanced_naval_approach
-		x = 1
+		x = 2
 		y = 2
 
 		cost = 5
@@ -32007,7 +32254,7 @@ focus_tree = {
 					has_completed_focus = JAP_focus_on_aircraft_carriers
 				}
 				create_equipment_variant = {
-					name = "Shokaku Class"				
+					name = "翔鶴型"				
 					name_group = JAP_CV_HISTORICAL
 					type = ship_hull_carrier_2
 					modules = {
@@ -32026,9 +32273,9 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_carrier_2
 						creator = "JAP"
-						version_name = "Shokaku Class"
+						version_name = "翔鶴型"
 					}
-					name = "Shokaku"
+					name = "翔鶴"
 					requested_factories = 1
 					progress = 0.75
 					amount = 1
@@ -32038,9 +32285,9 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_carrier_2
 						creator = "JAP"
-						version_name = "Shokaku Class"
+						version_name = "翔鶴型"
 					}
-					name = "Zuikaku"
+					name = "瑞鶴"
 					requested_factories = 1
 					progress = 0.75
 					amount = 1
@@ -32050,9 +32297,9 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_carrier_2
 						creator = "JAP"
-						version_name = "Shokaku Class"
+						version_name = "翔鶴型"
 					}
-					name = "Ryukaku" 
+					name = "龍鶴" 
 					requested_factories = 1
 					progress = 0.75
 					amount = 1
@@ -32062,9 +32309,9 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_carrier_2
 						creator = "JAP"
-						version_name = "Shokaku Class"
+						version_name = "翔鶴型"
 					}
-					name = "Tengaku" 
+					name = "天鶴" 
 					requested_factories = 1
 					progress = 0.5
 					amount = 1
@@ -32076,7 +32323,7 @@ focus_tree = {
 					has_completed_focus = JAP_balanced_naval_approach
 				}
 				create_equipment_variant = {
-					name = "Shokaku Class"				
+					name = "翔鶴型"				
 					name_group = JAP_CV_HISTORICAL
 					type = ship_hull_carrier_2
 					modules = {
@@ -32095,9 +32342,9 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_carrier_2
 						creator = "JAP"
-						version_name = "Shokaku Class"
+						version_name = "翔鶴型"
 					}
-					name = "Shokaku"
+					name = "翔鶴"
 					requested_factories = 1
 					progress = 0.75
 					amount = 1
@@ -32107,9 +32354,9 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_carrier_2
 						creator = "JAP"
-						version_name = "Shokaku Class"
+						version_name = "翔鶴型"
 					}
-					name = "Zuikaku"
+					name = "瑞鶴"
 					requested_factories = 1
 					progress = 0.75
 					amount = 1
@@ -32117,7 +32364,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				create_equipment_variant = {
-					name = "Yamato Class"
+					name = "大和型"
 					type = ship_hull_super_heavy_1
 					name_group = JAP_BB_HISTORICAL
 					parent_version = 0
@@ -32146,9 +32393,9 @@ focus_tree = {
 						equipment = {
 							type = ship_hull_super_heavy_1
 							creator = "JAP" 
-							version_name = "Yamato Class"
+							version_name = "大和型"
 						}
-						name = "Yamato" 
+						name = "大和" 
 						requested_factories = 1
 						progress = 0.75
 						amount = 1
@@ -32158,9 +32405,9 @@ focus_tree = {
 						equipment = {
 							type = ship_hull_super_heavy_1
 							creator = "JAP" 
-							version_name = "Yamato Class"
+							version_name = "大和型"
 						}
-						name = "Musashi" 
+						name = "武蔵" 
 						requested_factories = 1
 						progress = 0.75
 						amount = 1
@@ -32170,7 +32417,7 @@ focus_tree = {
 			}
 			ELSE = {
 				create_equipment_variant = {
-					name = "Yamato Class"
+					name = "大和型"
 					type = ship_hull_super_heavy_1
 					name_group = JAP_BB_HISTORICAL
 					parent_version = 0
@@ -32199,9 +32446,9 @@ focus_tree = {
 						equipment = {
 							type = ship_hull_super_heavy_1
 							creator = "JAP" 
-							version_name = "Yamato Class"
+							version_name = "大和型"
 						}
-						name = "Yamato" 
+						name = "大和" 
 						requested_factories = 1
 						progress = 0.75
 						amount = 1
@@ -32211,9 +32458,9 @@ focus_tree = {
 						equipment = {
 							type = ship_hull_super_heavy_1
 							creator = "JAP" 
-							version_name = "Yamato Class"
+							version_name = "大和型"
 						}
-						name = "Musashi" 
+						name = "武蔵" 
 						requested_factories = 1
 						progress = 0.75
 						amount = 1
@@ -32223,9 +32470,9 @@ focus_tree = {
 						equipment = {
 							type = ship_hull_super_heavy_1
 							creator = "JAP" 
-							version_name = "Yamato Class"
+							version_name = "大和型"
 						}
-						name = "Shinano"
+						name = "信濃"
 						requested_factories = 1
 						progress = 0.75
 						amount = 1
@@ -32235,9 +32482,9 @@ focus_tree = {
 						equipment = {
 							type = ship_hull_super_heavy_1
 							creator = "JAP" 
-							version_name = "Yamato Class"
+							version_name = "大和型"
 						}
-						name = "Kii" 
+						name = "紀伊" 
 						requested_factories = 1
 						progress = 0.5
 						amount = 1
@@ -32246,6 +32493,81 @@ focus_tree = {
 				#}
 			}
 
+		}
+
+	}
+
+	focus = { #MOD
+		id = JAP_shinano_class
+		icon = GFX_focus_JAP_strengthen_the_kido_butai
+
+
+		prerequisite = { focus = JAP_naval_armaments_program }
+
+		relative_position_id = JAP_naval_armaments_program
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			JAP_naval_faction_is_at_least_influential = yes
+			has_tech = advanced_ship_hull_carrier
+			has_completed_focus = JAP_balanced_naval_approach
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_IMPERIAL_INFLUENCE }
+
+		completion_reward = {
+
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.25
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			create_equipment_variant = {
+				name = "信濃型"				
+				name_group = JAP_CV_HISTORICAL
+				type = ship_hull_carrier_3
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_engine_slot = carrier_ship_engine_4
+					fixed_ship_secondaries_slot = dp_ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_cruiser_4
+					front_1_custom_slot = ship_anti_air_2
+					mid_1_custom_slot = empty
+					mid_2_custom_slot = ship_armor_carrier_deck
+					rear_1_custom_slot = ship_deck_space
+				}
+				design_team = mio:JAP_yokosuka_naval_arsenal_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_3
+					creator = "JAP"
+					version_name = "信濃型"
+				}
+				name = "信濃"
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
+			}
 		}
 
 	}
@@ -32262,7 +32584,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_rockets_development }
 
 		relative_position_id = JAP_akizuki_class_destroyers
-		x = -1
+		x = -2
 		y = 2
 
 		cost = 5
@@ -32312,7 +32634,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_form_the_kido_butai focus = JAP_sea_heavier_naval_guns }
 
 		relative_position_id = JAP_form_the_kido_butai
-		x = 0
+		x = 1
 		y = 1
 
 		cost = 5
@@ -32364,7 +32686,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_form_the_kido_butai focus = JAP_sea_heavier_naval_guns }
 
 		relative_position_id = JAP_form_the_kido_butai
-		x = 2
+		x = 3
 		y = 1
 
 		cost = 5
@@ -32417,7 +32739,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_form_the_kido_butai focus = JAP_sea_heavier_naval_guns }
 
 		relative_position_id = JAP_form_the_kido_butai
-		x = 4
+		x = 5
 		y = 1
 
 		cost = 5
@@ -32527,6 +32849,62 @@ focus_tree = {
 			add_to_variable = { JAP_navy_refit_speed = 0.1 tooltip = refit_speed_tt }
 			add_to_variable = { JAP_navy_naval_ship_recovery_chance = 0.1 tooltip = naval_ship_recovery_chance_tt }
 		}
+	}
+
+	focus = {
+		id = JAP_conversion_merchant_ship
+		icon = GFX_focus_generic_refit_civilian_ships
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = JAP_akizuki_class_destroyers focus = JAP_assure_superior_naval_quality focus = JAP_seek_strength_in_numbers focus = JAP_nationalize_suzuka_naval_arsenal }
+
+		relative_position_id = JAP_akizuki_class_destroyers
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			#has_war_with_major = yes
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { }
+
+		completion_reward = {
+			IF = {
+				LIMIT = {
+					NOT = { has_tech = sp:sp_naval_escort_carrier }
+				}
+				add_ideas = JAP_escort_carrier_modi
+			}
+			
+
+			# Junyo Classes
+			unlock_decision_tooltip = JAP_build_junyo
+			unlock_decision_tooltip = JAP_build_hiyo
+
+			# Taiyo Classes
+			unlock_decision_tooltip = JAP_build_taiyo
+			unlock_decision_tooltip = JAP_build_unyo
+			unlock_decision_tooltip = JAP_build_chuyo
+			unlock_decision_tooltip = JAP_build_kaiyo
+		}
+
 	}
 
 	focus = {

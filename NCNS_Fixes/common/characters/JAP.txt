@@ -1865,15 +1865,15 @@ characters = {
 			}
 		}
 		
-		navy_leader = {
-			traits = { bold navy_career_officer gunnery_expert naval_lineage }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			maneuvering_skill = 3
-			coordination_skill = 2
-			legacy_id = -1
-		}
+		#navy_leader = {
+		#	traits = { bold navy_career_officer gunnery_expert naval_lineage }
+		#	skill = 3
+		#	attack_skill = 3
+		#	defense_skill = 3
+		#	maneuvering_skill = 3
+		#	coordination_skill = 2
+		#	legacy_id = -1
+		#}
 
 		scientist = {
 			traits = { scientist_trait_bright }

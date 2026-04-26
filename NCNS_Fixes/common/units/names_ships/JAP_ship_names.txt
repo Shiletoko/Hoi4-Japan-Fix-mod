@@ -8,57 +8,55 @@ JAP_DD_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
 	link_numbering_with = { JAP_DD_TEI_HISTORICAL } 
-	fallback_name = "Dai  %d -go Kuchikukan"					
+	fallback_name = "第%d号駆逐艦"					
 
 	unique = {											
 		# Starting with Shiratsuyu class
-		"Shiratsuyu" "Shigure" "Murasame" "Yudachi" "Kawakaze" "Umikaze" "Samidare" "Yamakaze" "Harusame" "Suzukaze" 
-		#Asasio class
-		"Asashio" "Arashio" "Oshio" "Michishio" "Yamagumo" "Natsugumo" "Minegumo" "Asagumo" "Arare" "Kasumi" 
+		"白露" "時雨" "村雨" "夕立" "春雨" "五月雨" "海風" "山風" "江風" "涼風"
+		#Asashio class
+		"朝潮" "荒潮" "大潮" "満潮" "山雲" "夏雲" "峯雲" "朝雲" "霰" "霞"
 		#Kagero class
-		"Kagero" "Shiranui" "Kuroshio" "Oyashio" "Hayashio" "Natsushio" "Hatsukaze" "Yukikaze" "Amatsukaze" "Tokitsukaze" "Urakaze" "Isokaze" "Hamakaze" "Tanikaze" "Nowaki" "Arashi" "Hagikaze" "Maikaze" "Akigumo"
-		
+		# Hamakaze 
+		"陽炎" "不知火" "黒潮" "親潮" "早潮" "夏潮" "初風" "雪風" "天津風" "時津風" "浦風" "磯風" "浜風" "谷風" "野分" "嵐" "萩風" "舞風" "秋雲" 
 		#Yugumo class
-		"Yugumo" "Makigumo" "Kazagumo" "Naganami" "Makinami" "Takanami" "Onami" "Kiyonami" "Tamanami" "Suzunami" "Fujinami" "Hayanami" "Hamanami" "Asashimo" "Okinami" "Kishinami" "Hayashimo" "Akishimo" "Kiyoshimo" #"Shimakaze"
-		
+		"夕雲" "巻雲" "風雲" "長波" "巻波" "高波" "大波" "清波" "玉波" "涼波" "藤波" "早波" "浜波" "沖波" "岸波" "朝霜" "早霜" "秋霜" "清霜"
 		#Akizuki class (Akizuki)
-		"Akizuki" "Teruzuki" "Suzutsuki" "Hatsuzuki" "Niizuki" "Wakatsuki" "Shimotsuki"
+		"秋月" "照月" "涼月" "初月" "新月" "若月" "霜月"
 		#Akizuki (Fuyutsuki)
-		"Fuyutsuki" "Harutsuki" "Yoizuki" "Natsuzuki"
+		"冬月" "春月" "宵月" "夏月"
 		#Akizuki (Michitsuki)
-		"Michitsuki" "Hanazuki" "Kiyotsuki" "Otsuki" "Hazuki" "Yamazuki" "Urazuki" "Aogumo" "Benigumo" "Harugumo" "Amagumo" "Yaegumo" "Fuyugumo" "Yukigumo" "Okitsukaze" 
-		"Shimokaze" "Asagochi" "Okaze" "Kochi" "Nishikaze" "Hae"
+		"満月" "花月" "清月" "大月" "葉月" "山月" "浦月" "青雲" "紅雲" "春雲" "天雲" "八重雲" "冬雲" "雪雲" "沖津風" 
+		"霜風" "朝東風" "大風" "東風" "西風" "南風"
 		
 		#Yugumo class (Cancelled)
-		"Umigiri" "Yamagiri" "Tanigiri" "Kawagiri" "Taekaze" "Kiyokaze" "Satokaze" "Murakaze"
-		#Kai-Yugumo class
-		"Yamasame" "Akisame" "Natsusame" "Hayasame" "Takashio" "Akishio" "Harushio" "Wakashio"
+		"妙風" "清風" "村風" "里風" "山霧" "海霧" "谷霧" "川霧"
+		#Ka伊Yugumo class
+		"山雨" "秋雨" "夏雨" "早雨" "高潮" "秋潮" "春潮" "若潮"
 		#Sho-Akizuki class
-		"Kitakaze" "Hayakaze" "Natsukaze" "Fuyukaze" "Hatsunatsu" "Hatsuaki" "Hayaharu"
+		"北風" "早風" "夏風" "冬風" "初夏" "初秋" "早春"
 
-		"Yaezakura" "Yatake" "Kuzu" "Saume" "Katsura" "Tobiume"
-		"Fuji" "Wakazakura" "Yamazakura" "Ashi" "Shinodake" "Yomogi" "Aoi" "Shiraume" "Kiku" "Kashiwa" "Kigiku" "Hatsugiku" "Akane" 
-		"Shiragiku" "Chigusa" "Wakakusa" "Natsukusa"
-		"Akikusa" "Azusa" "Tochi" "Hishi" "Nogiku" "Susuki" "Sakaki"
-		"Sawakaze" "Okikaze" "Shimakaze" "Nadakaze" "Yakaze" "Shiokaze"
-		"Keifuu" "Minewatari" "Hokuki" "Takasei" "Senpuu" "Yokokaze" "Neppuu" "Gyokufuu" "Shokufuu" "Ryokufuu" "Keifuu" "Tsuufuu"
-		"Choufuu" "Haruarashi" "Kunpuu" "Nanpuu" "Hanaarashi" "Hatsu-arashi" "Yuu-arashi" "Sayo-arashi" "Kurokaze" "Asa-arashi" "Kyoufuu" "Kafuu" "Tengukaze"
-		"Asanagi" "Yuunagi" "Kannanagi" "Fuyunagi" "Uranagi" "Yonagi" "Hatsunagi" "Aburanagi" "Doyounagi"
-		"Kirisetsu" "Seisetsu" "Neyuki" "Satoyuki" "Madayuki" "Amesetsu" "Mochiyuki" "Hayashiyuki" "Nigori-yuki" "Zansetsu" "Konayuki" "Bousetsu" "Benisetsu" "Ginkuzu"
-		"Koyuki" "Kasayuki" "Kaifuu" "Watayuki" "Akiyuki" "Botan-yuki" "Usuyuki" "Boseki" "Fuusetsu" "Shimosetsu" "Shimesetsu" "Shukusetsu" "Sanpaku" "Tenka"
-		"Yamagumo" "Minegumo" "Kiri-gumo" "Kasagumo" "Kougumo" "Akatsukigumo" "Ukigumo" "Awagumo"
-		"Keigumo" "Iwashi-gumo" "Hanagumo" "Kouun" "Boun" "Kaigumo" "Shougumo" "Nisshougumo" "Shirokogumo" "Urokogumo" "Oborogumo" "Watagumo" "Takigumo" "Kinugumo" 
-		"Chouchougumo" "Akanegumo" "Unpou" "Unkai" "Unami" "Minami"
-		"Akigiri" "Nagigiri" "Kawagiri" "Unmu" "Usugiri" "Yogiri"
-		"Gyoro" "Uro" "Reiro" "Gero" "Furo" "Yuro" "Gyokuro" "Asatsuyu" "Kikuro" "Shimotsuyu" "Yotsuyu" "Uetsuyu" "Kusabatsuyu"
-		"Shirasame" "Kirisame" "Haraame" "Sekiu" "Kouu" "Asaame" "Karatsuyu" "Kosame" "Ooame" "Sobae"
-		"Itoame" "Keiu" "Sui-u" "Jiame" "Nagasame" "Yosame" "Hayasame" "Keiu" "San'u" "Hisame" "Ryokuu" "Akisame" "Sou" "Un'u" "Bakuu" "Satsukiame" "Bou"
-		"Ryouu" "En'u" "Shukuu" "Hiu" "Kan'u" "Tenkyu"
-		"Hatsushio" "Yuushio" "Nagashio" "Mochishio" "Setoshio" "Okishio" "Nadashio" "Hamashio" "Akishio" "Moushio"
-		"Yukishio" "Saiwai-shio" "Wakashio" "Fuyushio" "Harushio" "Uzushio" "Makishio" "Isoshio" "Narushio" "Takashio" "Yaeshio"
-		"Tamaarame" "Yukiarame" "Hatsuarame" "Haruarame"
-		"Urakasumi" "Tougasumi" "Muragasumi" "Unka" "Nagagasumi" "Usugasumi" "Asagasumi" "Yuugasumi" "Tanka" 
-		"Ososhimo"
+		"八重桜" "矢竹" "葛" "早梅" "桂" "飛梅"
+		"藤" "若櫻" "山櫻" "葦" "篠竹" "蓬" "葵" "白梅" "菊" "柏" "黄菊" "初菊" "茜" "白菊" "千草" "若草" "夏草"
+		"秋草" "梓" "栃" "菱" "野菊" "薄" "榊"
+		"澤風" "沖風" "島風" "灘風" "矢風" "汐風"
+		"恵風" "嶺渡" "北気" "高西" "旋風" "横風" "熱風" "玉風" "束風" "緑風" "軽風" "通風"
+		"長風" "春嵐" "薫風" "軟風" "花嵐" "初嵐" "夕嵐" "小夜嵐" "黒風" "朝嵐" "強風" "廻風" "天狗風"
+		"朝凪" "夕凪" "寒凪" "冬凪" "浦凪" "夜凪" "初凪" "油凪" "土用凪"
+		"霧雪" "晴雪" "根雪" "里雪" "斑雪" "雨雪" "餅雪" "林雪" "俄雪" "残雪" "粉雪" "忘雪" "紅雪" "銀屑"
+		"小雪" "笠雪" "回雪" "綿雪" "秋雪" "牡丹雪" "薄雪" "暮雪" "風雪" "霜雪" "締雪" "宿雪" "三白" "天華"
+		"山雲" "峯雲" "霧雲" "笠雲" "香雲" "暁雲" "浮雲" "淡雲"
+		"慶雲" "鰯雲" "花雲" "行雲" "暮雲" "海雲" "祥雲" "日照雲" "白小雲" "鱗雲" "朧雲" "綿雲" "滝雲" "絹雲" "蝶々雲" "茜雲" "雲峰" "雲海"
+		"卯波" "水波"
+		"秋霧" "夏霧" "河霧" "雲霧" "薄霧" "夜霧"
+		"暁露" "雨露" "零露" "下露" "風露" "夕露" "玉露" "朝露" "菊露" "霜露" "夜露" "上露" "草葉露"
+		"白雨" "霧雨" "晴雨" "積雨" "紅雨" "朝雨" "空梅雨" "小雨" "大雨" "日照雨"
+		"糸雨" "恵雨" "翠雨" "地雨" "長雨" "夜雨" "速雨" "軽雨" "山雨" "氷雨" "緑雨" "秋雨" "疎雨" "雲雨" "麦雨" "皐月雨" "暮雨"
+		"涼雨" "煙雨" "宿雨" "飛雨" "甘雨" "秋霖" "天泣"
+		"初潮" "夕潮" "長潮" "望潮" "瀬戸潮" "沖潮" "灘潮" "浜潮" "秋潮" "猛潮"
+		"雪潮" "幸潮" "冬潮" "渦潮" "巻潮" "磯潮" "鳴潮" "高潮" "八重潮"
+		"玉霰" "雪霰" "初霰" "春霰" 
+		"浦霞" "遠霞" "群霞" "雲霞" "夏霞" "薄霞" "朝霞" "夕霞" "丹霞" 
+		"遅霜" 
 	}
 }
 JAP_DD_TEI_HISTORICAL = {
@@ -68,14 +66,15 @@ JAP_DD_TEI_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
+	
 	link_numbering_with = { JAP_DD_HISTORICAL } 
-	fallback_name = "Dai  %d -go Kuchikukan"					
+	fallback_name = "第%d号駆逐艦"					
 
 	unique = {											
-		"Matsu" "Take" "Ume" "Momo" "Kuwa" "Kiri" "Sugi" "Maki" "Momi" "Kashi" "Kaya" "Nara" "Sakura" "Yanagi" "Tsubaki" "Hinoki" "Kaede" "Keyaki" 
-		"Kaki" "Kaba" "Tachibana" "Tuta" "Hagi" "Sumire" "Kusunoki" "Hatsuzakura" "Nire" "Nashi" "Shii" "Enoki" "Odake" "Hatsuume" 
-		"Yaezakura" "Yadake" "kuzu" "Matake" "Katsura" "Wakazakura" "Azusa" "Tochi" "Hishi" "Sakaki"
-		"Hayaume" "Tobiume" "Fuji" "Yamazakura" "Ashi" "Shinodake" "Yomogi" "Aoi" "Shiraume" "Kiku" "Kashiwa" "Kigiku" "Hatsugiku" "Akane" "Shiragiku" "Chigusa" "Wakakusa" "Natsugusa" "Akikusa" "Susuki" "Nogiku" 
+		"松" "竹" "梅" "桃" "桑" "桐" "杉" "槙" "樅" "樫" "榧" "楢" "桜" "柳" "椿" "檜" "楓" "欅"
+		"柿" "樺" "橘" "蔦" "萩" "菫" "楠" "初桜" "楡" "梨" "椎" "榎" "雄竹" "初梅"
+		"八重桜" "矢竹" "葛" "真竹" "桂" "若桜" "梓" "栃" "菱" "榊"
+		"早梅" "飛梅" "藤" "山桜" "葦" "篠竹" "蓬" "葵" "白梅" "菊" "柏" "黄菊" "初菊" "茜" "白菊" "千草" "若草" "夏草" "秋草" "薄" "野菊"
 	}
 }
 JAP_SEAPLANE_TENDER_HISTORICAL = {
@@ -86,10 +85,10 @@ JAP_SEAPLANE_TENDER_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_light destroyer ship_hull_cruiser light_cruiser }			
 	link_numbering_with = { } 
-	fallback_name = "Dai  %d -go Suijoki Bokan"					
+	fallback_name = "第%d号水上機母艦"					
 
 	unique = {											
-		"Nisshin" "Kinugasa Maru" "Kagu Maru" "Kamikawa Maru" "Kiyokawa Maru" "Kimikawa Maru" "Kunikawa Maru" "Mizuho" "Sanuki Maru" "Akitsushima"
+		"日進" "衣笠丸" "香久丸" "神川丸" "聖川丸" "君川丸" "国川丸" "瑞穂" "讃岐丸" "相良丸" "秋津洲"
 		
 	}
 }
@@ -103,20 +102,28 @@ JAP_DE_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_light destroyer }
 	
-	fallback_name = "Dai %d -go Kaibokan"
+	fallback_name = "第%d号海防艦"
 
 	unique = {
-		# Starting with Shimushu class
-				"Shimushu" "Hachijo" "Kunashiri" "Ishigaki" "Etorofu" "Oki" "Sado" "Matsuwa" "Fukue" "Tsushima" "Mutsure" "Wakamiya" "Kanju" "Hirado" "Amakusa" "Manju" "Kasado" "Iki"
-		"Matsu" "Take" "Ume" "Momo" "Kuwa" "Kiri" "Sugi" "Maki" "Momi" "Kashi" "Kaya" "Nara" "Sakura" "Yanagi" "Tsubaki" "Kaki" "Kaba" "Hinoki" "Kaede" "Keyaki"
-		"Tachibana" "Nire" "Tsuta" "Hagi" "Nashi" "Shii" "Sumire" "Enoki" "Kusunoki" "Odake" "Hatsuzakura" "Hatsuume"
-		"Mikura" "Miyake" "Awaji" "Kurahashi" "Nomi" "Chiburi" "Yashiro" "Kusagaki"
-		"Ukuru" "Hiburi" "Shonan" "Daito" "Okinawa" "Kume" "Ikuna" "Shinnan" "Yaku" "Aguni" "Mokuto" "Inagi" "Uku" "Chikubu" "Shisaka" "Habushi" "Sakito" "Kuga" "Oga" "Kozu"
-		# Cancelled/not completed
-		"Otsu" "Tomoshiri" 
-		"Umigiri" "Yamagiri" "Tanigiri" "Kawagiri" "Taekaze" "Kiyokaze" "Satokaze" "Murakaze" "Yamasame" "Akisame" "Natsusame" "Hayasame" "Takashio" "Akishio" "Harushio" "Wakashio" 
-		"Kiyotsuki" "Otsuki" "Hazuki" "Yamazuki" "Urazuki" "Aogumo" "Benigumo" "Harugumo" "Amagumo" "Yaegumo" "Fuyugumo" "Yukigumo" "Okitsukaze" "Shimokaze" "Asagochi" 
-		"Okaze" "Kochi" "Nishikaze" "Hae" "Kitakaze" "Hayakaze" "Natsukaze" "Fuyukaze" "Hatsunatsu" "Hatsuaki" "Hayaharu" "Hayaume" "Tobiume" 
+		# 占守型・択捉型
+		"占守" "八丈" "国後" "石垣" "択捉" "隠岐" "佐渡" "松輪" "福江" "対馬" "六連" "若宮" "干珠" "平戸" "天草" "満珠" "笠戸" "壱岐"
+		
+		
+		# 御蔵型海防艦
+		"御蔵" "三宅" "淡路" "倉橋" "能美" "千振" "屋代" "草垣"
+		
+		#日振/鵜来型
+		"日振" "鵜来" "大東" "沖縄" "奄美" "粟国" "新南" "昭南" "屋久" "久米" "竹生" "生名" "神津" "保高" "四阪" "伊唐" "崎戸" "生野" "目斗" "波太" "稲木" "羽節" "男鹿" "金輪" "宇久" "高根" "久賀" "志賀" "伊王"
+		"蔚美" "室津" "大津" "友知"
+		#"大風" "東風" "西風" "南風" "北風" "早風" "夏風" "冬風" "初夏" "初秋" "早春"
+		
+		# 計画中止・未完成艦
+		"大津" "友知" 
+		"色丹" "奥尻" "利尻" "礼文" "志発" "多楽" "勇留" "水晶" "天売" "秋勇留" "嶮暮帰" "大黒" "萌茂尻"
+		"帯" "蕪" "宮戸" "式根" "南鳥" "祇苗" "鵜渡根" "地内" "見月" "烏辺" "佐久" "答志" "渡鹿野" "鹿久居" "伯方"　"針尾"
+		"若松" "崎戸" "野釜" "津久見" "島浦" "諸浦" "伊唐" "宮古"　"伊江" "与那国" "伊良部" "西表" "多良間" 
+		"小浜" "粟国" "座間味" "竹富" "渡名喜" "来間" "屋嘉比" "野甫" "藪地" "慶伊瀬" "得撫" "阿頼度"
+		
 	}
 }
 
@@ -128,18 +135,52 @@ JAP_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
-	fallback_name = "Dai %d -go Keijun'yokan"
+	link_numbering_with = { JAP_CA_HISTORICAL } 
+	fallback_name = "第%d号軽巡洋艦"
 
 	unique = {
-		"Suzuya" "Kumano" "Katori" "Kashima" "Kashii" "Kashiwara" "Agano" "Noshiro" "Yahagi" "Sakawa" "Oyodo" "Niyodo"
-		# Captured/Converted/Older Models
-		"Ioshima" "Yasoshima" "Yodo" 
-		# Fictional
-		"Takase" "Iwaki" "Kuzuryu" "Tsurumi" "Koyoshi" "Shokotsu" "Yoneshiro" "Shimanto" "Oyabe" "Ibi" "Kuji" "Miyase" "Rumoi" "Oze" "Maruyama" "Shiribetsu" "Ishikari"
-		"Kurobe" "Mabechi" "Honmyo" "Tokoro" "Suzuka" "Hime" "Banjo" "Omono" "Tedori" "Karino" "Naruse" "Abashiri" "Yubetsu"
-		"Kano" "Shonai" "Kumozu" "Kushida" "Hino" "Seta" "Gokase" "Omaru" "Kimotsuki" "Teshio"
-		"Takatsu" "Yoshii" "Takahashi" "Ashida" "Yoshino" "Onga" "Yabe" "Matsuura" "Yamakuni" "Chikugo" "Rokkaku" "Kikuchi" "Kase" "Oita" "Ono" "Ota"
+		# Suzuya class
+		"鈴谷" "熊野"
+		"香取" "鹿島" "香椎" "橿原"
+		# Agano class
+		"阿賀野" "能代" "矢矧" "酒匂"
+		# Oyodo class
+		"大淀" "仁淀"
+		# Tone Class
+		"利根" "筑摩"
+		# Not represented in game
+		"淀" "平戸"
+		## Represented in game ##
+		# Tenryu class
+		"天龍" "龍田"
+		# Kuma class
+		"球磨" "多摩" "北上" "大井" "木曾"
+		# Nagara class
+		"長良" "五十鈴" "名取" "由良" "鬼怒" "阿武隈"
+		# Yubari
+		"夕張"
+		# Sendai class
+		"川内" "神通" "那珂"
+		# Furutaka class
+		"加古"
+		#Monobe/Tokachi class
+		"物部" "最上" "三隈" "九頭竜" "十勝" "六角" "隅田" "鈴鹿"
+		## Fictional
+		"綾瀬" "皆瀬"
+		# Hokkaido rivers
+		"網走" "石狩" "豊平" "真駒内" "穴の川" "釧路" "鵡" "留萌" "沙流" "後志"
+		"渚滑" "天塩" "常呂" "湧別" "阿寒" "新冠" "標津" "静内" "声問" "三石"
+		#Honshu
+		"磐城" "高瀬" "馬淵" "成瀬" "米代" "雄物" "奥入瀬" "久慈"
+		"神田" "鶴見" "黒部" "鈴鹿"
+		"常願寺" "小矢部" "手取" "庄内" "神宮"
+		"揖斐" "櫛田" "狩野" "雲出"
+		"木津" "丸山" "揖保" "嘉野" "武庫" "天神" "日野" "樋井" "高梁"
+		"高須" "吉井" "蘆田" "小瀬" "佐波" "吉野" 
+		"四万十"
+		#Kyushu
+		"遠賀" "山国" "矢部" "嘉瀬" "本明"
+		"番匠" "五ヶ瀬" 
 		
 	}
 }
@@ -152,20 +193,22 @@ JAP_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
-	fallback_name = "Dai %d -go Jujun'yokan"
+	link_numbering_with = { JAP_BC_HISTORICAL } 
+	fallback_name = "第%d号重巡洋艦"
 
 	unique = {
-		"Tone" "Chikuma" "Aso" "Tsugaru" "Soya" 
-		# Older Models
-		"Furutaka" "Kako" "Aoba" "Kinugasa" "Myoko" "Nachi" "Haguro" "Ashigara" "Takao" "Atago" "Maya" "Chokai" 
-		# Cancelled/not completed
-		"Ibuki" "Haogi" "Mogami" "Mikuma" "Suzuya" "Kumano" 
-		# Fictional
-		"Iwate" "Asahi" "Zao" "Iide" "Azuma" "Bandai" "Nasu" "Makihata" "Tanigawa" "Takatsuma" "Hotaka"
-		"Asama" "Tsukuba" "Hotaka" "Jonen" "Norikura" "Tateshina" "Mizugaki" "Tanzawa" "Ena" "Shiomi" "Akaishi"
-		"Omine" "Ishizuchi" "Aso" "Kaimon" "Waga" "Kurikoma" "Moriyoshi" "Sumon" "Hakkai" "Iwasuge" "Myogi" "Buko"
-		"Hakuseki" "Ashitaka" "Osuzu" "Ichifusa" "Yufu" "Unzen" "Ariake" "Iizuma"
+		"利根" "筑摩" "阿蘇" "津軽" "宗谷"  "葛城" "笠置" "生駒"
+		# 旧式艦・既成艦
+		"古鷹" "加古" "青葉" "衣笠" "妙高" "那智" "羽黒" "足柄" "高雄" "愛宕" "摩耶" "鳥海" 
+		# 計画中止・未完成艦
+		"伊吹" "鞍馬" "最上" "三隈" "鈴谷" "熊野" 
+		# 架空・計画名（山の名前）
+		"岩手" "朝日" "蔵王" "飯豊" "吾妻" "磐梯" "那須" "巻機" "谷川" "高妻"
+		"浅間" "筑波" "穂高" "常念" "乗鞍" "蓼科" "瑞牆" "丹沢" "恵那" "塩見" "赤石"
+		"吾妻" "磐梯" "那須" "巻機" "谷川" "高妻" "穂高"
+		"武尊" "常念" "乗鞍" "蓼科" "瑞牆" "丹沢" "恵那" "塩見" "赤石"
+		"大峰" "石鎚" "開聞" "和賀" "栗駒" "森吉" "守門" "八海" "岩菅" "妙義" "武甲"
+		"白石" "愛鷹" "大鈴" "市房" "由布" "雲仙" "有明" "飯縄"
 	}
 }
 
@@ -179,16 +222,16 @@ JAP_MINELAYERS_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
 	
-	fallback_name = "Fusetsukan %d -go"
+	fallback_name = "第%d号掃海艇"
 
 	unique = {
 		# Cruiser and DD Minelayers
-		"Okinoshima" "Hatsutaka" "Aotaka" "Wakataka" "Tsugaru" "Eijo" "Mino"
-		"Katsuriki" "Shirataka" "Itsukushima" "Yaeyama"
+		"沖島" "初鷹" "蒼鷹" "若鷹" "津軽" "永城" "箕面"
+		"勝力" "白鷹" "厳島" "八重山"
 		# Older and smaller Minelayer Names
-		"Natsushima" "Sokuten" "Toshima" "Kuroshima" "Ashizaki" "Katoku" "Kurokami" "Katashima" "Ento" "Enoshima" "Kurosaki" "Ninoshima" "Washizaki" "Kamome" "Tsubame" "Nasami" 
-		"Sarushima" "Shirakami" "Naryu" "Kyosai" "Ukishima" "Hirashima" "Hoko" "Ishizaki" "Takashima" "Saishu" "Niizaki" "Yurijima" "Nuwashima" "Maeshima" 
-		"Ajiro" "Kamishima" "Awashima" 
+		"夏島" "測天" "戸島" "黒島" "葦埼" "加徳" "黒神" "片島" "圓島" "江之島" "黒埼" "似島" "鷲埼" "鴎" "燕" "那沙美" 
+		"夏島" "猿島" "測天" "白神" "成生" "巨済" "浮島" "平島" "澎湖" "石埼" "鷹島" "済州" "新井埼" "由利島" "怒和島" "前島" 
+		"網代" "神島" "粟島" 
 	}
 }
 
@@ -200,16 +243,15 @@ JAP_BB_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
-	
-	fallback_name = "Senkan %d -go"		
+	fallback_name = "第%d号戦艦"		
 
 	unique = {
-			"Hiei" "Yamato" "Musashi" "Shinano" "Kii" "Tosa" "Owari" "Iwami" "Sagami" "Suwo" "Hizen" "Tango" "Iki" 
-			# Captured/Converted/Older Models
-			"Fuso" "Yamashiro" "Ise" "Hyuga" "Nagato" "Mutsu" "Haruna" "Kirishima" "Kaga"  
-			# Fictional
-			"Dewa" "Hitachi" "Noto" "Hida" "Mino" "Mikawa" "Suruga" "Kai" "Izumi" "Kawachi" "Iga" "Tanba" "Sanuki" "Awa" "Satsuma"
-			"Osumi" "Aki" "Settsu" "Tajima" "Iyo" "Omi"
+		"大和" "武蔵" "信濃" "紀伊" "土佐" "尾張" "石見" "相模" "周防" "肥前" "丹後" "壱岐" 
+		# Captured/Converted/Older Models
+		"扶桑" "山城" "伊勢" "日向" "長門" "陸奥" "榛名" "霧島" "加賀"
+		# Fictional
+		"出羽" "常陸" "能登" "飛騨" "美濃" "三河" "駿河" "甲斐" "和泉" "河内" "伊賀" "丹波" "讃岐" "阿波" "薩摩"
+		"大隅" "安芸" "摂津" "但馬" "伊予" "近江"
 	}
 }
 
@@ -221,16 +263,19 @@ JAP_BC_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
+	link_numbering_with = { JAP_CA_HISTORICAL } 
 	
-	fallback_name = "Jun'yosenkan %d -go"		
+	fallback_name = "第%d号巡洋戦艦"		
 
 	unique = {
-		"Amagi" "Tsukuba" "Ikoma" "Ibuki" "Kurama" "Akagi" "Atago" "Takao" "Kongo" "Hiei" "Haruna" "Kirishima"
+		"比叡" "秩父 ""筑波" "生駒" "伊吹" "鞍馬" "金剛" "比叡" "榛名" "霧島"
 		# Fictional
-		"Iwaki" "Iwate" "Asahi" "Zao" "Iide" "Azuma" "Bandai" "Nasu" "Makihata" "Tanigawa" "Takatsuma" "Hotaka"
-		"Asama" "Tsukuba" "Hotaka" "Jonen" "Norikura" "Tateshina" "Mizugaki" "Tanzawa" "Ena" "Shiomi" "Akaishi"
-		"Omine" "Ishizuchi" "Aso" "Kaimon" "Waga" "Kurikoma" "Moriyoshi" "Sumon" "Hakkai" "Iwasuge" "Myogi" "Buko"
-		"Hakuseki" "Ashitaka" "Osuzu" "Ichifusa" "Yufu" "Unzen" "Ariake" "Iizuma"
+		"磐城" "磐手" "旭" "蔵王" "飯豊" "吾妻" "磐梯" "那須" "巻機" "谷川" "高妻" "武尊"
+		"浅間" "筑波" "武尊" "常念" "乗鞍" "蓼科" "瑞牆" "丹沢" "恵那" "塩見" "赤石"
+		"大峰" "石鎚" "阿蘇" "開聞" "和賀" "栗駒" "森吉" "守門" "八海" "岩菅" "妙義" "武甲"
+		"白石" "愛鷹" "尾鈴" "市房" "由布" "雲仙" "有明" "飯綱"
+		# Amagi Class
+		"天城" "赤城" "愛宕" "高雄"
 	}
 }
 
@@ -243,11 +288,11 @@ JAP_CV_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 	
-	fallback_name = "Seikikubo %d -go"	
+	fallback_name = "第%d号航空母艦"	
 
 	unique = {
-			"Akagi" "Soryu" "Hiryu" "Shokaku" "Zuikaku" "Junyo" "Hiyo" "Taiho" "Unryu" "Amagi" "Katsuragi" "Shinano" "Kasagi" "Aso" "Ikoma" 
-			"Kurama" "Kaga" 
+		"赤城" "蒼龍" "飛龍" "翔鶴" "瑞鶴" "隼鷹" "飛鷹" "大鳳" "雲龍" "天城" "葛城" "信濃" "笠置" "阿蘇" "生駒" 
+		"鞍馬" "加賀" 
 	}
 }
 
@@ -260,33 +305,49 @@ JAP_CVL_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 	
-	fallback_name = "Keikubo %d -go"	
+	fallback_name = "第%d号軽航空母艦"	
 
 	unique = {
 		# CVL Names
-		"Zuiho" "Shoho" "Ryuho" "Chitose" "Chiyoda" "Ibuki" "Taiyo" "Unyo" "Chuyo" "Shinyo" 
-		"Hosho" "Ryujo" "Kaiyo"
+		"瑞鳳" "祥鳳" "龍鳳" "千歳" "千代田" "伊吹" 
+		"鳳翔" "龍驤" 
 		# CVE Names
-		"Yamashiro Maru" "Chigusa Maru" "Shimane Maru" "Otakisan Maru"
+		"山城丸" "千草丸" "島根丸" "大滝山丸"
 	}
 }
 
 ### SUBMARINES ###
 JAP_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES_JAP
+	link_numbering_with = { JAP_SSC_HISTORICAL } 
+	for_countries = { JAP }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	fallback_name = "伊%d"
+	
+	ordered = {
+		51 = {"伊51"} #Starting at U-27 to count
+
+	}
+}
+JAP_SSC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINE_CARRIERS_JAP
+	link_numbering_with = { JAP_SS_HISTORICAL } 
 
 	for_countries = { JAP }
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
 	
-	fallback_name = "I-%d"
+	fallback_name = "伊%d"
 	
 	ordered = {
-		51 = {"I-%d"}52 = {"I-%d"}53 = {"I-%d"}54 = {"I-%d"}55 = {"I-%d"}
+		400 = {"伊400"} #Starting at U-27 to count
+
 	}
 }
-
 ### SUBMARINES ###
 JAP_SS_2nd_HISTORICAL = {
 	name = NAME_THEME_2nd_HISTORICAL_SUBMARINES_JAP
@@ -296,202 +357,10 @@ JAP_SS_2nd_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
 	
-	fallback_name = "Ro-%d"
+	fallback_name = "呂%d"
 	
 	ordered = {
-		34 = {"Ro-%d"}35 = {"Ro-%d"}36 = {"Ro-%d"}37 = {"Ro-%d"}38 = {"Ro-%d"}39 = {"Ro-%d"}40 = {"Ro-%d"}
-		41 = {"Ro-%d"}42 = {"Ro-%d"}43 = {"Ro-%d"}44 = {"Ro-%d"}45 = {"Ro-%d"}
-		46 = {"Ro-%d"}47 = {"Ro-%d"}48 = {"Ro-%d"}49 = {"Ro-%d"}50 = {"Ro-%d"}
-		51 = {"Ro-%d"}52 = {"Ro-%d"}53 = {"Ro-%d"}54 = {"Ro-%d"}55 = {"Ro-%d"}
-		56 = {"Ro-%d"}57 = {"Ro-%d"}58 = {"Ro-%d"}59 = {"Ro-%d"}60 = {"Ro-%d"}
-		61 = {"Ro-%d"}62 = {"Ro-%d"}63 = {"Ro-%d"}64 = {"Ro-%d"}65 = {"Ro-%d"}
-		66 = {"Ro-%d"}67 = {"Ro-%d"}68 = {"Ro-%d"}69 = {"Ro-%d"}70 = {"Ro-%d"}
-		71 = {"Ro-%d"}72 = {"Ro-%d"}73 = {"Ro-%d"}74 = {"Ro-%d"}75 = {"Ro-%d"}
-		76 = {"Ro-%d"}77 = {"Ro-%d"}78 = {"Ro-%d"}79 = {"Ro-%d"}80 = {"Ro-%d"}
-		81 = {"Ro-%d"}82 = {"Ro-%d"}83 = {"Ro-%d"}84 = {"Ro-%d"}85 = {"Ro-%d"}
-		86 = {"Ro-%d"}87 = {"Ro-%d"}88 = {"Ro-%d"}89 = {"Ro-%d"}90 = {"Ro-%d"}
-		91 = {"Ro-%d"}92 = {"Ro-%d"}93 = {"Ro-%d"}94 = {"Ro-%d"}95 = {"Ro-%d"}
-		96 = {"Ro-%d"}97 = {"Ro-%d"}98 = {"Ro-%d"}99 = {"Ro-%d"}100 = {"Ro-%d"}
-		101 = {"Ro-%d"}102 = {"Ro-%d"}103 = {"Ro-%d"}104 = {"Ro-%d"}105 = {"Ro-%d"}
-		106 = {"Ro-%d"}107 = {"Ro-%d"}108 = {"Ro-%d"}109 = {"Ro-%d"}110 = {"Ro-%d"}
-		111 = {"Ro-%d"}112 = {"Ro-%d"}113 = {"Ro-%d"}114 = {"Ro-%d"}115 = {"Ro-%d"}
-		116 = {"Ro-%d"}117 = {"Ro-%d"}118 = {"Ro-%d"}119 = {"Ro-%d"}120 = {"Ro-%d"}
-		121 = {"Ro-%d"}122 = {"Ro-%d"}123 = {"Ro-%d"}124 = {"Ro-%d"}125 = {"Ro-%d"}
-		126 = {"Ro-%d"}127 = {"Ro-%d"}128 = {"Ro-%d"}129 = {"Ro-%d"}130 = {"Ro-%d"}
-		131 = {"Ro-%d"}132 = {"Ro-%d"}133 = {"Ro-%d"}134 = {"Ro-%d"}135 = {"Ro-%d"}
-		136 = {"Ro-%d"}137 = {"Ro-%d"}138 = {"Ro-%d"}139 = {"Ro-%d"}140 = {"Ro-%d"}
-		141 = {"Ro-%d"}142 = {"Ro-%d"}143 = {"Ro-%d"}144 = {"Ro-%d"}145 = {"Ro-%d"}
-		146 = {"Ro-%d"}147 = {"Ro-%d"}148 = {"Ro-%d"}149 = {"Ro-%d"}150 = {"Ro-%d"}
-		151 = {"Ro-%d"}152 = {"Ro-%d"}153 = {"Ro-%d"}154 = {"Ro-%d"}155 = {"Ro-%d"}
-		156 = {"Ro-%d"}157 = {"Ro-%d"}158 = {"Ro-%d"}159 = {"Ro-%d"}160 = {"Ro-%d"}
-		161 = {"Ro-%d"}162 = {"Ro-%d"}163 = {"Ro-%d"}164 = {"Ro-%d"}165 = {"Ro-%d"}
-		166 = {"Ro-%d"}167 = {"Ro-%d"}168 = {"Ro-%d"}169 = {"Ro-%d"}170 = {"Ro-%d"}
-		171 = {"Ro-%d"}172 = {"Ro-%d"}173 = {"Ro-%d"}174 = {"Ro-%d"}175 = {"Ro-%d"}
-		176 = {"Ro-%d"}177 = {"Ro-%d"}178 = {"Ro-%d"}179 = {"Ro-%d"}180 = {"Ro-%d"}
-		181 = {"Ro-%d"}182 = {"Ro-%d"}183 = {"Ro-%d"}184 = {"Ro-%d"}185 = {"Ro-%d"}
-		186 = {"Ro-%d"}187 = {"Ro-%d"}188 = {"Ro-%d"}189 = {"Ro-%d"}190 = {"Ro-%d"}
-		191 = {"Ro-%d"}192 = {"Ro-%d"}193 = {"Ro-%d"}194 = {"Ro-%d"}195 = {"Ro-%d"}
-		196 = {"Ro-%d"}197 = {"Ro-%d"}198 = {"Ro-%d"}199 = {"Ro-%d"}200 = {"Ro-%d"}
-		201 = {"Ro-%d"}202 = {"Ro-%d"}203 = {"Ro-%d"}204 = {"Ro-%d"}205 = {"Ro-%d"}
-		206 = {"Ro-%d"}207 = {"Ro-%d"}208 = {"Ro-%d"}209 = {"Ro-%d"}210 = {"Ro-%d"}
-		211 = {"Ro-%d"}212 = {"Ro-%d"}213 = {"Ro-%d"}214 = {"Ro-%d"}215 = {"Ro-%d"}
-		216 = {"Ro-%d"}217 = {"Ro-%d"}218 = {"Ro-%d"}219 = {"Ro-%d"}220 = {"Ro-%d"}
-		221 = {"Ro-%d"}222 = {"Ro-%d"}223 = {"Ro-%d"}224 = {"Ro-%d"}225 = {"Ro-%d"}
-		226 = {"Ro-%d"}227 = {"Ro-%d"}228 = {"Ro-%d"}229 = {"Ro-%d"}230 = {"Ro-%d"}
-		231 = {"Ro-%d"}232 = {"Ro-%d"}233 = {"Ro-%d"}234 = {"Ro-%d"}235 = {"Ro-%d"}
-		236 = {"Ro-%d"}237 = {"Ro-%d"}238 = {"Ro-%d"}239 = {"Ro-%d"}240 = {"Ro-%d"}
-		241 = {"Ro-%d"}242 = {"Ro-%d"}243 = {"Ro-%d"}244 = {"Ro-%d"}245 = {"Ro-%d"}
-		246 = {"Ro-%d"}247 = {"Ro-%d"}248 = {"Ro-%d"}249 = {"Ro-%d"}250 = {"Ro-%d"}
-		251 = {"Ro-%d"}252 = {"Ro-%d"}253 = {"Ro-%d"}254 = {"Ro-%d"}255 = {"Ro-%d"}
-		256 = {"Ro-%d"}257 = {"Ro-%d"}258 = {"Ro-%d"}259 = {"Ro-%d"}260 = {"Ro-%d"}
-		261 = {"Ro-%d"}262 = {"Ro-%d"}263 = {"Ro-%d"}264 = {"Ro-%d"}265 = {"Ro-%d"}
-		266 = {"Ro-%d"}267 = {"Ro-%d"}268 = {"Ro-%d"}269 = {"Ro-%d"}270 = {"Ro-%d"}
-		271 = {"Ro-%d"}272 = {"Ro-%d"}273 = {"Ro-%d"}274 = {"Ro-%d"}275 = {"Ro-%d"}
-		276 = {"Ro-%d"}277 = {"Ro-%d"}278 = {"Ro-%d"}279 = {"Ro-%d"}280 = {"Ro-%d"}
-		281 = {"Ro-%d"}282 = {"Ro-%d"}283 = {"Ro-%d"}284 = {"Ro-%d"}285 = {"Ro-%d"}
-		286 = {"Ro-%d"}287 = {"Ro-%d"}288 = {"Ro-%d"}289 = {"Ro-%d"}290 = {"Ro-%d"}
-		291 = {"Ro-%d"}292 = {"Ro-%d"}293 = {"Ro-%d"}294 = {"Ro-%d"}295 = {"Ro-%d"}
-		296 = {"Ro-%d"}297 = {"Ro-%d"}298 = {"Ro-%d"}299 = {"Ro-%d"}300 = {"Ro-%d"}
-		301 = {"Ro-%d"}302 = {"Ro-%d"}303 = {"Ro-%d"}304 = {"Ro-%d"}305 = {"Ro-%d"}
-		306 = {"Ro-%d"}307 = {"Ro-%d"}308 = {"Ro-%d"}309 = {"Ro-%d"}310 = {"Ro-%d"}
-		311 = {"Ro-%d"}312 = {"Ro-%d"}313 = {"Ro-%d"}314 = {"Ro-%d"}315 = {"Ro-%d"}
-		316 = {"Ro-%d"}317 = {"Ro-%d"}318 = {"Ro-%d"}319 = {"Ro-%d"}320 = {"Ro-%d"}
-		321 = {"Ro-%d"}322 = {"Ro-%d"}323 = {"Ro-%d"}324 = {"Ro-%d"}325 = {"Ro-%d"}
-		326 = {"Ro-%d"}327 = {"Ro-%d"}328 = {"Ro-%d"}329 = {"Ro-%d"}330 = {"Ro-%d"}
-		331 = {"Ro-%d"}332 = {"Ro-%d"}333 = {"Ro-%d"}334 = {"Ro-%d"}335 = {"Ro-%d"}
-		336 = {"Ro-%d"}337 = {"Ro-%d"}338 = {"Ro-%d"}339 = {"Ro-%d"}340 = {"Ro-%d"}
-		341 = {"Ro-%d"}342 = {"Ro-%d"}343 = {"Ro-%d"}344 = {"Ro-%d"}345 = {"Ro-%d"}
-		346 = {"Ro-%d"}347 = {"Ro-%d"}348 = {"Ro-%d"}349 = {"Ro-%d"}350 = {"Ro-%d"}
-		351 = {"Ro-%d"}352 = {"Ro-%d"}353 = {"Ro-%d"}354 = {"Ro-%d"}355 = {"Ro-%d"}
-		356 = {"Ro-%d"}357 = {"Ro-%d"}358 = {"Ro-%d"}359 = {"Ro-%d"}360 = {"Ro-%d"}
-		361 = {"Ro-%d"}362 = {"Ro-%d"}363 = {"Ro-%d"}364 = {"Ro-%d"}365 = {"Ro-%d"}
-		366 = {"Ro-%d"}367 = {"Ro-%d"}368 = {"Ro-%d"}369 = {"Ro-%d"}370 = {"Ro-%d"}
-		371 = {"Ro-%d"}372 = {"Ro-%d"}373 = {"Ro-%d"}374 = {"Ro-%d"}375 = {"Ro-%d"}
-		376 = {"Ro-%d"}377 = {"Ro-%d"}378 = {"Ro-%d"}379 = {"Ro-%d"}380 = {"Ro-%d"}
-		381 = {"Ro-%d"}382 = {"Ro-%d"}383 = {"Ro-%d"}384 = {"Ro-%d"}385 = {"Ro-%d"}
-		386 = {"Ro-%d"}387 = {"Ro-%d"}388 = {"Ro-%d"}389 = {"Ro-%d"}390 = {"Ro-%d"}
-		391 = {"Ro-%d"}392 = {"Ro-%d"}393 = {"Ro-%d"}394 = {"Ro-%d"}395 = {"Ro-%d"}
-		396 = {"Ro-%d"}397 = {"Ro-%d"}398 = {"Ro-%d"}399 = {"Ro-%d"}400 = {"Ro-%d"}
-		401 = {"Ro-%d"}402 = {"Ro-%d"}403 = {"Ro-%d"}404 = {"Ro-%d"}405 = {"Ro-%d"}
-		406 = {"Ro-%d"}407 = {"Ro-%d"}408 = {"Ro-%d"}409 = {"Ro-%d"}410 = {"Ro-%d"}
-		411 = {"Ro-%d"}412 = {"Ro-%d"}413 = {"Ro-%d"}414 = {"Ro-%d"}415 = {"Ro-%d"}
-		416 = {"Ro-%d"}417 = {"Ro-%d"}418 = {"Ro-%d"}419 = {"Ro-%d"}420 = {"Ro-%d"}
-		421 = {"Ro-%d"}422 = {"Ro-%d"}423 = {"Ro-%d"}424 = {"Ro-%d"}425 = {"Ro-%d"}
-		426 = {"Ro-%d"}427 = {"Ro-%d"}428 = {"Ro-%d"}429 = {"Ro-%d"}430 = {"Ro-%d"}
-		431 = {"Ro-%d"}432 = {"Ro-%d"}433 = {"Ro-%d"}434 = {"Ro-%d"}435 = {"Ro-%d"}
-		436 = {"Ro-%d"}437 = {"Ro-%d"}438 = {"Ro-%d"}439 = {"Ro-%d"}440 = {"Ro-%d"}
-		441 = {"Ro-%d"}442 = {"Ro-%d"}443 = {"Ro-%d"}444 = {"Ro-%d"}445 = {"Ro-%d"}
-		446 = {"Ro-%d"}447 = {"Ro-%d"}448 = {"Ro-%d"}449 = {"Ro-%d"}450 = {"Ro-%d"}
-		451 = {"Ro-%d"}452 = {"Ro-%d"}453 = {"Ro-%d"}454 = {"Ro-%d"}455 = {"Ro-%d"}
-		456 = {"Ro-%d"}457 = {"Ro-%d"}458 = {"Ro-%d"}459 = {"Ro-%d"}460 = {"Ro-%d"}
-		461 = {"Ro-%d"}462 = {"Ro-%d"}463 = {"Ro-%d"}464 = {"Ro-%d"}465 = {"Ro-%d"}
-		466 = {"Ro-%d"}467 = {"Ro-%d"}468 = {"Ro-%d"}469 = {"Ro-%d"}470 = {"Ro-%d"}
-		471 = {"Ro-%d"}472 = {"Ro-%d"}473 = {"Ro-%d"}474 = {"Ro-%d"}475 = {"Ro-%d"}
-		476 = {"Ro-%d"}477 = {"Ro-%d"}478 = {"Ro-%d"}479 = {"Ro-%d"}480 = {"Ro-%d"}
-		481 = {"Ro-%d"}482 = {"Ro-%d"}483 = {"Ro-%d"}484 = {"Ro-%d"}485 = {"Ro-%d"}
-		486 = {"Ro-%d"}487 = {"Ro-%d"}488 = {"Ro-%d"}489 = {"Ro-%d"}490 = {"Ro-%d"}
-		491 = {"Ro-%d"}492 = {"Ro-%d"}493 = {"Ro-%d"}494 = {"Ro-%d"}495 = {"Ro-%d"}
-		496 = {"Ro-%d"}497 = {"Ro-%d"}498 = {"Ro-%d"}499 = {"Ro-%d"}500 = {"Ro-%d"}
-		501 = {"Ro-%d"}502 = {"Ro-%d"}503 = {"Ro-%d"}504 = {"Ro-%d"}505 = {"Ro-%d"}
-		506 = {"Ro-%d"}507 = {"Ro-%d"}508 = {"Ro-%d"}509 = {"Ro-%d"}510 = {"Ro-%d"}
-		511 = {"Ro-%d"}512 = {"Ro-%d"}513 = {"Ro-%d"}514 = {"Ro-%d"}515 = {"Ro-%d"}
-		516 = {"Ro-%d"}517 = {"Ro-%d"}518 = {"Ro-%d"}519 = {"Ro-%d"}520 = {"Ro-%d"}
-		521 = {"Ro-%d"}522 = {"Ro-%d"}523 = {"Ro-%d"}524 = {"Ro-%d"}525 = {"Ro-%d"}
-		526 = {"Ro-%d"}527 = {"Ro-%d"}528 = {"Ro-%d"}529 = {"Ro-%d"}530 = {"Ro-%d"}
-		531 = {"Ro-%d"}532 = {"Ro-%d"}533 = {"Ro-%d"}534 = {"Ro-%d"}535 = {"Ro-%d"}
-		536 = {"Ro-%d"}537 = {"Ro-%d"}538 = {"Ro-%d"}539 = {"Ro-%d"}540 = {"Ro-%d"}
-		541 = {"Ro-%d"}542 = {"Ro-%d"}543 = {"Ro-%d"}544 = {"Ro-%d"}545 = {"Ro-%d"}
-		546 = {"Ro-%d"}547 = {"Ro-%d"}548 = {"Ro-%d"}549 = {"Ro-%d"}550 = {"Ro-%d"}
-		551 = {"Ro-%d"}552 = {"Ro-%d"}553 = {"Ro-%d"}554 = {"Ro-%d"}555 = {"Ro-%d"}
-		556 = {"Ro-%d"}557 = {"Ro-%d"}558 = {"Ro-%d"}559 = {"Ro-%d"}560 = {"Ro-%d"}
-		561 = {"Ro-%d"}562 = {"Ro-%d"}563 = {"Ro-%d"}564 = {"Ro-%d"}565 = {"Ro-%d"}
-		566 = {"Ro-%d"}567 = {"Ro-%d"}568 = {"Ro-%d"}569 = {"Ro-%d"}570 = {"Ro-%d"}
-		571 = {"Ro-%d"}572 = {"Ro-%d"}573 = {"Ro-%d"}574 = {"Ro-%d"}575 = {"Ro-%d"}
-		576 = {"Ro-%d"}577 = {"Ro-%d"}578 = {"Ro-%d"}579 = {"Ro-%d"}580 = {"Ro-%d"}
-		581 = {"Ro-%d"}582 = {"Ro-%d"}583 = {"Ro-%d"}584 = {"Ro-%d"}585 = {"Ro-%d"}
-		586 = {"Ro-%d"}587 = {"Ro-%d"}588 = {"Ro-%d"}589 = {"Ro-%d"}590 = {"Ro-%d"}
-		591 = {"Ro-%d"}592 = {"Ro-%d"}593 = {"Ro-%d"}594 = {"Ro-%d"}595 = {"Ro-%d"}
-		596 = {"Ro-%d"}597 = {"Ro-%d"}598 = {"Ro-%d"}599 = {"Ro-%d"}600 = {"Ro-%d"}
-		601 = {"Ro-%d"}602 = {"Ro-%d"}603 = {"Ro-%d"}604 = {"Ro-%d"}605 = {"Ro-%d"}
-		606 = {"Ro-%d"}607 = {"Ro-%d"}608 = {"Ro-%d"}609 = {"Ro-%d"}610 = {"Ro-%d"}
-		611 = {"Ro-%d"}612 = {"Ro-%d"}613 = {"Ro-%d"}614 = {"Ro-%d"}615 = {"Ro-%d"}
-		616 = {"Ro-%d"}617 = {"Ro-%d"}618 = {"Ro-%d"}619 = {"Ro-%d"}620 = {"Ro-%d"}
-		621 = {"Ro-%d"}622 = {"Ro-%d"}623 = {"Ro-%d"}624 = {"Ro-%d"}625 = {"Ro-%d"}
-		626 = {"Ro-%d"}627 = {"Ro-%d"}628 = {"Ro-%d"}629 = {"Ro-%d"}630 = {"Ro-%d"}
-		631 = {"Ro-%d"}632 = {"Ro-%d"}633 = {"Ro-%d"}634 = {"Ro-%d"}635 = {"Ro-%d"}
-		636 = {"Ro-%d"}637 = {"Ro-%d"}638 = {"Ro-%d"}639 = {"Ro-%d"}640 = {"Ro-%d"}
-		641 = {"Ro-%d"}642 = {"Ro-%d"}643 = {"Ro-%d"}644 = {"Ro-%d"}645 = {"Ro-%d"}
-		646 = {"Ro-%d"}647 = {"Ro-%d"}648 = {"Ro-%d"}649 = {"Ro-%d"}650 = {"Ro-%d"}
-		651 = {"Ro-%d"}652 = {"Ro-%d"}653 = {"Ro-%d"}654 = {"Ro-%d"}655 = {"Ro-%d"}
-		656 = {"Ro-%d"}657 = {"Ro-%d"}658 = {"Ro-%d"}659 = {"Ro-%d"}660 = {"Ro-%d"}
-		661 = {"Ro-%d"}662 = {"Ro-%d"}663 = {"Ro-%d"}664 = {"Ro-%d"}665 = {"Ro-%d"}
-		666 = {"Ro-%d"}667 = {"Ro-%d"}668 = {"Ro-%d"}669 = {"Ro-%d"}670 = {"Ro-%d"}
-		671 = {"Ro-%d"}672 = {"Ro-%d"}673 = {"Ro-%d"}674 = {"Ro-%d"}675 = {"Ro-%d"}
-		676 = {"Ro-%d"}677 = {"Ro-%d"}678 = {"Ro-%d"}679 = {"Ro-%d"}680 = {"Ro-%d"}
-		681 = {"Ro-%d"}682 = {"Ro-%d"}683 = {"Ro-%d"}684 = {"Ro-%d"}685 = {"Ro-%d"}
-		686 = {"Ro-%d"}687 = {"Ro-%d"}688 = {"Ro-%d"}689 = {"Ro-%d"}690 = {"Ro-%d"}
-		691 = {"Ro-%d"}692 = {"Ro-%d"}693 = {"Ro-%d"}694 = {"Ro-%d"}695 = {"Ro-%d"}
-		696 = {"Ro-%d"}697 = {"Ro-%d"}698 = {"Ro-%d"}699 = {"Ro-%d"}700 = {"Ro-%d"}
-		701 = {"Ro-%d"}702 = {"Ro-%d"}703 = {"Ro-%d"}704 = {"Ro-%d"}705 = {"Ro-%d"}
-		706 = {"Ro-%d"}707 = {"Ro-%d"}708 = {"Ro-%d"}709 = {"Ro-%d"}710 = {"Ro-%d"}
-		711 = {"Ro-%d"}712 = {"Ro-%d"}713 = {"Ro-%d"}714 = {"Ro-%d"}715 = {"Ro-%d"}
-		716 = {"Ro-%d"}717 = {"Ro-%d"}718 = {"Ro-%d"}719 = {"Ro-%d"}720 = {"Ro-%d"}
-		721 = {"Ro-%d"}722 = {"Ro-%d"}723 = {"Ro-%d"}724 = {"Ro-%d"}725 = {"Ro-%d"}
-		726 = {"Ro-%d"}727 = {"Ro-%d"}728 = {"Ro-%d"}729 = {"Ro-%d"}730 = {"Ro-%d"}
-		731 = {"Ro-%d"}732 = {"Ro-%d"}733 = {"Ro-%d"}734 = {"Ro-%d"}735 = {"Ro-%d"}
-		736 = {"Ro-%d"}737 = {"Ro-%d"}738 = {"Ro-%d"}739 = {"Ro-%d"}740 = {"Ro-%d"}
-		741 = {"Ro-%d"}742 = {"Ro-%d"}743 = {"Ro-%d"}744 = {"Ro-%d"}745 = {"Ro-%d"}
-		746 = {"Ro-%d"}747 = {"Ro-%d"}748 = {"Ro-%d"}749 = {"Ro-%d"}750 = {"Ro-%d"}
-		751 = {"Ro-%d"}752 = {"Ro-%d"}753 = {"Ro-%d"}754 = {"Ro-%d"}755 = {"Ro-%d"}
-		756 = {"Ro-%d"}757 = {"Ro-%d"}758 = {"Ro-%d"}759 = {"Ro-%d"}760 = {"Ro-%d"}
-		761 = {"Ro-%d"}762 = {"Ro-%d"}763 = {"Ro-%d"}764 = {"Ro-%d"}765 = {"Ro-%d"}
-		766 = {"Ro-%d"}767 = {"Ro-%d"}768 = {"Ro-%d"}769 = {"Ro-%d"}770 = {"Ro-%d"}
-		771 = {"Ro-%d"}772 = {"Ro-%d"}773 = {"Ro-%d"}774 = {"Ro-%d"}775 = {"Ro-%d"}
-		776 = {"Ro-%d"}777 = {"Ro-%d"}778 = {"Ro-%d"}779 = {"Ro-%d"}780 = {"Ro-%d"}
-		781 = {"Ro-%d"}782 = {"Ro-%d"}783 = {"Ro-%d"}784 = {"Ro-%d"}785 = {"Ro-%d"}
-		786 = {"Ro-%d"}787 = {"Ro-%d"}788 = {"Ro-%d"}789 = {"Ro-%d"}790 = {"Ro-%d"}
-		791 = {"Ro-%d"}792 = {"Ro-%d"}793 = {"Ro-%d"}794 = {"Ro-%d"}795 = {"Ro-%d"}
-		796 = {"Ro-%d"}797 = {"Ro-%d"}798 = {"Ro-%d"}799 = {"Ro-%d"}800 = {"Ro-%d"}
-		801 = {"Ro-%d"}802 = {"Ro-%d"}803 = {"Ro-%d"}804 = {"Ro-%d"}805 = {"Ro-%d"}
-		806 = {"Ro-%d"}807 = {"Ro-%d"}808 = {"Ro-%d"}809 = {"Ro-%d"}810 = {"Ro-%d"}
-		811 = {"Ro-%d"}812 = {"Ro-%d"}813 = {"Ro-%d"}814 = {"Ro-%d"}815 = {"Ro-%d"}
-		816 = {"Ro-%d"}817 = {"Ro-%d"}818 = {"Ro-%d"}819 = {"Ro-%d"}820 = {"Ro-%d"}
-		821 = {"Ro-%d"}822 = {"Ro-%d"}823 = {"Ro-%d"}824 = {"Ro-%d"}825 = {"Ro-%d"}
-		826 = {"Ro-%d"}827 = {"Ro-%d"}828 = {"Ro-%d"}829 = {"Ro-%d"}830 = {"Ro-%d"}
-		831 = {"Ro-%d"}832 = {"Ro-%d"}833 = {"Ro-%d"}834 = {"Ro-%d"}835 = {"Ro-%d"}
-		836 = {"Ro-%d"}837 = {"Ro-%d"}838 = {"Ro-%d"}839 = {"Ro-%d"}840 = {"Ro-%d"}
-		841 = {"Ro-%d"}842 = {"Ro-%d"}843 = {"Ro-%d"}844 = {"Ro-%d"}845 = {"Ro-%d"}
-		846 = {"Ro-%d"}847 = {"Ro-%d"}848 = {"Ro-%d"}849 = {"Ro-%d"}850 = {"Ro-%d"}
-		851 = {"Ro-%d"}852 = {"Ro-%d"}853 = {"Ro-%d"}854 = {"Ro-%d"}855 = {"Ro-%d"}
-		856 = {"Ro-%d"}857 = {"Ro-%d"}858 = {"Ro-%d"}859 = {"Ro-%d"}860 = {"Ro-%d"}
-		861 = {"Ro-%d"}862 = {"Ro-%d"}863 = {"Ro-%d"}864 = {"Ro-%d"}865 = {"Ro-%d"}
-		866 = {"Ro-%d"}867 = {"Ro-%d"}868 = {"Ro-%d"}869 = {"Ro-%d"}870 = {"Ro-%d"}
-		871 = {"Ro-%d"}872 = {"Ro-%d"}873 = {"Ro-%d"}874 = {"Ro-%d"}875 = {"Ro-%d"}
-		876 = {"Ro-%d"}877 = {"Ro-%d"}878 = {"Ro-%d"}879 = {"Ro-%d"}880 = {"Ro-%d"}
-		881 = {"Ro-%d"}882 = {"Ro-%d"}883 = {"Ro-%d"}884 = {"Ro-%d"}885 = {"Ro-%d"}
-		886 = {"Ro-%d"}887 = {"Ro-%d"}888 = {"Ro-%d"}889 = {"Ro-%d"}890 = {"Ro-%d"}
-		891 = {"Ro-%d"}892 = {"Ro-%d"}893 = {"Ro-%d"}894 = {"Ro-%d"}895 = {"Ro-%d"}
-		896 = {"Ro-%d"}897 = {"Ro-%d"}898 = {"Ro-%d"}899 = {"Ro-%d"}900 = {"Ro-%d"}
-		901 = {"Ro-%d"}902 = {"Ro-%d"}903 = {"Ro-%d"}904 = {"Ro-%d"}905 = {"Ro-%d"}
-		906 = {"Ro-%d"}907 = {"Ro-%d"}908 = {"Ro-%d"}909 = {"Ro-%d"}910 = {"Ro-%d"}
-		911 = {"Ro-%d"}912 = {"Ro-%d"}913 = {"Ro-%d"}914 = {"Ro-%d"}915 = {"Ro-%d"}
-		916 = {"Ro-%d"}917 = {"Ro-%d"}918 = {"Ro-%d"}919 = {"Ro-%d"}920 = {"Ro-%d"}
-		921 = {"Ro-%d"}922 = {"Ro-%d"}923 = {"Ro-%d"}924 = {"Ro-%d"}925 = {"Ro-%d"}
-		926 = {"Ro-%d"}927 = {"Ro-%d"}928 = {"Ro-%d"}929 = {"Ro-%d"}930 = {"Ro-%d"}
-		931 = {"Ro-%d"}932 = {"Ro-%d"}933 = {"Ro-%d"}934 = {"Ro-%d"}935 = {"Ro-%d"}
-		936 = {"Ro-%d"}937 = {"Ro-%d"}938 = {"Ro-%d"}939 = {"Ro-%d"}940 = {"Ro-%d"}
-		941 = {"Ro-%d"}942 = {"Ro-%d"}943 = {"Ro-%d"}944 = {"Ro-%d"}945 = {"Ro-%d"}
-		946 = {"Ro-%d"}947 = {"Ro-%d"}948 = {"Ro-%d"}949 = {"Ro-%d"}950 = {"Ro-%d"}
-		951 = {"Ro-%d"}952 = {"Ro-%d"}953 = {"Ro-%d"}954 = {"Ro-%d"}955 = {"Ro-%d"}
-		956 = {"Ro-%d"}957 = {"Ro-%d"}958 = {"Ro-%d"}959 = {"Ro-%d"}960 = {"Ro-%d"}
-		961 = {"Ro-%d"}962 = {"Ro-%d"}963 = {"Ro-%d"}964 = {"Ro-%d"}965 = {"Ro-%d"}
-		966 = {"Ro-%d"}967 = {"Ro-%d"}968 = {"Ro-%d"}969 = {"Ro-%d"}970 = {"Ro-%d"}
-		971 = {"Ro-%d"}972 = {"Ro-%d"}973 = {"Ro-%d"}974 = {"Ro-%d"}975 = {"Ro-%d"}
-		976 = {"Ro-%d"}977 = {"Ro-%d"}978 = {"Ro-%d"}979 = {"Ro-%d"}980 = {"Ro-%d"}
-		981 = {"Ro-%d"}982 = {"Ro-%d"}983 = {"Ro-%d"}984 = {"Ro-%d"}985 = {"Ro-%d"}
-		986 = {"Ro-%d"}987 = {"Ro-%d"}988 = {"Ro-%d"}989 = {"Ro-%d"}990 = {"Ro-%d"}
-		991 = {"Ro-%d"}992 = {"Ro-%d"}993 = {"Ro-%d"}994 = {"Ro-%d"}995 = {"Ro-%d"}
-		996 = {"Ro-%d"}997 = {"Ro-%d"}998 = {"Ro-%d"}999 = {"Ro-%d"}1000 = {"Ro-%d"}
+		34 = {"呂34"} #Starting at U-27 to count
 	}
 }
 ### THEME: JAPANESE PREFECTURES ###
@@ -503,12 +372,11 @@ JAP_PREFECTURES = {
 	type = ship
 
 	unique = {
-		"Yamashiro" "Kawachi" "Izumi" "Settsu" "Iga" "Ise" "Shima" "Owari" "Mikawa" "Totomi" "Suruga" "Izu" "Kai" "Sagami" "Musashi" "Awa" "Kazusa" 
-		"Shimosa" "Hitachi" "Omi" "Mino" "Hida" "Shinano" "Kozuke" "Shimotsuke" "Dewa" "Mutsu" "Wakasa" "Echizen" "Kaga" "Noto" "Etchu" "Echigo" 
-		"Sado" "Tanba" "Tango" "Tajima" "Inaba" "Hoki" "Izumo" "Iwami" "Oki" "Harima" "Mimasaka" "Bizen" "Bitchu" "Bingo" "Aki" "Suo" "Nagato" 
-		"Kii" "Awaji" "Awa" "Sanuki" "Iyo" "Tosa" "Buzen" "Chikuzen" "Chikugo" "Hizen" "Higo" "Hyuga" "Osumi" "Satsuma" "Iki" "Tsushima" "Oshima" 
-		"Shiribeshi" "Iburi" "Ishikari" "Teshio" "Kitami" "Hidaka" "Tokachi" "Kushiro" "Nemuro" "Chishima" 
-		"Hokkaido" "Aichi" "Ehime" "Gunma" "Hyogo" "Ishikawa" "Iwate" "Kagawa" "Kanagawa" "Mie" "Miyagi" "Okinawa" "Shiga" "Shimane" "Tochigi" "Yamanashi"
+		"山城" "河内" "和泉" "摂津" "伊賀" "伊勢" "志摩" "尾張" "三河" "遠江" "駿河" "伊豆" "甲斐" "相模" "武蔵" "阿波" "上総" 
+		"下総" "常陸" "近江" "箕面" "飛騨" "信濃" "上野" "下野" "出羽" "陸奥" "若狭" "越前" "加賀" "能登" "越中" "越後" 
+		"佐渡" "丹波" "丹後" "但馬" "稲葉" "伯耆" "出雲" "石見" "隠岐" "播磨" "美作" "備前" "備中" "備後" "安芸" "周防" "長門" 
+		"紀伊" "淡路" "阿波" "讃岐" "伊予" "土佐" "豊前" "筑前" "筑後" "肥前" "肥後" "日向" "大隅" "薩摩" "壱岐" "対馬" "渡島" 
+		"後志" "胆振" "石狩" "天塩" "北見" "日高" "十勝" "釧路" "根室" "千島" 
 	}
 }
 ## THEME: JAPANESE CITIES ###
@@ -520,16 +388,16 @@ JAP_CITIES = {
 	type = ship
 
 	unique = {
-		"Tokyo" "Yokohama" "Osaka" "Nagoya" "Sapporo" "Kobe" "Kyoto" "Fukuoka" "Kawasaki" "Saitama" "Hiroshima" "Sendai" "Kitakyushu" "Chiba" "Setagaya" 
-		"Sakai" "Niigata" "Hamamatsu" "Shizuoka" "Sagamihara" "Nerima" "Okayama" "Oita" "Kumamoto" "Edogawa" "Adachi" "Kagoshima" "Funabashi" "Hachioji" 
-		"Kawaguchi" "Himeji" "Suginami" "Itabashi" "Matsuyama" "Higashiosaka" "Utsunomiya" "Matsudo" "Nishinomiya" "Kurashiki" "Ichikawa" "Fukuyama" 
-		"Amagasaki" "Kanazawa" "Nagasaki" "Koto" "Katsushika" "Yokusaka" "Toyama" "Toyota" "Takamatsu" "Machida" "Gifu" "Hirakata" "Fujisawa" "Kashiwa" 
-		"Toyonaka" "Nagano" "Toyohashi" "Ichinomiya" "Wakayama" "Okazaki" "Miyazaki" "Nara" "Suita" "Takatsuki" "Shinagawa" "Asahikawa" "Iwaki" "Kochi" 
-		"Takasaki" "Koriyama" "Tokorozawa" "Kawagoe" "Kita" "Akita" "Otsu" "Koshigaya" "Maebashi" "Naha" "Nakano" "Shinjuku" "Yokaichi" "Aomori" "Kurume" 
-		"Kasugai" "Morioka" "Akashi" "Fukushima" "Tsu" "Shimonoseki" "Nagaoka" "Ichihara" "Hakodate" "Yao" "Ibaraki" "Fukui" "Meguro" "Kakogawa" "Tokushima" 
-		"Mito" "Hiratsuka" "Toshima" "Yamagata" "Sasebo" "Fuchu" "Kure" "Hachinohe" "Saga" "Neyagawa" "Soka" "Sumida" "Fuji" "Kasukabe" "Chigasaki" "Matsumoto"   
-		"Atsugi" "Yamato" "Ageo" "Takarazuka" "Chofu" "Ota" "Tsukuba" "Numazu" "Joetsu" "Shibuya" "Minato" "Kumagaya" "Isesaki" "Kishiwada" "Tottori" "Kofu" 
-		"Odawara" "Suzuka" "Matsue" "Hitachi" "Bunkyo" "Arakawa" "Itami" "Nishitokyo" "Yamaguchi" "Uji"		
+		"東京" "横浜" "大阪" "名古屋" "札幌" "神戸" "京都" "福岡" "川崎" "埼玉" "広島" "川内" "北九州" "千葉" "世田谷" 
+		"堺" "新潟" "浜松" "静岡" "相模原" "練馬" "岡山" "大分" "熊本" "江戸川" "足立" "鹿児島" "船橋" "八王子" 
+		"川口" "姫路" "杉並" "板橋" "松山" "東大阪" "宇都宮" "松戸" "西宮" "倉敷" "市川" "福山" 
+		"尼崎" "神奈川" "長崎" "江東" "葛飾" "横須賀" "富山" "豊田" "高松" "町田" "岐阜" "枚方" "藤沢" "柏" 
+		"豊中" "長野" "豊橋" "一宮" "和歌山" "岡崎" "宮崎" "奈良" "吹田" "上月" "品川" "旭川" "磐城" "古地" 
+		"高崎" "郡山" "所沢" "川越" "喜多" "秋田" "大津" "越谷" "前橋" "那覇" "中野" "新宿" "四日市" "青森" "黒目" 
+		"春日井" "盛岡" "明石" "福島" "津" "下関" "長岡" "市原" "函館" "八尾" "茨城" "福井" "目黒" "加古川" "徳島" 
+		"水戸" "平塚" "戸島" "山形" "佐世保" "府中" "呉" "八戸" "佐賀" "寝屋川" "草加" "墨田" "富士" "春日部" "茅ヶ崎" "松本"   
+		"厚木" "大和" "上尾" "宝塚" "調布" "太田" "筑波" "沼津" "上越" "渋谷" "港" "熊谷" "伊勢崎" "岸和田" "鳥取" "甲府" 
+		"小田原" "鈴鹿" "松江" "常陸" "文京" "荒川" "伊丹" "山口" "宇治"			
 	}
 }
 
@@ -541,15 +409,15 @@ JAP_WEATHER = {
 	type = ship
 
 	unique = {
-		"Kawakaze" "Tanikaze" "Minekaze" "Sawakaze" "Okikaze" "Shimakaze" "Nadakaze" "Yakaze" "Hakaze" "Shiokaze" "Akikaze" "Yukaze" "Tachikaze" "Hokaze" "Nokaze" 
-		"Namikaze" "Numakaze" "Kamikaze" "Asakaze" "Harukaze" "Matsukaze" "Hatakaze" "Oite" "Hayate" "Asanagi" "Yunagi" 
-		"Fubuki" "Shirayuki" "Hatsuyuki" "Miyuki" "Murakumo" "Shinonome" "Usugumo" "Shirakumo" "Isonami" "Uranami" "Ayanami" "Shikinami" 
-		"Asagiri" "Yugiri" "Amagiri" "Sagiri" "Oboro" "Akebono" "Sazanami" "Ushio" "Akatsuki" "Hibiki" "Ikazuchi" "Inazuma" 
-		"Shiratsuyu" "Shigure" "Murasame" "Yudachi" "Umikaze" "Samidare" "Yamakaze" "Harusame" "Suzukaze"
-		"Asashio" "Arashio" "Oshio" "Michishio" "Yamagumo" "Natsugumo" "Minegumo" "Asagumo" "Arare" "Kasumi"
-		"Kagero" "Shiranui" "Kuroshio" "Yukikaze" "Oyashio" "Hayashio" "Natsushio" "Hatsukaze" "Amatsukaze" "Isokaze" "Tokitsukaze" "Urakaze" "Arashi" 
-		"Hagikaze" "Nowaki" "Tanikaze" "Hamakaze" "Maikaze" "Akigumo" "Yugumo" "Makigumo" "Kazagumo" "Naganami" "Makinami" "Takanami" "Onami" "Kiyonami" "Tamanami" 
-		"Suzunami" "Fujinami" "Hayanami" "Hamanami" "Asashimo" "Okinami" "Kishinami" "Hayashimo" "Akishimo" "Kiyoshimo"
+		"川風" "谷風" "峯風" "澤風" "沖風" "島風" "灘風" "雪風" "葉風" "潮風" "秋風" "雪風" "太刀風" "帆風" "野風" 
+		"波風" "沼風" "神風" "朝風" "朝風" "松風" "旗風" "追風" "疾風" "朝凪" "夕凪" 
+		"吹雪" "白雪" "初雪" "深雪" "叢雲" "東雲" "薄雲" "白雲" "磯波" "浦波" "綾波" "敷波" 
+		"朝霧" "夕霧" "天霧" "狭霧" "朧" "曙" "漣" "潮" "暁" "響" "雷" "電" 
+		"白露" "時雨" "村雨" "夕立" "海風" "五月雨" "山風" "春雨" "涼風"
+		"朝潮" "荒潮" "大潮" "満潮" "山雲" "夏雲" "峯雲" "朝雲" "霰" "霞"
+		"陽炎" "不知火" "黒潮" "雪風" "親潮" "早潮" "夏潮" "初風" "天津風" "磯風" "時津風" "浦風" "嵐" 
+		"萩風" "野分" "谷風" "浜風" "舞風" "秋雲" "夕雲" "巻雲" "風雲" "長波" "巻波" "高波" "大波" "清波" "玉波" 
+		"鈴波" "藤波" "早波" "浜波" "朝霜" "沖波" "岸波" "早霜" "秋霜" "清霜"
 	}
 }
 
@@ -561,12 +429,12 @@ JAP_NATURE = {
 	type = ship
 
 	unique = {
-			"Momo" "Kashi" "Hinoki" "Yanagi" "Enoki" "Maki" "Keyaki" "Kuwa" "Tsubaki" "Nara" 
-			"Momi" "Kaya" "Nashi" "Take" "Kaki" "Tsuga" "Nire" "Kuri" "Kiku" "Aoi" "Fuji" "Hagi" "Susuki" "Hishi" "Hasu" "Warabi" "Tade" "Sumire" "Tsuta" "Ashi" 
-			"Yomogi" "Wakatake" "Kuretake" "Sanae" "Sarawabi" "Asagao" "Yugao" "Fuyo" "Karukaya"
-			"Matsu" "Ume" "Kiri" "Sugi" "Sakura" "Kaba" "Kaede" "Yaezakura" "Yadake" "Kudzu" "Madake" "Hayaume" "Tobiume" "Wakazakura" "Yamazakura" 
-			"Tachibana" "Shii" "Kusunoki" "Odake" "Hatsuzakura" "Hatsuume" "Azusa" "Mikura" "Miyake" "Awaji" "Kurahashi" "Nomi" "Chiburi" "Yashiro" 
-			"Kusagaki" "Shinodake" "Shiraume" "Kashiwa" "Kigiku" "Hatsugiku" "Akane" "Shiragiku" "Chigusa" "Wakakusa" "Natsugusa" "Akikusa" "Tochi" "Nogiku" 			
+			"桃" "樫" "檜" "柳" "榎" "槇" "欅" "桑" "椿" "楢" 
+			"樅" "茅" "梨" "竹" "柿" "栂" "楡" "栗" "菊" "葵" "藤" "萩" "薄" "菱" "蓮" "蕨" "蓼" "菫" "蔦" "葦" 
+			"蓬" "若竹" "呉竹" "早苗" "早蕨" "朝顔" "夕顔" "芙蓉" "苅萱"
+			"松" "梅" "桐" "杉" "桜" "樺" "楓" "八重櫻" "矢竹" "葛" "真竹" "早梅" "飛梅" "若櫻" "山桜" 
+			"橘" "椎" "楠" "雄竹" "初桜" "初梅" "梓" "御蔵" "三宅" "淡路" "倉橋" "能美" "千振" "屋代" 
+			"草垣" "篠竹" "白梅" "柏" "黄菊" "初菊" "茜" "白菊" "千草" "若草" "夏草" "秋草" "栃" "野菊" 				
 		}
 }
 
@@ -578,9 +446,9 @@ JAP_RIVER_MOUNTAIN = {
 	type = ship
 
 	unique = {
-		"Asama" "Furutaka" "Kako" "Aoba" "Kinugasa" "Myoko" "Nachi" "Haguro" "Ashigara" "Takao" "Atago" "Maya" "Chokai" "Mogami" "Mikuma" "Suzuya" 
-		"Kumano" "Tone" "Chikuma" "Ibuki" "Yodo" "Hirado" "Yahagi" "Tenryu" "Tatsuta" "Kuma" "Tama" "Kitakami" "Oi" "Kiso" "Nagara" "Isuzu" "Natori" 
-		"Yura" "Kinu" "Abukuma" "Yubari" "Sendai" "Jintsu" "Naka" "Agano" "Noshiro" "Yahagi" "Sakawa" "Oyodo"
-		"Ayase" "Minase" "Otonase" 
+		"浅間" "古鷹" "加古" "青葉" "衣笠" "妙高" "那智" "羽黒" "足柄" "高雄" "愛宕" "摩耶" "鳥海" "最上" "三隈" "鈴谷" 
+		"熊野" "利根" "筑摩" "伊吹" "淀" "平戸" "矢矧" "天龍" "龍田" "球磨" "多摩" "北上" "大井" "木曽" "長良" "五十鈴" "名取" 
+		"由良" "鬼怒" "阿武隈" "夕張" "川内" "神通" "那珂" "阿賀野" "能代" "矢矧" "酒匂" "大淀"
+		"綾瀬" "水無瀬" "音無瀬"  
 	}
 }

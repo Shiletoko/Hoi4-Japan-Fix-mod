@@ -3,6 +3,8 @@
  JAP_mikawa_gunichi: "三川軍一"
  JAP_kurita_takeo: "栗田健男"
  demoted_general: "左遷された将軍"
- demoted_general_desc: "この将軍は政治闘争に破れ、左遷させられてしまった。昇進するには多大なコストを払う必要があるだろう。"
+ demoted_general_desc: "この将軍は政治中央での権力闘争のあおりを受け、左遷させられてしまった。昇進するには多大なコストを払う必要があるだろう。"
+ ima_kampaku: "『今関白』"
+ soutou_konoe: "総統"
  # INS
  INS_Sukarno_NCNS: "スカルノ"

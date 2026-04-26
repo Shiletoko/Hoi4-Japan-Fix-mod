@@ -449,8 +449,10 @@ country_event = {
 							is_ally_with = FROM
 						}
 						is_owned_by = BRM
-						is_controlled_by_ROOT_or_ally = yes
-						
+						OR = {
+							is_controlled_by_ROOT_or_ally = yes
+							is_controlled_by_ROOT_or_subject = yes
+						} 
 					}
 					transfer_state_to = controller
 				}
@@ -459,6 +461,7 @@ country_event = {
 				transfer_state_to = ROOT
 			}
 		}
+		######################### RAJ #####################################
 		IF = {
 			limit = {
 				RAJ = {
@@ -484,7 +487,6 @@ country_event = {
 						target = RAJ
 					}
 					set_capital = { state = 439 }
-				
 				}
 				992 = {
 					transfer_state_to = FROM
@@ -501,8 +503,15 @@ country_event = {
 		}
 		else_if  = {
 			limit = {
+				RAJ = {
+					has_war_with = ROOT
+					is_subject_of = FROM 
+				}
 				430 = {
-					is_controlled_by_ROOT_or_ally = yes
+					OR = {
+						is_controlled_by_ROOT_or_ally = yes
+						is_controlled_by_ROOT_or_subject = yes
+					}
 				}
 				430.owner = { has_war_with = ROOT }
 			}
@@ -518,8 +527,10 @@ country_event = {
 					limit = {
 						is_owned_by = RAJ
 						NOT = { state = 992 }
-						is_controlled_by_ROOT_or_ally = yes
-						
+						OR = {
+							is_controlled_by_ROOT_or_ally = yes
+							is_controlled_by_ROOT_or_subject = yes
+						}
 					}
 					transfer_state_to = PREV
 				}
@@ -529,13 +540,19 @@ country_event = {
 					limit = {
 						is_owned_by = RAJ
 						NOT = { state = 992 }
-						is_controlled_by_ROOT_or_ally = yes
-						
+						OR = {
+							is_controlled_by_ROOT_or_ally = yes
+							is_controlled_by_ROOT_or_subject = yes
+						}
 					}
 					transfer_state_to = ROOT
 				}
 			}
 		}
+		
+		
+		
+		#########################################
 		IF = {
 			limit = { 
 				any_country = { 
@@ -614,36 +631,475 @@ country_event = {
 	}
 }
 
-country_event = { 
+country_event = {
 	id = SEA_japan_foreign_policy_Fixes.4
 	title = SEA_japan_foreign_policy_Fixes.4.t
 	desc = SEA_japan_foreign_policy_Fixes.4.desc
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
-
-	option = { # They will fall to our blade!
+	
+	option = { 
 		name = SEA_japan_foreign_policy_Fixes.4.a
-			activate_targeted_decision = {
-				 target = ENG
-				 decision = JAP_demand_united_nations_surrender 
-			}
-			activate_targeted_decision = {
-				 target = FRA
-				 decision = JAP_demand_united_nations_surrender 
-			}
-			#activate_targeted_decision = {
-			#	 target = GER
-			#	 decision = JAP_demand_united_nations_surrender 
-			#}
-			activate_targeted_decision = {
-				 target = USA
-				 decision = JAP_demand_united_nations_surrender 
-			}
-			#activate_targeted_decision = {
-			#	 target = ITA
-			#	 decision = JAP_demand_united_nations_surrender 
-			#}
-
+		
+		custom_effect_tooltip = New_focuses_tooltip
+		add_country_leader_trait = {
+			character = JAP_fumimaro_konoe
+			trait = ima_kampaku
+		}
+		hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+		}
+		JAP_small_government_faction_gain = yes
+		set_country_flag = JAP_konoe_ima_kampaku
+		clr_country_flag = Konoe_Remain
 	}
 }
+
+country_event = {
+	id = SEA_japan_foreign_policy_Fixes.5
+	title = SEA_japan_foreign_policy_Fixes.5.t
+	desc = SEA_japan_foreign_policy_Fixes.5.desc
+	picture = GFX_report_event_japanese_reply
+
+	is_triggered_only = yes
+	option = { 
+		name = SEA_japan_foreign_policy_Fixes.5.a
+		JAP_small_government_faction_gain = yes
+	}
+	option = { 
+		name = SEA_japan_foreign_policy_Fixes.5.b
+		country_event = {
+			id = SEA_japan_foreign_policy_Fixes.6
+			days = 70
+		}
+		hidden_effect = {
+		country_event = {
+			id = SEA_japan_foreign_policy_Fixes.7
+			days = 50
+		}
+		country_event = {
+			id = SEA_japan_foreign_policy_Fixes.8
+			days = 60
+		}
+		}
+	}
+}	
+country_event = {
+	id = SEA_japan_foreign_policy_Fixes.7
+	title = SEA_japan_foreign_policy_Fixes.7.t
+	desc = SEA_japan_foreign_policy_Fixes.7.desc
+	picture = GFX_report_event_JAP_diet_speech
+
+	is_triggered_only = yes
+	option = { 
+		name = SEA_japan_foreign_policy_Fixes.7.a
+	}
+}	
+country_event = {
+	id = SEA_japan_foreign_policy_Fixes.8
+	title = SEA_japan_foreign_policy_Fixes.8.t
+	desc = SEA_japan_foreign_policy_Fixes.8.desc
+	picture = GFX_report_event_JAP_diet_speech
+
+	is_triggered_only = yes
+	option = { 
+		name = SEA_japan_foreign_policy_Fixes.8.a
+	}
+}	
+country_event = {
+	id = SEA_japan_foreign_policy_Fixes.6
+	title = SEA_japan_foreign_policy_Fixes.6.t
+	desc = SEA_japan_foreign_policy_Fixes.6.desc
+	picture = GFX_report_event_JAP_diet_speech
+
+	is_triggered_only = yes
+	option = { 
+		name = SEA_japan_foreign_policy_Fixes.6.a
+		JAP_small_government_faction_gain = yes
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.5
+		}	
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			election_frequency = 48
+			long_name = JAP_JLP_party_long
+			name = JAP_JLP_party
+		}	
+		add_country_leader_role = {
+			character = JAP_ichiro_hatoyama
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				expire = "1989.1.1.1"
+				traits = { JAP_rikken_seiyukai_leader } 
+			}
+		}
+		
+	}
+	option = { 
+		name = SEA_japan_foreign_policy_Fixes.6.b
+		JAP_small_government_faction_gain = yes
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.5
+		}	
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			election_frequency = 48
+			long_name = JAP_JPP_party_long
+			name = JAP_JPP_party
+		}	
+		add_country_leader_role = {
+			character = JAP_machida_chuuji
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				expire = "1989.1.1.1"
+				traits = { JAP_minseito_leader } 
+			}
+		}
+	}
+	option = { 
+		name = SEA_japan_foreign_policy_Fixes.6.c
+		JAP_small_government_faction_gain = yes
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}	
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.5
+		}
+		add_country_leader_role = {
+			character = JAP_kazushige_ugaki
+			promote_leader = yes
+			country_leader = {
+				ideology = japan_militarism_ideology
+				expire = "1952.1.1.1"
+				traits = { JAP_diplomatic_prime_minister } 
+			}
+		}
+	}
+}	
+country_event = { # Buraziru Maru is sunk
+	id = SEA_japan_foreign_policy_Fixes.9
+	title = SEA_japan_foreign_policy_Fixes.9.t
+	desc = SEA_japan_foreign_policy_Fixes.9.desc
+	picture = GFX_report_event_merchant_ship_01
+
+	trigger = {
+		original_tag = JAP
+		has_war = yes
+		OR = {
+			ships_in_area = { area = 94 size > 0 } 
+			ships_in_area = { area = 84 size > 0 } 
+		}
+		NOT = { has_country_flag = zuiyo_safe }
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 4800
+		modifier = {
+			factor = 0.1       
+			OR = {
+				ships_in_area = { area = 94 size > 0 } 
+				ships_in_area = { area = 84 size > 0 } 
+			}
+		}
+		modifier = {
+			factor = 0.1       
+			OR = {
+				ships_in_area = { area = 94 size > 5 } 
+				ships_in_area = { area = 84 size > 5 } 
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				ships_in_area = { area = 94 size > 10 } 
+				ships_in_area = { area = 84 size > 10 } 
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				ships_in_area = { area = 94 size > 20 } 
+				ships_in_area = { area = 84 size > 20 } 
+			}
+		}
+		modifier = {
+			factor = 0.1
+			OR = {
+				ships_in_area = { area = 94 size > 30 } 
+				ships_in_area = { area = 84 size > 30 } 
+			}
+		}
+	}
+	
+	option = { 
+		name = SEA_japan_foreign_policy_Fixes.9.a
+		hidden_effect = { set_country_flag = zuiyo_is_sunk }
+		add_war_support = -0.01
+		add_manpower = -188
+	}
+}	
+country_event = { # Battle of Shanghai for Japan
+	id = SEA_japan_foreign_policy_Fixes.10
+	title = SEA_japan_foreign_policy_Fixes.10.t
+	desc = SEA_japan_foreign_policy_Fixes.10.desc
+	picture = GFX_report_event_japanese_battle_of_shanghai
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		division_template = {
+			name = "上海派遣軍" 			
+			division_names_group = JAP_INF_01
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 3 y = 0 }
+				infantry = { x = 3 y = 1 }
+				infantry = { x = 3 y = 2 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }
+			}
+		}
+		division_template = {
+			name = "海軍陸戦隊"		#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+			division_names_group = JAP_MAR_01
+			regiments = {
+				marine = { x = 0 y = 0 }
+				marine = { x = 0 y = 1 }
+				marine = { x = 0 y = 2 }
+				marine = { x = 1 y = 0 }
+				marine = { x = 1 y = 1 }
+				marine = { x = 1 y = 2 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+			}	
+			priority = 2
+		}
+		set_state_controller = 613
+		random_state = {
+			limit = {
+				state = 613
+			}
+			create_unit = {
+				prioritize_location =　7014
+				division = "name = \"第3師団\" division_template = \"上海派遣軍\" start_experience_factor = 0.5"
+				owner = ROOT
+			}
+			create_unit = {
+				prioritize_location =　7014
+				division = "name = \"第11師団\" division_template = \"上海派遣軍\" start_experience_factor = 0.5"
+				owner = ROOT
+			}
+			create_unit = {
+				prioritize_location =　7014
+				division = "name = \"上海海軍特別陸戦隊\" division_template = \"海軍陸戦隊\" start_experience_factor = 0.5"
+				owner = ROOT
+			}
+			IF = {
+				LIMIT = {
+					ROOT = {
+						is_ai = yes 
+					}
+				}
+				create_unit = {
+					prioritize_location =　7014
+					division = "name = \"第9師団\" division_template = \"上海派遣軍\" start_experience_factor = 0.5"
+					owner = ROOT
+				}
+				create_unit = {
+					prioritize_location =　7014
+					division = "name = \"第13師団\" division_template = \"上海派遣軍\" start_experience_factor = 0.5"
+					owner = ROOT
+				}
+				create_unit = {
+					prioritize_location =　7014
+					division = "name = \"第101師団\" division_template = \"上海派遣軍\" start_experience_factor = 0.5"
+					owner = ROOT
+				}
+			}
+		}
+		
+	}
+	option = { 
+		name = SEA_japan_foreign_policy_Fixes.10.a
+		effect_tooltip = {
+			division_template = {
+				name = "上海派遣軍" 			
+				division_names_group = JAP_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					recon = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+				}
+			}
+			division_template = {
+				name = "海軍陸戦隊"		#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+				division_names_group = JAP_MAR_01
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}	
+				priority = 2
+			}
+			set_state_controller = 613
+			random_state = {
+				limit = {
+					state = 613
+				}
+				create_unit = {
+				prioritize_location =　7014
+				division = "name = \"第3師団\" division_template = \"上海派遣軍\" start_experience_factor = 0.5"
+				owner = ROOT
+				}
+				create_unit = {
+					prioritize_location =　7014
+					division = "name = \"第11師団\" division_template = \"上海派遣軍\" start_experience_factor = 0.5"
+					owner = ROOT
+				}
+				create_unit = {
+					prioritize_location =　7014
+					division = "name = \"上海海軍特別陸戦隊\" division_template = \"海軍陸戦隊\" start_experience_factor = 0.5"
+					owner = ROOT
+				}
+			}
+		}
+		
+	}
+}	
+country_event = { # Battle of Shanghai for Japan
+	id = SEA_japan_foreign_policy_Fixes.11
+	title = SEA_japan_foreign_policy_Fixes.10.t
+	desc = SEA_japan_foreign_policy_Fixes.10.desc
+	picture = GFX_report_event_japanese_battle_of_shanghai
+
+	is_triggered_only = yes 
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	fire_only_once = yes
+	immediate = {
+		
+	}
+	option = { 
+		name = SEA_japan_foreign_policy_Fixes.10.a
+		effect_tooltip = {
+			JAP = {
+				division_template = {
+					name = "上海派遣軍" 			
+					division_names_group = JAP_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+					}
+				}
+				division_template = {
+					name = "海軍陸戦隊"		#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+					division_names_group = JAP_MAR_01
+					regiments = {
+						marine = { x = 0 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 0 y = 2 }
+						marine = { x = 1 y = 0 }
+						marine = { x = 1 y = 1 }
+						marine = { x = 1 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}	
+					priority = 2
+				}
+				set_state_controller = 613
+				random_state = {
+					limit = {
+						state = 613
+					}
+					create_unit = {
+					prioritize_location =　7014
+					division = "name = \"第3師団\" division_template = \"上海派遣軍\" start_experience_factor = 0.5"
+					owner = ROOT
+					}
+					create_unit = {
+						prioritize_location =　7014
+						division = "name = \"第11師団\" division_template = \"上海派遣軍\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						prioritize_location =　7014
+						division = "name = \"上海海軍特別陸戦隊\" division_template = \"海軍陸戦隊\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+}	
+country_event = {
+	id = SEA_japan_foreign_policy_Fixes.999
+	title = SEA_japan_foreign_policy_Fixes.5.t
+	desc = SEA_japan_foreign_policy_Fixes.5.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	option = { 
+		name = SEA_japan_foreign_policy_Fixes.5.a
+		set_country_flag = Konoe_Remain
+	}
+}	

@@ -1165,7 +1165,7 @@ IF = {
 	}
 
 	create_equipment_variant = {
-		name = "Type 92 Tankette"
+		name = "九二式重装甲車"
 		type = light_tank_chassis_0
 		design_team = mio:JAP_osaka_army_arsenal_organization
 		parent_version = 0
@@ -1189,7 +1189,7 @@ IF = {
 	}
 
 	create_equipment_variant = {
-		name = "Type 94 Tankette"
+		name = "九四式重装甲車"
 		type = light_tank_chassis_1
 		design_team = mio:JAP_osaka_army_arsenal_organization
 		parent_version = 0
@@ -1213,7 +1213,7 @@ IF = {
 	}
 
 	create_equipment_variant = {
-		name = "Type 89 I-Go"
+		name = "八九式中戦車 イ号"
 		type = medium_tank_chassis_0
 		design_team = mio:JAP_sagami_army_arsenal_organization
 		parent_version = 0
@@ -1236,7 +1236,7 @@ IF = {
 	}
 
 	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
-		name = "Type 95 Ha-Go"
+		name = "九五式軽戦車 ハ号"
 		type = light_tank_chassis_2
 		design_team = mio:JAP_osaka_army_arsenal_organization
 		parent_version = 0
@@ -1302,6 +1302,7 @@ IF = {
 	}
 }
 
+
 IF = {
 
 	limit = {
@@ -1309,7 +1310,7 @@ IF = {
 	}
 
 	create_equipment_variant = {
-		name = "Ki-10"
+		name = "九五式戦闘機"
 		type = small_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
@@ -1319,7 +1320,7 @@ IF = {
 	}
 
 	create_equipment_variant = {
-		name = "Ki-2"
+		name = "九三式双軽爆撃機"
 		type = small_plane_cas_airframe_0
 		modules = {
 			fixed_main_weapon_slot = small_bomb_bay
@@ -1330,7 +1331,7 @@ IF = {
 	}
 
 	create_equipment_variant = {
-		name = "Ki-1"
+		name = "九三式重爆撃機"
 		type = medium_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
@@ -1340,7 +1341,7 @@ IF = {
 	}
 
 	create_equipment_variant = {
-		name = "Ki-3"
+		name = "九三式単発軽爆撃機"
 		type = small_plane_cas_airframe_0
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
@@ -1351,7 +1352,7 @@ IF = {
 	}
 
 	create_equipment_variant = {
-		name = "Aichi D1A2"
+		name = "九六式艦上爆撃機"
 		type = cv_small_plane_cas_airframe_0
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
@@ -1363,7 +1364,7 @@ IF = {
 	}
 
 	create_equipment_variant = {
-		name = "A4N"
+		name = "九五式艦上戦闘機"
 		type = cv_small_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
@@ -1373,7 +1374,7 @@ IF = {
 	}
 
 	create_equipment_variant = {
-		name = "B2M"
+		name = "八九式艦上攻撃機"
 		type = cv_small_plane_naval_bomber_airframe_0
 		modules = {
 			fixed_main_weapon_slot = torpedo_mounting
@@ -1385,7 +1386,7 @@ IF = {
 	}
 
 	create_equipment_variant = {
-		name = "B4Y"
+		name = "九六式艦上攻撃機"
 		type = cv_small_plane_naval_bomber_airframe_1
 		modules = {
 			fixed_main_weapon_slot = torpedo_mounting
@@ -1404,7 +1405,7 @@ IF = {
 
 ### Carrier Variants
 create_equipment_variant = {
-	name = "Akagi Class"
+	name = "赤城型"
 	type = ship_hull_carrier_conversion_bb
 	name_group = JAP_CV_HISTORICAL
 	design_team = mio:JAP_yokosuka_naval_arsenal_organization
@@ -1422,7 +1423,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Kaga Class"
+	name = "加賀型"
 	type = ship_hull_carrier_conversion_bb
 	name_group = JAP_CV_HISTORICAL
 	design_team = mio:JAP_yokosuka_naval_arsenal_organization
@@ -1440,7 +1441,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Soryu Class"
+	name = "蒼龍型"
 	type = ship_hull_carrier_1
 	name_group = JAP_CV_HISTORICAL
 	design_team = mio:JAP_yokosuka_naval_arsenal_organization
@@ -1456,7 +1457,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Zuiho Class"
+	name = "瑞鳳型"
 	type = ship_hull_carrier_conversion_ca
 	name_group = JAP_CVL_HISTORICAL
 	design_team = mio:JAP_yokosuka_naval_arsenal_organization
@@ -1471,7 +1472,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Hosho Class"
+	name = "鳳翔型"
 	name_group = JAP_CVL_HISTORICAL
 	design_team = mio:JAP_yokosuka_naval_arsenal_organization
 	type = ship_hull_carrier_conversion_ca
@@ -1488,7 +1489,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Ryujo Class"
+	name = "龍驤型"
 	name_group = JAP_CVL_HISTORICAL
 	design_team = mio:JAP_yokosuka_naval_arsenal_organization
 	type = ship_hull_carrier_1
@@ -1507,7 +1508,7 @@ create_equipment_variant = {
 
 ### Battleship Variants	
 create_equipment_variant = {
-	name = "Nagato Class"
+	name = "長門型"
 	name_group = JAP_BB_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
 	type = ship_hull_heavy_1
@@ -1527,8 +1528,8 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Kongo Class"
-	name_group = JAP_BB_HISTORICAL
+	name = "金剛型"
+	name_group = JAP_BC_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
 	type = ship_hull_heavy_1
 	parent_version = 0
@@ -1547,7 +1548,47 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Fuso/Ise Class"
+	name = "加賀型"
+	name_group = JAP_BC_HISTORICAL
+	#design_team = mio:JAP_sasebo_naval_arsenal_organization
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_2
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_2
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_1
+		front_1_custom_slot = ship_heavy_battery_2
+		mid_1_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = ship_airplane_launcher_1
+		rear_1_custom_slot = ship_heavy_battery_2
+	}
+}
+create_equipment_variant = {
+	name = "天城型"
+	name_group = JAP_BC_HISTORICAL
+	#design_team = mio:JAP_sasebo_naval_arsenal_organization
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_2
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_2
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bc_1
+		front_1_custom_slot = ship_heavy_battery_2
+		mid_1_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = ship_airplane_launcher_1
+		rear_1_custom_slot = ship_heavy_battery_2
+	}
+}
+create_equipment_variant = {
+	name = "扶桑/伊勢型"
 	type = ship_hull_heavy_1
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
 	name_group = JAP_BB_HISTORICAL
@@ -1570,7 +1611,7 @@ create_equipment_variant = {
 	
 ### Cruiser Variants			
 create_equipment_variant = {
-	name = "Takao Class"
+	name = "高雄型"
 	type = ship_hull_cruiser_2
 	name_group = JAP_CA_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -1591,7 +1632,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Myoko Class"
+	name = "妙高型"
 	type = ship_hull_cruiser_2
 	name_group = JAP_CA_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -1613,7 +1654,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Furutaka/Aoba Class"
+	name = "古鷹/青葉型"
 	type = ship_hull_cruiser_2
 	name_group = JAP_CA_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -1634,7 +1675,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Chikuma Class"
+	name = "筑摩型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CA_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -1654,7 +1695,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Izumo Class"
+	name = "出雲型"
 	type = ship_hull_cruiser_coastal_defense_ship
 	name_group = JAP_CA_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -1674,7 +1715,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Tone Class"
+	name = "利根型"
 	type = ship_hull_cruiser_2
 	name_group = JAP_CA_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -1695,7 +1736,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Tokiwa Class"
+	name = "常盤型"
 	type = ship_hull_cruiser_coastal_defense_ship
 	name_group = JAP_CA_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -1715,7 +1756,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Mogami Class"
+	name = "最上型"
 	type = ship_hull_cruiser_2
 	name_group = JAP_CL_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1736,7 +1777,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Yubari Class"
+	name = "夕張型"
 	type = ship_hull_cruiser_2
 	name_group = JAP_CL_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1756,7 +1797,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Sendai Class"
+	name = "川内型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CL_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1777,7 +1818,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Tenryu Class"
+	name = "天龍型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CL_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1797,7 +1838,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Kuma/Nagara Class"
+	name = "球磨/長良型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CL_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1817,7 +1858,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Okinoshima Class"					# cruiser minelayer
+	name = "沖島型"					# cruiser minelayer
 	type = ship_hull_cruiser_1
 	name_group = JAP_MINELAYERS_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1836,7 +1877,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Chitose/Mizuho Class"
+	name = "千歳/瑞穂型"
 	type = ship_hull_cruiser_2
 	name_group = JAP_CL_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1856,7 +1897,7 @@ create_equipment_variant = {
 
 ### Destroyer Variants
 create_equipment_variant = {
-	name = "Mutsuki Class" #collection of various WWI and early interwar ships with similiar capabilities
+	name = "睦月型" #collection of various WWI and early interwar ships with similiar capabilities
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -1875,7 +1916,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Minekaze Class" 
+	name = "峯風型" 
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1894,7 +1935,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Momi Class" 
+	name = "樅型" 
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	parent_version = 0
@@ -1913,7 +1954,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Chidori/Otori Class"
+	name = "千鳥/鴻型"
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1931,7 +1972,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Fubuki Class"
+	name = "吹雪型"
 	type = ship_hull_light_2
 	name_group = JAP_DD_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1949,7 +1990,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Sokuten Class" 				# collection of interwar DD-sized minelayers
+	name = "測天型" 				# collection of interwar DD-sized minelayers
 	type = ship_hull_light_1
 	name_group = JAP_MINELAYERS_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1967,7 +2008,7 @@ create_equipment_variant = {
 }	
 
 create_equipment_variant = {
-	name = "Momo Class" # Momo-class destroyers, successors to the Kaba's, one of which is transferred to Manchukuo in 1937
+	name = "桃型" # Momo-class destroyers, successors to the Kaba's, one of which is transferred to Manchukuo in 1937
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -1986,7 +2027,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Asashio Class"
+	name = "朝潮型"
 	type = ship_hull_light_2
 	name_group = JAP_DD_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -2004,7 +2045,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Hatsuharu Class"
+	name = "初春型"
 	type = ship_hull_light_2
 	name_group = JAP_DD_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -2023,7 +2064,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Shiratsuyu Class"
+	name = "白露型"
 	type = ship_hull_light_2
 	name_group = JAP_DD_HISTORICAL
 	design_team = mio:JAP_maizuru_naval_arsenal_organization
@@ -2043,7 +2084,7 @@ create_equipment_variant = {
 
 ### Submarine Variants	
 create_equipment_variant = {
-	name = "Kaidai III Class"
+	name = "海大三型"
 	type = ship_hull_submarine_2
 	name_group = JAP_SS_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -2056,7 +2097,7 @@ create_equipment_variant = {
 }	
 
 create_equipment_variant = {
-	name = "Kaichū IV Class"
+	name = "海中四型"
 	type = ship_hull_submarine_1
 	name_group = JAP_SS_2nd_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -2069,7 +2110,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Kiraisen Class"
+	name = "機雷潜型"
 	type = ship_hull_submarine_2
 	name_group = JAP_SS_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -2082,7 +2123,7 @@ create_equipment_variant = {
 }	
 
 create_equipment_variant = {
-	name = "I-1 Class"
+	name = "伊1型"
 	type = ship_hull_cruiser_submarine
 	name_group = JAP_SS_HISTORICAL
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -2106,7 +2147,7 @@ create_equipment_variant = {
 			has_dlc = "By Blood Alone"
 		}
 		create_equipment_variant = {
-			name = "Ki-27"
+			name = "九七式戦闘機"
 			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = light_mg_2x
@@ -2115,7 +2156,7 @@ create_equipment_variant = {
 			}
 		}
 		create_equipment_variant = {
-			name = "A5M"
+			name = "九六式艦上戦闘機"
 			type = cv_small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = light_mg_2x
@@ -2125,7 +2166,7 @@ create_equipment_variant = {
 			icon = "GFX_JAP_cv_fighter1_medium"
 		}
 		create_equipment_variant = {
-			name = "B5N"
+			name = "九七式艦上攻撃機"
 			type = cv_small_plane_naval_bomber_airframe_1
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -2136,7 +2177,7 @@ create_equipment_variant = {
 			icon = "GFX_JAP_cv_naval_bomber1_medium"
 		}
 		create_equipment_variant = {
-			name = "Ki-30/32"
+			name = "九七式軽爆撃機"
 			type = small_plane_cas_airframe_1
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
@@ -2145,7 +2186,7 @@ create_equipment_variant = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Ki-21"
+			name = "九七式重爆撃機"
 			type = medium_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -2154,7 +2195,7 @@ create_equipment_variant = {
 			}
 		}
 		create_equipment_variant = {
-			name = "G3M2"
+			name = "九六式陸上攻撃機"
 			type = medium_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -2172,7 +2213,7 @@ create_equipment_variant = {
 		}
 		### Carrier Variants
 		create_equipment_variant = {
-			name = "Hiryu Class"
+			name = "飛龍型"
 			type = carrier_2
 			parent_version = 0
 			upgrades = {
@@ -2184,7 +2225,7 @@ create_equipment_variant = {
 		}
 		
 		create_equipment_variant = {
-			name = "Kagero Class"
+			name = "陽炎型"
 			type = destroyer_2
 			parent_version = 0
 			upgrades = {
@@ -2200,7 +2241,7 @@ create_equipment_variant = {
 			has_dlc = "Man the Guns"
 		}
 		create_equipment_variant = {
-			name = "Shokaku Class"
+			name = "翔鶴型"
 			type = ship_hull_carrier_2
 			name_group = JAP_CV_HISTORICAL
 			parent_version = 0
@@ -2216,7 +2257,7 @@ create_equipment_variant = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Yamato Class"
+			name = "大和型"
 			type = ship_hull_super_heavy_1
 			name_group = JAP_BB_HISTORICAL
 			parent_version = 0
@@ -2238,7 +2279,7 @@ create_equipment_variant = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Asashio Class"
+			name = "朝潮型"
 			type = ship_hull_light_2
 			name_group = JAP_DD_HISTORICAL
 			parent_version = 0
@@ -2254,7 +2295,7 @@ create_equipment_variant = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Katori Class"
+			name = "香取型"
 			type = ship_hull_cruiser_2
 			name_group = JAP_CL_HISTORICAL
 			parent_version = 0
@@ -2272,7 +2313,7 @@ create_equipment_variant = {
 			obsolete = yes
 		}
 		create_equipment_variant = {
-			name = "Kagero Class"
+			name = "陽炎型"
 			type = ship_hull_light_2
 			name_group = JAP_DD_HISTORICAL
 			parent_version = 0
@@ -2288,7 +2329,7 @@ create_equipment_variant = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Hatsutaka Class" 	# DD-sized minelayers
+			name = "初鷹型" 	# DD-sized minelayers
 			type = ship_hull_light_2
 			name_group = JAP_MINELAYERS_HISTORICAL
 			parent_version = 0
@@ -2304,7 +2345,7 @@ create_equipment_variant = {
 			}
 		}
 		create_equipment_variant = {
-			name = "A1/B1 Class"
+			name = "巡潜甲型/乙型"
 			type = ship_hull_cruiser_submarine
 			name_group = JAP_SS_HISTORICAL
 			parent_version = 0
@@ -2322,7 +2363,7 @@ create_equipment_variant = {
 			has_dlc = "No Step Back"
 		}
 		create_equipment_variant = {
-			name = "Type 97 Chi-Ha"
+			name = "九七式中戦車 チハ"
 			type = medium_tank_chassis_1
 			design_team = mio:JAP_sagami_army_arsenal_organization
 			parent_version = 0

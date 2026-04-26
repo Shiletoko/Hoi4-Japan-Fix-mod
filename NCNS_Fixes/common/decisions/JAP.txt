@@ -4448,6 +4448,128 @@ prospect_for_resources = {
 #  #  ##  #  #  #  #  # ### #  # #  #     #  # ### ##   ##   ##  #  #  ##  ###     #  # #  # ### #  # 
 
 	#Below is visible when JAP_establish_the_northern_resource_area is completed
+	JAP_develop_north_Birobidzhan_deposits = { # MOD
+		icon = steel
+
+		highlight_states = {
+ 			highlight_state_targets = {
+				state = 657
+			} 
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			657 = { is_controlled_by_ROOT_or_subject = yes }
+			has_tech = excavation2
+			
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = JAP_establish_the_northern_resource_area
+				has_completed_focus = JAP_sea_establish_the_northern_resource_area
+				has_completed_focus = JAP_transformation_of_nature
+			}
+			check_variable = {
+				Birobidzhan_Develop > 0
+			}
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			657 = { is_controlled_by_ROOT_or_subject = no }
+		}
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				var = Birobidzhan_Develop
+				value = 1
+			}
+		}
+		remove_effect = {
+			657 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}
+	}
+	JAP_develop_north_Nikolayevsk_deposits = { # MOD
+		icon = steel
+
+		highlight_states = {
+ 			highlight_state_targets = {
+				state = 569
+			} 
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			560 = { is_controlled_by_ROOT_or_subject = yes }
+			has_tech = excavation2
+			
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = JAP_establish_the_northern_resource_area
+				has_completed_focus = JAP_sea_establish_the_northern_resource_area
+				has_completed_focus = JAP_transformation_of_nature
+			}
+			check_variable = {
+				Nikolayevsk_Develop > 0
+			}
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			560 = { is_controlled_by_ROOT_or_subject = no }
+		}
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				var = Nikolayevsk_Develop
+				value = 1
+			}
+		}
+		remove_effect = {
+			560 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}
+	}
 	JAP_develop_north_sakhalin_oil_deposits = { #655
 		icon = oil
 
@@ -4717,15 +4839,18 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			check_variable = {
+				Mindanao_Develop > 0
+			}
 			OR = {
 				has_completed_focus = JAP_transformation_of_nature
 				has_completed_focus = JAP_sea_exploit_southern_resource_area
 			}
-			627 = {
-				NOT = {
-					has_state_flag = mindanao_steel_developed
-				}
-			}
+			#627 = {
+			#	NOT = {
+			#		has_state_flag = mindanao_steel_developed
+			#	}
+			#}
 		}
 
 		fire_only_once = no
@@ -4744,14 +4869,21 @@ prospect_for_resources = {
 		ai_will_do = {
 			base = 10
 		}
-
+		complete_effect = { 
+			subtract_from_variable = {
+				var = Mindanao_Develop
+				value = 1
+			}
+		}
 		remove_effect = {
+			
 			627 = {
 				add_resource = {
 					type = steel
 					amount = 8
 				}
-				set_state_flag = mindanao_steel_developed
+				
+				#set_state_flag = mindanao_steel_developed
 			}
 		}
 	}
@@ -4779,6 +4911,9 @@ prospect_for_resources = {
 				has_completed_focus = JAP_transformation_of_nature
 				has_completed_focus = JAP_sea_exploit_southern_resource_area
 			}
+			check_variable = {
+				samar_Develop > 0
+			}
 			625 = {
 				NOT = {
 					has_state_flag = samar_steel_developed
@@ -4802,14 +4937,20 @@ prospect_for_resources = {
 		ai_will_do = {
 			base = 10
 		}
-
+		complete_effect = { 
+			subtract_from_variable = {
+				var = samar_Develop
+				value = 1
+			}
+		}
 		remove_effect = {
+			
 			625 = {
 				add_resource = {
 					type = steel
 					amount = 6
 				}
-				set_state_flag = samar_steel_developed
+				#set_state_flag = samar_steel_developed
 			}
 		}
 	}
@@ -4958,6 +5099,9 @@ prospect_for_resources = {
 					has_state_flag = singapore_aluminium_developed
 				}
 			}
+			check_variable = {
+				singapore_Develop > 0
+			}
 		}
 
 		fire_only_once = no
@@ -4976,14 +5120,20 @@ prospect_for_resources = {
 		ai_will_do = {
 			base = 1
 		}
-
+		complete_effect = { 
+			subtract_from_variable = {
+				var = singapore_Develop
+				value = 1
+			}
+		}
 		remove_effect = {
+		
 			1021 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
 				}
-				set_state_flag = singapore_aluminium_developed
+				#set_state_flag = singapore_aluminium_developed
 			}
 		}
 	}
@@ -5263,6 +5413,9 @@ prospect_for_resources = {
 					has_state_flag = shandong_aluminium_developed
 				}
 			}
+			check_variable = {
+				shandong_Develop > 0
+			}
 		}
 
 		fire_only_once = no
@@ -5281,14 +5434,19 @@ prospect_for_resources = {
 		ai_will_do = {
 			base = 1
 		}
-
-		complete_effect = {
+		complete_effect = { 
+			subtract_from_variable = {
+				var = shandong_Develop
+				value = 1
+			}
+		}
+		remove_effect = {
 			597 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
 				}
-				set_state_flag = shandong_aluminium_developed
+				#set_state_flag = shandong_aluminium_developed
 			}
 		}
 	}
@@ -5323,6 +5481,9 @@ prospect_for_resources = {
 					has_state_flag = suiyuan_steel_developed
 				}
 			}
+			check_variable = {
+				suiyuan_Develop > 0
+			}
 		}
 
 		fire_only_once = no
@@ -5341,14 +5502,19 @@ prospect_for_resources = {
 		ai_will_do = {
 			base = 10
 		}
-
-		complete_effect = {
+		complete_effect = { 
+			subtract_from_variable = {
+				var = suiyuan_Develop
+				value = 1
+			}
+		}
+		remove_effect = {
 			621 = {
 				add_resource = {
 					type = steel
 					amount = 8
 				}
-				set_state_flag = suiyuan_steel_developed
+				#set_state_flag = suiyuan_steel_developed
 			}
 		}	
 	}
@@ -5377,6 +5543,9 @@ prospect_for_resources = {
 					has_state_flag = yunnan_aluminium_developed
 				}
 			}
+			check_variable = {
+				yunnan_Develop > 0
+			}
 		}
 
 		fire_only_once = no
@@ -5395,14 +5564,19 @@ prospect_for_resources = {
 		ai_will_do = {
 			base = 1
 		}
-
-		complete_effect = {
+		complete_effect = { 
+			subtract_from_variable = {
+				var = yunnan_Develop
+				value = 1
+			}
+		}
+		remove_effect = {
 			325 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
 				}
-				set_state_flag = yunnan_aluminium_developed
+				#set_state_flag = yunnan_aluminium_developed
 			}
 		}	
 	}
@@ -5431,6 +5605,9 @@ prospect_for_resources = {
 					has_state_flag = sichuan_aluminium_developed
 				}
 			}
+			check_variable = {
+				sichuan_Develop > 0
+			}
 		}
 
 		fire_only_once = no
@@ -5449,18 +5626,135 @@ prospect_for_resources = {
 		ai_will_do = {
 			base = 1
 		}
-
+		remove_effect = { 
+			subtract_from_variable = {
+				var = sichuan_Develop
+				value = 1
+			}
+		}
 		complete_effect = {
 			605 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
 				}
-				set_state_flag = sichuan_aluminium_developed
+				#set_state_flag = sichuan_aluminium_developed
 			}
 		}	
 	}
+	
+	JAP_develop_Liaotung_steel_deposits = { #716
 
+		icon = steel
+		
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			716 = { is_controlled_by_ROOT_or_subject = yes }
+			has_tech = excavation2
+		}
+
+		visible = {
+			716 = { 
+				is_controlled_by_ROOT_or_subject = yes
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			check_variable = {
+				Liaotung_Develop > 0
+			}
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			716 = { is_controlled_by_ROOT_or_subject = no }
+		}
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = Liaotung_Develop
+				value = 1
+			}
+		}
+		remove_effect = {
+			716 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+				#set_state_flag = yunnan_aluminium_developed
+			}
+		}	
+	}
+	
+	JAP_develop_suiyuan_steel_deposits = { #621
+
+		icon = steel
+		
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			621 = { is_controlled_by_ROOT_or_subject = yes }
+			has_tech = excavation3
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = JAP_transformation_of_nature
+				has_completed_focus = JAP_develop_the_chinese_resources
+			}
+			
+			check_variable = {
+				suiyuan_Develop > 0
+			}
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			621 = { is_controlled_by_ROOT_or_subject = no }
+		}
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		remove_effect = { 
+			subtract_from_variable = {
+				var = sichuan_Develop
+				value = 1
+			}
+		}
+		complete_effect = {
+			621 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				#set_state_flag = sichuan_aluminium_developed
+			}
+		}	
+	}
 }
 
 
@@ -10195,7 +10489,143 @@ JAP_the_propaganda_department_decisions = {
 
 # The Co-Prosperity Sphere
 JAP_the_co_prosperity_sphere_decisions = {
+	JAP_Sukarno_decision  = {
+
+		priority = 5
+
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+		targets = { INS }
+		ai_will_do = {
+			base = 100
+		}
 	
+		allowed = {  
+			original_tag = JAP 
+		}
+
+		visible = { 
+			has_completed_focus = JAP_strike_the_southern_road
+			INS = {
+				NOT = {
+					has_country_leader = {
+						name = INS_Sukarno_NCNS
+						ruling_only = yes
+					}
+				}
+			}
+		}
+	
+		available = {
+			
+			OR = {
+				INS = { 
+					is_subject_of = JAP
+				}
+				INS = { 
+					exists = no
+					any_state = { 
+						is_core_of = INS
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		#days_remove = 70
+
+		
+
+		cost = 10
+
+
+		complete_effect = { 
+			IF = {
+				limit = {
+					FROM = {
+						exists = no
+					}
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = INS
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					transfer_state_to = FROM
+				}
+				set_autonomy = {
+					target = INS
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			FROM = {
+				drop_cosmetic_tag = yes
+				create_country_leader = {
+					name = INS_Sukarno_NCNS
+					desc = ""
+					picture = "gfx/leaders/INS/Portrait_Sukarno.png"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						expert_unifier
+					}
+				}
+				add_popularity = {
+					ideology = neutrality 
+					popularity = 0.4
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1935.12.17"
+					long_name = INS_democratic_party
+					name = INS_democratic_party
+				}
+				JAP_setup_faction_wide_aoe_effects_root_this = yes
+			}	
+			
+
+		}
+	}
+	JAP_transfer_609_to_RNG_decision  = {
+
+		priority = 5
+
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+		targets = { RNG }
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {  
+			original_tag = JAP 
+		}
+
+		visible = { 
+			has_subject = RNG
+			owns_state = 609
+		}
+	
+		available = {
+			has_subject = RNG
+			owns_state = 609
+		}
+
+		days_remove = 35
+
+		
+
+		cost = 0
+
+
+		remove_effect = { 
+
+			RNG = {
+				transfer_state = 609
+			}	
+		}
+	}
 	# Hand Mongol States over to the [MEN.GetAdjective] Administration
 	JAP_hand_mongol_states_to_mengkukuo_decision  = {
 

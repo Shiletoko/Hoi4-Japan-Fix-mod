@@ -18,5 +18,39 @@ ideas = {
 				
 			}
 		}
+		JAP_Expanded_PMs_Power_idea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = 0.05
+				political_advisor_cost_factor = -0.25
+				army_advisor_cost_factor = -0.15
+				navy_advisor_cost_factor = -0.15
+				air_advisor_cost_factor = -0.15
+			}
+		}
+		JAP_escort_carrier_modi = {
+			allowed = {
+				always = no
+			}
+			picture = generic_navy_carrier_bonus
+			removal_cost = -1
+	
+			cancel = {
+				is_special_project_completed = sp:sp_naval_escort_carrier
+            }
+			modifier = {
+				sp_naval_escort_carrier_speed_factor = 0.5
+				custom_modifier_tooltip = if_completed_escort_carrier
+			}
+		}
+	}
+	industrial_concern = {
+		
 	}
 }
