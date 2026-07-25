@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_japanese_battle_of_shanghai"
+		texturefile = "gfx/event_pictures/report_event_japanese_battle_of_shanghai.dds"
+	}
+
+
+}

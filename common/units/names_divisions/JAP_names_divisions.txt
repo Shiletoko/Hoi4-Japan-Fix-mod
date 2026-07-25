@@ -1,0 +1,2562 @@
+﻿JAP_INF_01 = {
+  name = "歩兵師団"  # Infantry Division
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "infantry"
+  }
+  fallback_name = "第%d師団"  # %d Hohei Shidan
+  ordered = {
+    168 = {
+      "近衛師団"  # Konoe Shidan
+    }
+    1 = {
+      "第%d師団 『玉』"  # %d 'Tama' Hohei Shidan
+    }
+    2 = {
+      "第%d師団 『勇』"  # %d 'Isamu' Hohei Shidan
+    }
+    3 = {
+      "第%d師団 『幸』"  # %d 'Sachi' Hohei Shidan
+    }
+    4 = {
+      "第%d師団 『淀』"  # %d 'Yodo' Hohei Shidan
+    }
+    5 = {
+      "第%d師団 『鯉』"  # %d 'Koi' Hohei Shidan
+    }
+    6 = {
+      "第%d師団 『明』"  # %d 'Akari' Hohei Shidan
+    }
+    7 = {
+      "第%d師団 『熊』"  # %d 'Kuma' Hohei Shidan
+    }
+    8 = {
+      "第%d師団 『杉』"  # %d 'Sugi' Hohei Shidan
+    }
+    9 = {
+      "第%d師団 『武』"  # %d 'Take' Hohei Shidan
+    }
+    10 = {
+      "第%d師団 『鉄』"  # %d 'Tetsu' Hohei Shidan
+    }
+    11 = {
+      "第%d師団 『錦』"  # %d 'Nishiki' Hohei Shidan
+    }
+    12 = {
+      "第%d師団 『剣』"  # %d 'Ken' Hohei Shidan
+    }
+    13 = {
+      "第%d師団 『鏡』"  # %d 'Kagami' Hohei Shidan
+    }
+    14 = {
+      "第%d師団 『照』"  # %d 'Teru' Hohei Shidan
+    }
+    15 = {
+      "第%d師団 『祭』"  # %d 'Matsuri' Hohei Shidan
+    }
+    16 = {
+      "第%d師団 『垣』"  # %d 'Kaki' Hohei Shidan
+    }
+    17 = {
+      "第%d師団 『月』"  # %d 'Tsuki' Hohei Shidan
+    }
+    18 = {
+      "第%d師団 『菊』"  # %d 'Kiku' Hohei Shidan
+    }
+    19 = {
+      "第%d師団 『虎』"  # %d 'Tora' Hohei Shidan
+    }
+    20 = {
+      "第%d師団 『朝』"  # %d 'Asa' Hohei Shidan
+    }
+    21 = {
+      "第%d師団 『討』"  # %d 'Utsu' Hohei Shidan
+    }
+    22 = {
+      "第%d師団 『原』"  # %d 'Hara' Hohei Shidan
+    }
+    23 = {
+      "第%d師団 『旭』"  # %d 'Asahi' Hohei Shidan
+    }
+    24 = {
+      "第%d師団 『山』"  # %d 'Yama' Hohei Shidan
+    }
+    35 = {
+      "第%d師団 『東』"  # %d 'Higashi' Hohei Shidan
+    }
+    36 = {
+      "第%d師団 『雪』"  # %d 'Yuki' Hohei Shidan
+    }
+    37 = {
+      "第%d師団 『冬』"  # %d 'Fuyu' Hohei Shidan
+    }
+    38 = {
+      "第%d師団 『沼』"  # %d 'Numa' Hohei Shidan
+    }
+    39 = {
+      "第%d師団 『藤』"  # %d 'Fuji' Hohei Shidan
+    }
+    40 = {
+      "第%d師団 『鯨』"  # %d 'Kujira' Hohei Shidan
+    }
+    41 = {
+      "第%d師団 『河』"  # %d 'Kawa' Hohei Shidan
+    }
+    42 = {
+      "第%d師団 『勲』"  # %d 'Isao' Hohei Shidan
+    }
+    43 = {
+      "第%d師団 『誉』"  # %d 'Homare' Hohei Shidan
+    }
+    44 = {
+      "第%d師団 『橘』"  # %d 'Tachibana' Hohei Shidan
+    }
+    104 = {
+      "第%d師団 『鳳』"  # %d 'Ootori' Hohei Shidan
+    }
+    116 = {
+      "第%d師団 『嵐』"  # %d 'Ran' Hohei Shidan
+    }
+    25 = {
+      "第%d師団 『国』"  # %d 'Kuni' Hohei Shidan
+    }
+    26 = {
+      "第%d師団 『泉』"  # %d 'Izumi' Hohei Shidan
+    }
+    27 = {
+      "第%d師団 『極』"  # %d 'Kiwame' Hohei Shidan
+    }
+    28 = {
+      "第%d師団 『豊』"  # %d 'Toyo' Hohei Shidan
+    }
+    29 = {
+      "第%d師団 『雷』"  # %d 'Rai' Hohei Shidan
+    }
+    48 = {
+      "第%d師団 『海』"  # %d 'Umi' Hohei Shidan
+    }
+    50 = {
+      "第%d師団 『蓬』"  # %d 'Hou' Hohei Shidan
+    }
+    51 = {
+      "第%d師団 『基』"  # %d 'Moto' Hohei Shidan
+    }
+    52 = {
+      "第%d師団 『柏』"  # %d 'Kashiwa' Hohei Shidan
+    }
+    53 = {
+      "第%d師団 『安』"  # %d 'Yasushi' Hohei Shidan
+    }
+    54 = {
+      "第%d師団 『兵』"  # %d 'Hei' Hohei Shidan
+    }
+    55 = {
+      "第%d師団 『壮』"  # %d 'Sou' Hohei Shidan
+    }
+    56 = {
+      "第%d師団 『龍』"  # %d 'Tatsu' Hohei Shidan
+    }
+    57 = {
+      "第%d師団 『奥』"  # %d 'Oku' Hohei Shidan
+    }
+    58 = {
+      "第%d師団 『広』"  # %d 'Hiroshi' Hohei Shidan
+    }
+    59 = {
+      "第%d師団 『衣』"  # %d 'Koromo' Hohei Shidan
+    }
+    60 = {
+      "第%d師団 『矛』"  # %d 'Hoko' Hohei Shidan
+    }
+    68 = {
+      "第%d師団 『檜』"  # %d 'Hinoki' Hohei Shidan
+    }
+    69 = {
+      "第%d師団 『勝』"  # %d 'Katsu' Hohei Shidan
+    }
+    70 = {
+      "第%d師団 『槍』"  # %d 'Yari' Hohei Shidan
+    }
+    71 = {
+      "第%d師団 『命』"  # %d 'Mikoto' Hohei Shidan
+    }
+    31 = {
+      "第%d師団 『烈』"  # %d 'Retsu' Hohei Shidan
+    }
+    61 = {
+      "第%d師団 『鵄』"  # %d 'Tobi' Hohei Shidan
+    }
+    30 = {
+      "第%d師団 『豹』"  # %d 'Hyo' Hohei Shidan
+    }
+    46 = {
+      "第%d師団 『静』"  # %d 'Sei' Hohei Shidan
+    }
+    47 = {
+      "第%d師団 『弾』"  # %d 'Dan' Hohei Shidan
+    }
+    62 = {
+      "第%d師団 『石』"  # %d 'Ishi' Hohei Shidan
+    }
+    63 = {
+      "第%d師団 『陣』"  # %d 'Jin' Hohei Shidan
+    }
+    64 = {
+      "第%d師団 『開』"  # %d 'Kai' Hohei Shidan
+    }
+    65 = {
+      "第%d師団 『専』"  # %d 'Sen' Hohei Shidan
+    }
+    49 = {
+      "第%d師団 『狼』"  # %d 'Rou' Hohei Shidan
+    }
+    72 = {
+      "第%d師団 『伝』"  # %d 'Den' Hohei Shidan
+    }
+    77 = {
+      "第%d師団 『稔』"  # %d 'Nen' Hohei Shidan
+    }
+    81 = {
+      "第%d師団 『納』"  # %d 'No' Hohei Shidan
+    }
+    86 = {
+      "第%d師団 『積』"  # %d 'Seki' Hohei Shidan
+    }
+    91 = {
+      "第%d師団 『先』"  # %d 'Saki' Hohei Shidan
+    }
+    100 = {
+      "第%d師団 『拠』"  # %d 'Kyo' Hohei Shidan
+    }
+    102 = {
+      "第%d師団 『抜』"  # %d 'Batsu' Hohei Shidan
+    }
+    103 = {
+      "第%d師団 『駿』"  # %d 'Shun' Hohei Shidan
+    }
+    66 = {
+      "第%d師団 『敢』"  # %d 'Kan' Hohei Shidan
+    }
+    73 = {
+      "第%d師団 『怒』"  # %d 'Ikari' Hohei Shidan
+    }
+    84 = {
+      "第%d師団 『突』"  # %d 'Totsu' Hohei Shidan
+    }
+    93 = {
+      "第%d師団 『決』"  # %d 'Ketsu' Hohei Shidan
+    }
+    105 = {
+      "第%d師団 『勤』"  # %d 'Kin' Hohei Shidan
+    }
+    107 = {
+      "第%d師団 『凪』"  # %d 'Nagi' Hohei Shidan
+    }
+    108 = {
+      "第%d師団 『佑』"  # %d 'Yū' Hohei Shidan
+    }
+    109 = {
+      "第%d師団 『膽』"  # %d 'Tan' Hohei Shidan
+    }
+    111 = {
+      "第%d師団 『市』"  # %d 'Ichi' Hohei Shidan
+    }
+    112 = {
+      "第%d師団 『公』"  # %d 'Kimi' Hohei Shidan
+    }
+    115 = {
+      "第%d師団 『北』"  # %d 'Kita' Hohei Shidan
+    }
+    117 = {
+      "第%d師団 『弘』"  # %d 'Gu' Hohei Shidan
+    }
+    114 = {
+      "第%d師団 『将』"  # %d 'Sho' Hohei Shidan
+    }
+    94 = {
+      "第%d師団 『威烈』"  # %d 'Iretsu' Hohei Shidan
+    }
+    118 = {
+      "第%d師団 『恵』"  # %d 'Megumi' Hohei Shidan
+    }
+    119 = {
+      "第%d師団 『宰』"  # %d 'Sai' Hohei Shidan
+    }
+    120 = {
+      "第%d師団 『邁進』"  # %d 'Maishin' Hohei Shidan
+    }
+    96 = {
+      "第%d師団 『玄』"  # %d 'Gen' Hohei Shidan
+    }
+    32 = {
+      "第%d師団 『楓』"  # %d 'Kaede' Hohei Shidan
+    }
+    33 = {
+      "第%d師団 『弓』"  # %d 'Yumi' Hohei Shidan
+    }
+    34 = {
+      "第%d師団 『椿』"  # %d 'Tsubaki' Hohei Shidan
+    }
+    79 = {
+      "第%d師団 『奏』"  # %d 'So' Hohei Shidan
+    }
+    88 = {
+      "第%d師団 『要』"  # %d 'Kaname' Hohei Shidan
+    }
+    89 = {
+      "第%d師団 『摧』"  # %d 'Sai' Hohei Shidan
+    }
+    101 = {
+      "第%d師団"  # %d Hohei Shidan
+    }
+    106 = {
+      "第%d師団"  # %d Hohei Shidan
+    }
+    110 = {
+      "第%d師団 『鷺』"  # %d 'Sagi' Hohei Shidan
+    }
+    121 = {
+      "第%d師団 『栄光』"  # %d 'Eiko' Hohei Shidan
+    }
+    122 = {
+      "第%d師団 『真鶴』"  # %d 'Maizuru' Hohei Shidan
+    }
+    123 = {
+      "第%d師団 『松風』"  # %d 'Matsukaze' Hohei Shidan
+    }
+    124 = {
+      "第%d師団 『遠謀』"  # %d 'Enbo' Hohei Shidan
+    }
+    125 = {
+      "第%d師団 『英機』"  # %d 'Eiki' Hohei Shidan
+    }
+    127 = {
+      "第%d師団 『英邁』"  # %d 'Eimai' Hohei Shidan
+    }
+    128 = {
+      "第%d師団 『英武』"  # %d 'Eibu' Hohei Shidan
+    }
+    129 = {
+      "第%d師団 『振武』"  # %d 'Shinbu' Hohei Shidan
+    }
+    130 = {
+      "第%d師団 『鍾馗』"  # %d 'Shoki' Hohei Shidan
+    }
+    131 = {
+      "第%d師団 『秋水』"  # %d 'Shūsui' Hohei Shidan
+    }
+    132 = {
+      "第%d師団 『振起』"  # %d 'Shinki' Hohei Shidan
+    }
+    133 = {
+      "第%d師団 『進撃』"  # %d 'Shingeki' Hohei Shidan
+    }
+    134 = {
+      "第%d師団 『勾玉』"  # %d 'Magatama' Hohei Shidan
+    }
+    135 = {
+      "第%d師団 『真心』"  # %d 'Shinshin' Hohei Shidan
+    }
+    136 = {
+      "第%d師団 『不抜』"  # %d 'Fubatsu' Hohei Shidan
+    }
+    137 = {
+      "第%d師団 『扶翼』"  # %d 'Fuyoku' Hohei Shidan
+    }
+    138 = {
+      "第%d師団 『不動』"  # %d 'Fudo' Hohei Shidan
+    }
+    139 = {
+      "第%d師団 『不屈』"  # %d 'Fukutsu' Hohei Shidan
+    }
+    140 = {
+      "第%d師団 『護東』"  # %d 'Goto' Hohei Shidan
+    }
+    142 = {
+      "第%d師団 『護仙』"  # %d 'Gosen' Hohei Shidan
+    }
+    143 = {
+      "第%d師団 『護古』"  # %d 'Gogo' Hohei Shidan
+    }
+    144 = {
+      "第%d師団 『護阪』"  # %d 'Gohan' Hohei Shidan
+    }
+    145 = {
+      "第%d師団 『護州』"  # %d 'Goshu' Hohei Shidan
+    }
+    146 = {
+      "第%d師団 『護南』"  # %d 'Gonan' Hohei Shidan
+    }
+    147 = {
+      "第%d師団 『護北』"  # %d 'Gohoku' Hohei Shidan
+    }
+    148 = {
+      "第%d師団 『富嶽』"  # %d 'Fugaku' Hohei Shidan
+    }
+    149 = {
+      "第%d師団 『不撓』"  # %d 'Fugyo' Hohei Shidan
+    }
+    150 = {
+      "第%d師団 『護朝』"  # %d 'Gocho' Hohei Shidan
+    }
+    151 = {
+      "第%d師団 『護宇』"  # %d 'Gou' Hohei Shidan
+    }
+    152 = {
+      "第%d師団 『護沢』"  # %d 'Gotaku' Hohei Shidan
+    }
+    153 = {
+      "第%d師団 『護京』"  # %d 'Gokyo' Hohei Shidan
+    }
+    154 = {
+      "第%d師団 『護路』"  # %d 'Goro' Hohei Shidan
+    }
+    155 = {
+      "第%d師団 『護土』"  # %d 'Godo' Hohei Shidan
+    }
+    156 = {
+      "第%d師団 『護西』"  # %d 'Gosai' Hohei Shidan
+    }
+    157 = {
+      "第%d師団 『護弘』"  # %d 'Gogu' Hohei Shidan
+    }
+    158 = {
+      "第%d師団 『不滅』"  # %d 'Fumetsu' Hohei Shidan
+    }
+    160 = {
+      "第%d師団 『護鮮』"  # %d 'Gosen' Hohei Shidan
+    }
+    161 = {
+      "第%d師団 『震天』"  # %d 'Shinten' Hohei Shidan
+    }
+    201 = {
+      "第%d師団 『武蔵』"  # %d 'Musashi' Hohei Shidan
+    }
+    202 = {
+      "第%d師団 『青葉』"  # %d 'Aoba' Hohei Shidan
+    }
+    205 = {
+      "第%d師団 『安芸』"  # %d 'Aki' Hohei Shidan
+    }
+    206 = {
+      "第%d師団 『阿蘇』"  # %d 'Aso' Hohei Shidan
+    }
+    209 = {
+      "第%d師団 『加越』"  # %d 'Kaetsu' Hohei Shidan
+    }
+    212 = {
+      "第%d師団 『菊池』"  # %d 'Kikuchi' Hohei Shidan
+    }
+    214 = {
+      "第%d師団 『常盤』"  # %d 'Tokiwa' Hohei Shidan
+    }
+    216 = {
+      "第%d師団 『比叡』"  # %d 'Hiei' Hohei Shidan
+    }
+    221 = {
+      "第%d師団 『天龍』"  # %d 'Tenryū' Hohei Shidan
+    }
+    222 = {
+      "第%d師団 『八甲』"  # %d 'Hakkou' Hohei Shidan
+    }
+    224 = {
+      "第%d師団 『赤穂』"  # %d 'Ako' Hohei Shidan
+    }
+    225 = {
+      "第%d師団 『金剛』"  # %d 'Kongo' Hohei Shidan
+    }
+    229 = {
+      "第%d師団 『北越』"  # %d 'Hokuetsu' Hohei Shidan
+    }
+    230 = {
+      "第%d師団 『総武』"  # %d 'Sobu' Hohei Shidan
+    }
+    231 = {
+      "第%d師団 『大国』"  # %d 'Ookuni' Hohei Shidan
+    }
+    234 = {
+      "第%d師団 『利根』"  # %d 'Tone' Hohei Shidan
+    }
+    303 = {
+      "第%d師団 『高師』"  # %d 'Takashi' Hohei Shidan
+    }
+    308 = {
+      "第%d師団 『岩木』"  # %d 'Iwaki' Hohei Shidan
+    }
+    312 = {
+      "第%d師団 『千歳』"  # %d 'Chitose' Hohei Shidan
+    }
+    316 = {
+      "第%d師団 『山城』"  # %d 'Yamashiro' Hohei Shidan
+    }
+    320 = {
+      "第%d師団 『宣武』"  # %d 'Senbu' Hohei Shidan
+    }
+    321 = {
+      "第%d師団 『磯』"  # %d 'Iso' Hohei Shidan
+    }
+    322 = {
+      "第%d師団 『磐梯』"  # %d 'Bantai' Hohei Shidan
+    }
+    344 = {
+      "第%d師団 『剣山』"  # %d 'Kenzan' Hohei Shidan
+    }
+    351 = {
+      "第%d師団 『赤城』"  # %d 'Akagi' Hohei Shidan
+    }
+    354 = {
+      "第%d師団 『武甲』"  # %d 'Bukou' Hohei Shidan
+    }
+    355 = {
+      "第%d師団 『那智』"  # %d 'Nachi' Hohei Shidan
+    }
+  }
+}
+JAP_CAV_01 = {
+  name = "騎兵旅団"  # Cavalry Division
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "cavalry"
+  }
+  fallback_name = "第%d騎兵旅団"  # %d Kihei Shidan
+  ordered = {
+    1 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    2 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    3 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    4 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    5 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    6 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    7 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    8 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    9 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    10 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    11 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    12 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    13 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    14 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    15 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    16 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    17 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    18 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    19 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+    20 = {
+      "第%d騎兵旅団"  # %d Kihei Shidan
+    }
+  }
+}
+JAP_MOT_01 = {
+  name = "自動車化師団"  # Motorized Division
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "motorized"
+  }
+  link_numbering_with = {
+    JAP_INF_01
+  }
+  fallback_name = "第%d自動車化師団"  # %d Jidoushaka Shidan
+  ordered = {
+    1 = {
+      "第%d自動車化師団 『玉』"  # %d 'Gyoku' Jidoushaka Shidan
+    }
+    2 = {
+      "第%d自動車化師団 『勇』"  # %d 'Isamu' Jidoushaka Shidan
+    }
+    3 = {
+      "第%d自動車化師団 『幸』"  # %d 'Ko' Jidoushaka Shidan
+    }
+    4 = {
+      "第%d自動車化師団 『淀』"  # %d 'Yodo' Jidoushaka Shidan
+    }
+    5 = {
+      "第%d自動車化師団 『鯉』"  # %d 'Koi' Jidoushaka Shidan
+    }
+    6 = {
+      "第%d自動車化師団 『明』"  # %d 'Akari' Jidoushaka Shidan
+    }
+    7 = {
+      "第%d自動車化師団 『熊』"  # %d 'Kuma' Jidoushaka Shidan
+    }
+    8 = {
+      "第%d自動車化師団 『杉』"  # %d 'Sugi' Jidoushaka Shidan
+    }
+    9 = {
+      "第%d自動車化師団 『武』"  # %d 'Take' Jidoushaka Shidan
+    }
+    10 = {
+      "第%d自動車化師団 『鉄』"  # %d 'Tetsu' Jidoushaka Shidan
+    }
+    11 = {
+      "第%d自動車化師団 『錦』"  # %d 'Nishiki' Jidoushaka Shidan
+    }
+    12 = {
+      "第%d自動車化師団 『剣』"  # %d 'Ken' Jidoushaka Shidan
+    }
+    13 = {
+      "第%d自動車化師団 『鏡』"  # %d 'Kyo' Jidoushaka Shidan
+    }
+    14 = {
+      "第%d自動車化師団 『照』"  # %d 'Sho' Jidoushaka Shidan
+    }
+    15 = {
+      "第%d自動車化師団 『祭』"  # %d 'Sai' Jidoushaka Shidan
+    }
+    16 = {
+      "第%d自動車化師団 『垣』"  # %d 'Kaki' Jidoushaka Shidan
+    }
+    17 = {
+      "第%d自動車化師団 『月』"  # %d 'Getsu' Jidoushaka Shidan
+    }
+    18 = {
+      "第%d自動車化師団 『菊』"  # %d 'Kiku' Jidoushaka Shidan
+    }
+    19 = {
+      "第%d自動車化師団 『虎』"  # %d 'Tora' Jidoushaka Shidan
+    }
+    20 = {
+      "第%d自動車化師団 『朝』"  # %d 'Asa' Jidoushaka Shidan
+    }
+    21 = {
+      "第%d自動車化師団 『討』"  # %d 'Tou' Jidoushaka Shidan
+    }
+    22 = {
+      "第%d自動車化師団 『原』"  # %d 'Hara' Jidoushaka Shidan
+    }
+    23 = {
+      "第%d自動車化師団 『旭』"  # %d 'Kyoku' Jidoushaka Shidan
+    }
+    24 = {
+      "第%d自動車化師団 『山』"  # %d 'Yama' Jidoushaka Shidan
+    }
+    35 = {
+      "第%d自動車化師団 『東』"  # %d 'Azuma' Jidoushaka Shidan
+    }
+    36 = {
+      "第%d自動車化師団 『雪』"  # %d 'Yuki' Jidoushaka Shidan
+    }
+    37 = {
+      "第%d自動車化師団 『冬』"  # %d 'Fuyu' Jidoushaka Shidan
+    }
+    38 = {
+      "第%d自動車化師団 『沼』"  # %d 'Numa' Jidoushaka Shidan
+    }
+    39 = {
+      "第%d自動車化師団 『藤』"  # %d 'Fuji' Jidoushaka Shidan
+    }
+    40 = {
+      "第%d自動車化師団 『鯨』"  # %d 'Kujira' Jidoushaka Shidan
+    }
+    41 = {
+      "第%d自動車化師団 『河』"  # %d 'Kawa' Jidoushaka Shidan
+    }
+    42 = {
+      "第%d自動車化師団 『勲』"  # %d 'Isao' Jidoushaka Shidan
+    }
+    43 = {
+      "第%d自動車化師団 『誉』"  # %d 'Homare' Jidoushaka Shidan
+    }
+    44 = {
+      "第%d自動車化師団 『橘』"  # %d 'Tachibana' Jidoushaka Shidan
+    }
+    104 = {
+      "第%d自動車化師団 『鳳』"  # %d 'Ootori' Jidoushaka Shidan
+    }
+    116 = {
+      "第%d自動車化師団 『嵐』"  # %d 'Arashi' Jidoushaka Shidan
+    }
+    25 = {
+      "第%d自動車化師団 『国』"  # %d 'Kuni' Jidoushaka Shidan
+    }
+    26 = {
+      "第%d自動車化師団 『泉』"  # %d 'Izumi' Jidoushaka Shidan
+    }
+    27 = {
+      "第%d自動車化師団 『極』"  # %d 'Goku' Jidoushaka Shidan
+    }
+    28 = {
+      "第%d自動車化師団 『豊』"  # %d 'Toyo' Jidoushaka Shidan
+    }
+    29 = {
+      "第%d自動車化師団 『雷』"  # %d 'Ikazuchi' Jidoushaka Shidan
+    }
+    48 = {
+      "第%d自動車化師団 『海』"  # %d 'Umi' Jidoushaka Shidan
+    }
+    50 = {
+      "第%d自動車化師団 『蓬』"  # %d 'Yomogi' Jidoushaka Shidan
+    }
+    51 = {
+      "第%d自動車化師団 『基』"  # %d 'Moto' Jidoushaka Shidan
+    }
+    52 = {
+      "第%d自動車化師団 『柏』"  # %d 'Kashiwa' Jidoushaka Shidan
+    }
+    53 = {
+      "第%d自動車化師団 『安』"  # %d 'Yasushi' Jidoushaka Shidan
+    }
+    54 = {
+      "第%d自動車化師団 『兵』"  # %d 'Hei' Jidoushaka Shidan
+    }
+    55 = {
+      "第%d自動車化師団 『壮』"  # %d 'Sou' Jidoushaka Shidan
+    }
+    56 = {
+      "第%d自動車化師団 『龍』"  # %d 'Ryu' Jidoushaka Shidan
+    }
+    57 = {
+      "第%d自動車化師団 『奥』"  # %d 'Oku' Jidoushaka Shidan
+    }
+    58 = {
+      "第%d自動車化師団 『広』"  # %d 'Kou' Jidoushaka Shidan
+    }
+    59 = {
+      "第%d自動車化師団 『衣』"  # %d 'Koromo' Jidoushaka Shidan
+    }
+    60 = {
+      "第%d自動車化師団 『矛』"  # %d 'Hoko' Jidoushaka Shidan
+    }
+    68 = {
+      "第%d自動車化師団 『檜』"  # %d 'Hinoki' Jidoushaka Shidan
+    }
+    69 = {
+      "第%d自動車化師団 『勝』"  # %d 'Katsu' Jidoushaka Shidan
+    }
+    70 = {
+      "第%d自動車化師団"  # %d Jidoushaka Shidan
+    }
+    71 = {
+      "第%d自動車化師団 『命』"  # %d 'Mikoto' Jidoushaka Shidan
+    }
+    31 = {
+      "第%d自動車化師団 『烈』"  # %d 'Retsu' Jidoushaka Shidan
+    }
+    61 = {
+      "第%d自動車化師団 『鵄』"  # %d 'Tobi' Jidoushaka Shidan
+    }
+    30 = {
+      "第%d自動車化師団 『豹』"  # %d 'Hyo' Jidoushaka Shidan
+    }
+    46 = {
+      "第%d自動車化師団 『静』"  # %d 'Sei' Jidoushaka Shidan
+    }
+    47 = {
+      "第%d自動車化師団 『弾』"  # %d 'Dan' Jidoushaka Shidan
+    }
+    62 = {
+      "第%d自動車化師団 『石』"  # %d 'Ishi' Jidoushaka Shidan
+    }
+    63 = {
+      "第%d自動車化師団 『陣』"  # %d 'Jin' Jidoushaka Shidan
+    }
+    64 = {
+      "第%d自動車化師団 『開』"  # %d 'Kai' Jidoushaka Shidan
+    }
+    65 = {
+      "第%d自動車化師団 『専』"  # %d 'Sen' Jidoushaka Shidan
+    }
+    49 = {
+      "第%d自動車化師団 『狼』"  # %d 'Ookami' Jidoushaka Shidan
+    }
+    72 = {
+      "第%d自動車化師団 『伝』"  # %d 'Ten' Jidoushaka Shidan
+    }
+    77 = {
+      "第%d自動車化師団 『稔』"  # %d 'Nen' Jidoushaka Shidan
+    }
+    81 = {
+      "第%d自動車化師団 『納』"  # %d 'No' Jidoushaka Shidan
+    }
+    86 = {
+      "第%d自動車化師団 『積』"  # %d 'Seki' Jidoushaka Shidan
+    }
+    91 = {
+      "第%d自動車化師団 『先』"  # %d 'Saki' Jidoushaka Shidan
+    }
+    100 = {
+      "第%d自動車化師団 『拠』"  # %d 'Kyo' Jidoushaka Shidan
+    }
+    102 = {
+      "第%d自動車化師団 『抜』"  # %d 'Hatsu' Jidoushaka Shidan
+    }
+    103 = {
+      "第%d自動車化師団 『駿』"  # %d 'Shun' Jidoushaka Shidan
+    }
+    66 = {
+      "第%d自動車化師団 『敢』"  # %d 'Kan' Jidoushaka Shidan
+    }
+    73 = {
+      "第%d自動車化師団 『怒』"  # %d 'Ikari' Jidoushaka Shidan
+    }
+    84 = {
+      "第%d自動車化師団 『突』"  # %d 'To' Jidoushaka Shidan
+    }
+    93 = {
+      "第%d自動車化師団 『決』"  # %d 'Ketsu' Jidoushaka Shidan
+    }
+    105 = {
+      "第%d自動車化師団 『勤』"  # %d 'Kin' Jidoushaka Shidan
+    }
+    107 = {
+      "第%d自動車化師団 『凪』"  # %d 'Nagi' Jidoushaka Shidan
+    }
+    108 = {
+      "第%d自動車化師団 『佑』"  # %d 'Yū' Jidoushaka Shidan
+    }
+    109 = {
+      "第%d自動車化師団 『膽』"  # %d 'Tan' Jidoushaka Shidan
+    }
+    111 = {
+      "第%d自動車化師団 『市』"  # %d 'Ichi' Jidoushaka Shidan
+    }
+    112 = {
+      "第%d自動車化師団 『公』"  # %d 'Kimi' Jidoushaka Shidan
+    }
+    115 = {
+      "第%d自動車化師団 『北』"  # %d 'Kita' Jidoushaka Shidan
+    }
+    117 = {
+      "第%d自動車化師団 『弘』"  # %d 'Hiromu' Jidoushaka Shidan
+    }
+    114 = {
+      "第%d自動車化師団 『将』"  # %d 'Sho' Jidoushaka Shidan
+    }
+    94 = {
+      "第%d自動車化師団 『威烈』"  # %d 'Iretsu' Jidoushaka Shidan
+    }
+    118 = {
+      "第%d自動車化師団 『恵』"  # %d 'Kei' Jidoushaka Shidan
+    }
+    119 = {
+      "第%d自動車化師団 『宰』"  # %d 'Sai' Jidoushaka Shidan
+    }
+    120 = {
+      "第%d自動車化師団 『邁進』"  # %d 'Maishin' Jidoushaka Shidan
+    }
+    96 = {
+      "第%d自動車化師団 『玄』"  # %d 'Gen' Jidoushaka Shidan
+    }
+    167 = {
+      "第%d自動車化師団"  # %d Jidoushaka Shidan
+    }
+    32 = {
+      "第%d自動車化師団 『楓』"  # %d 'Kaede' Jidoushaka Shidan
+    }
+    33 = {
+      "第%d自動車化師団 『弓』"  # %d 'Yumi' Jidoushaka Shidan
+    }
+    34 = {
+      "第%d自動車化師団 『椿』"  # %d 'Tsubaki' Jidoushaka Shidan
+    }
+    79 = {
+      "第%d自動車化師団 『奏』"  # %d 'So' Jidoushaka Shidan
+    }
+    88 = {
+      "第%d自動車化師団 『要』"  # %d 'Kaname' Jidoushaka Shidan
+    }
+    89 = {
+      "第%d自動車化師団 『摧』"  # %d 'Sai' Jidoushaka Shidan
+    }
+    101 = {
+      "第%d自動車化師団"  # %d Jidoushaka Shidan
+    }
+    106 = {
+      "第%d自動車化師団"  # %d Jidoushaka Shidan
+    }
+    110 = {
+      "第%d自動車化師団 『鷺』"  # %d 'Sagi' Jidoushaka Shidan
+    }
+    121 = {
+      "第%d自動車化師団 『栄光』"  # %d 'Eiko' Jidoushaka Shidan
+    }
+    122 = {
+      "第%d自動車化師団 『真鶴』"  # %d 'Maizuru' Jidoushaka Shidan
+    }
+    123 = {
+      "第%d自動車化師団 『松風』"  # %d 'Matsukaze' Jidoushaka Shidan
+    }
+    124 = {
+      "第%d自動車化師団 『遠謀』"  # %d 'Enbo' Jidoushaka Shidan
+    }
+    125 = {
+      "第%d自動車化師団 『英機』"  # %d 'Eiki' Jidoushaka Shidan
+    }
+    127 = {
+      "第%d自動車化師団 『英邁』"  # %d 'Eimai' Jidoushaka Shidan
+    }
+    128 = {
+      "第%d自動車化師団 『英武』"  # %d 'Eibu' Jidoushaka Shidan
+    }
+    129 = {
+      "第%d自動車化師団 『振武』"  # %d 'Shinbu' Jidoushaka Shidan
+    }
+    130 = {
+      "第%d自動車化師団 『鍾馗』"  # %d 'Shoki' Jidoushaka Shidan
+    }
+    131 = {
+      "第%d自動車化師団 『秋水』"  # %d 'Shūsui' Jidoushaka Shidan
+    }
+    132 = {
+      "第%d自動車化師団 『振起』"  # %d 'Shinki' Jidoushaka Shidan
+    }
+    133 = {
+      "第%d自動車化師団 『進撃』"  # %d 'Shingeki' Jidoushaka Shidan
+    }
+    134 = {
+      "第%d自動車化師団 『勾玉』"  # %d 'Magatama' Jidoushaka Shidan
+    }
+    135 = {
+      "第%d自動車化師団 『真心』"  # %d 'Shinshin' Jidoushaka Shidan
+    }
+    136 = {
+      "第%d自動車化師団 『不抜』"  # %d 'Fubatsu' Jidoushaka Shidan
+    }
+    137 = {
+      "第%d自動車化師団 『扶翼』"  # %d 'Fuyoku' Jidoushaka Shidan
+    }
+    138 = {
+      "第%d自動車化師団 『不動』"  # %d 'Fudo' Jidoushaka Shidan
+    }
+    139 = {
+      "第%d自動車化師団 『不屈』"  # %d 'Fukutsu' Jidoushaka Shidan
+    }
+    140 = {
+      "第%d自動車化師団 『護東』"  # %d 'Koto' Jidoushaka Shidan
+    }
+    142 = {
+      "第%d自動車化師団 『護仙』"  # %d 'Kosen' Jidoushaka Shidan
+    }
+    143 = {
+      "第%d自動車化師団 『護古』"  # %d 'Kogo' Jidoushaka Shidan
+    }
+    144 = {
+      "第%d自動車化師団 『護阪』"  # %d 'Kosaka' Jidoushaka Shidan
+    }
+    145 = {
+      "第%d自動車化師団 『護州』"  # %d 'Koshu' Jidoushaka Shidan
+    }
+    146 = {
+      "第%d自動車化師団 『護南』"  # %d 'Konan' Jidoushaka Shidan
+    }
+    147 = {
+      "第%d自動車化師団 『護北』"  # %d 'Koho' Jidoushaka Shidan
+    }
+    148 = {
+      "第%d自動車化師団 『富嶽』"  # %d 'Fugaku' Jidoushaka Shidan
+    }
+    149 = {
+      "第%d自動車化師団 『不撓』"  # %d 'Fugyo' Jidoushaka Shidan
+    }
+    150 = {
+      "第%d自動車化師団 『護朝』"  # %d 'Gocho' Jidoushaka Shidan
+    }
+    151 = {
+      "第%d自動車化師団 『護宇』"  # %d 'Gou' Jidoushaka Shidan
+    }
+    152 = {
+      "第%d自動車化師団 『護沢』"  # %d 'Gozawa' Jidoushaka Shidan
+    }
+    153 = {
+      "第%d自動車化師団 『護京』"  # %d 'Gokyo' Jidoushaka Shidan
+    }
+    154 = {
+      "第%d自動車化師団 『護路』"  # %d 'Goji' Jidoushaka Shidan
+    }
+    155 = {
+      "第%d自動車化師団 『護土』"  # %d 'Godo' Jidoushaka Shidan
+    }
+    156 = {
+      "第%d自動車化師団 『護西』"  # %d 'Gosai' Jidoushaka Shidan
+    }
+    157 = {
+      "第%d自動車化師団 『護弘』"  # %d 'Gogu' Jidoushaka Shidan
+    }
+    158 = {
+      "第%d自動車化師団 『不滅』"  # %d 'Fumetsu' Jidoushaka Shidan
+    }
+    160 = {
+      "第%d自動車化師団 『護鮮』"  # %d 'Gosen' Jidoushaka Shidan
+    }
+    161 = {
+      "第%d自動車化師団 『震天』"  # %d 'Shinten' Jidoushaka Shidan
+    }
+    201 = {
+      "第%d自動車化師団 『武蔵』"  # %d 'Musashi' Jidoushaka Shidan
+    }
+    202 = {
+      "第%d自動車化師団 『青葉』"  # %d 'Aoba' Jidoushaka Shidan
+    }
+    205 = {
+      "第%d自動車化師団 『安芸』"  # %d 'Aki' Jidoushaka Shidan
+    }
+    206 = {
+      "第%d自動車化師団 『阿蘇』"  # %d 'Aso' Jidoushaka Shidan
+    }
+    209 = {
+      "第%d自動車化師団 『加越』"  # %d 'Kaetsu' Jidoushaka Shidan
+    }
+    212 = {
+      "第%d自動車化師団 『菊池』"  # %d 'Kikuchi' Jidoushaka Shidan
+    }
+    214 = {
+      "第%d自動車化師団 『常盤』"  # %d 'Hitachi' Jidoushaka Shidan
+    }
+    216 = {
+      "第%d自動車化師団 『比叡』"  # %d 'Hiei' Jidoushaka Shidan
+    }
+    221 = {
+      "第%d自動車化師団 『天龍』"  # %d 'Tenryū' Jidoushaka Shidan
+    }
+    222 = {
+      "第%d自動車化師団 『十和田』"  # %d 'Towada' Jidoushaka Shidan
+    }
+    224 = {
+      "第%d自動車化師団 『赤穂』"  # %d 'Ako' Jidoushaka Shidan
+    }
+    225 = {
+      "第%d自動車化師団 『金剛』"  # %d 'Kongo' Jidoushaka Shidan
+    }
+    229 = {
+      "第%d自動車化師団 『北越』"  # %d 'Hokuetsu' Jidoushaka Shidan
+    }
+    230 = {
+      "第%d自動車化師団 『総武』"  # %d 'Sobu' Jidoushaka Shidan
+    }
+    231 = {
+      "第%d自動車化師団 『大国』"  # %d 'Taikoku' Jidoushaka Shidan
+    }
+    234 = {
+      "第%d自動車化師団 『利根』"  # %d 'Tone' Jidoushaka Shidan
+    }
+    303 = {
+      "第%d自動車化師団 『高師』"  # %d 'Takashi' Jidoushaka Shidan
+    }
+    308 = {
+      "第%d自動車化師団 『岩木』"  # %d 'Iwaki' Jidoushaka Shidan
+    }
+    312 = {
+      "第%d自動車化師団 『千歳』"  # %d 'Chitose' Jidoushaka Shidan
+    }
+    316 = {
+      "第%d自動車化師団 『山城』"  # %d 'Yamajiro' Jidoushaka Shidan
+    }
+    320 = {
+      "第%d自動車化師団 『宣武』"  # %d 'Senbu' Jidoushaka Shidan
+    }
+  }
+}
+JAP_MEC_01 = {
+  name = "機械化師団"  # Mechanized Division
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "mechanized"
+  }
+  link_numbering_with = {
+    JAP_INF_01
+  }
+  fallback_name = "第%d機械化師団"  # %d Kikaika Shidan
+  ordered = {
+    1 = {
+      "第%d機械化師団 『玉』"  # %d 'Gyoku' Kikaika Shidan
+    }
+    2 = {
+      "第%d機械化師団 『勇』"  # %d 'Isamu' Kikaika Shidan
+    }
+    3 = {
+      "第%d機械化師団 『幸』"  # %d 'Ko' Kikaika Shidan
+    }
+    4 = {
+      "第%d機械化師団 『淀』"  # %d 'Yodo' Kikaika Shidan
+    }
+    5 = {
+      "第%d機械化師団 『鯉』"  # %d 'Koi' Kikaika Shidan
+    }
+    6 = {
+      "第%d機械化師団 『明』"  # %d 'Akari' Kikaika Shidan
+    }
+    7 = {
+      "第%d機械化師団 『熊』"  # %d 'Kuma' Kikaika Shidan
+    }
+    8 = {
+      "第%d機械化師団 『杉』"  # %d 'Sugi' Kikaika Shidan
+    }
+    9 = {
+      "第%d機械化師団 『武』"  # %d 'Take' Kikaika Shidan
+    }
+    10 = {
+      "第%d機械化師団 『鉄』"  # %d 'Tetsu' Kikaika Shidan
+    }
+    11 = {
+      "第%d機械化師団 『錦』"  # %d 'Nishiki' Kikaika Shidan
+    }
+    12 = {
+      "第%d機械化師団 『剣』"  # %d 'Ken' Kikaika Shidan
+    }
+    13 = {
+      "第%d機械化師団 『鏡』"  # %d 'Kyo' Kikaika Shidan
+    }
+    14 = {
+      "第%d機械化師団 『照』"  # %d 'Sho' Kikaika Shidan
+    }
+    15 = {
+      "第%d機械化師団 『祭』"  # %d 'Sai' Kikaika Shidan
+    }
+    16 = {
+      "第%d機械化師団 『垣』"  # %d 'Kaki' Kikaika Shidan
+    }
+    17 = {
+      "第%d機械化師団 『月』"  # %d 'Getsu' Kikaika Shidan
+    }
+    18 = {
+      "第%d機械化師団 『菊』"  # %d 'Kiku' Kikaika Shidan
+    }
+    19 = {
+      "第%d機械化師団 『虎』"  # %d 'Tora' Kikaika Shidan
+    }
+    20 = {
+      "第%d機械化師団 『朝』"  # %d 'Asa' Kikaika Shidan
+    }
+    21 = {
+      "第%d機械化師団 『討』"  # %d 'Tou' Kikaika Shidan
+    }
+    22 = {
+      "第%d機械化師団 『原』"  # %d 'Hara' Kikaika Shidan
+    }
+    23 = {
+      "第%d機械化師団 『旭』"  # %d 'Kyoku' Kikaika Shidan
+    }
+    24 = {
+      "第%d機械化師団 『山』"  # %d 'Yama' Kikaika Shidan
+    }
+    35 = {
+      "第%d機械化師団 『東』"  # %d 'Azuma' Kikaika Shidan
+    }
+    36 = {
+      "第%d機械化師団 『雪』"  # %d 'Yuki' Kikaika Shidan
+    }
+    37 = {
+      "第%d機械化師団 『冬』"  # %d 'Fuyu' Kikaika Shidan
+    }
+    38 = {
+      "第%d機械化師団 『沼』"  # %d 'Numa' Kikaika Shidan
+    }
+    39 = {
+      "第%d機械化師団 『藤』"  # %d 'Fuji' Kikaika Shidan
+    }
+    40 = {
+      "第%d機械化師団 『鯨』"  # %d 'Kujira' Kikaika Shidan
+    }
+    41 = {
+      "第%d機械化師団 『河』"  # %d 'Kawa' Kikaika Shidan
+    }
+    42 = {
+      "第%d機械化師団 『勲』"  # %d 'Isao' Kikaika Shidan
+    }
+    43 = {
+      "第%d機械化師団 『誉』"  # %d 'Homare' Kikaika Shidan
+    }
+    44 = {
+      "第%d機械化師団 『橘』"  # %d 'Tachibana' Kikaika Shidan
+    }
+    104 = {
+      "第%d機械化師団 『鳳』"  # %d 'Ootori' Kikaika Shidan
+    }
+    116 = {
+      "第%d機械化師団 『嵐』"  # %d 'Ran' Kikaika Shidan
+    }
+    25 = {
+      "第%d機械化師団 『国』"  # %d 'Kuni' Kikaika Shidan
+    }
+    26 = {
+      "第%d機械化師団 『泉』"  # %d 'Izumi' Kikaika Shidan
+    }
+    27 = {
+      "第%d機械化師団 『極』"  # %d 'Goku' Kikaika Shidan
+    }
+    28 = {
+      "第%d機械化師団 『豊』"  # %d 'Toyo' Kikaika Shidan
+    }
+    29 = {
+      "第%d機械化師団 『雷』"  # %d 'Ikazuchi' Kikaika Shidan
+    }
+    48 = {
+      "第%d機械化師団 『海』"  # %d 'Umi' Kikaika Shidan
+    }
+    50 = {
+      "第%d機械化師団 『蓬』"  # %d 'Yomogi' Kikaika Shidan
+    }
+    51 = {
+      "第%d機械化師団 『基』"  # %d 'Moto' Kikaika Shidan
+    }
+    52 = {
+      "第%d機械化師団 『柏』"  # %d 'Kashiwa' Kikaika Shidan
+    }
+    53 = {
+      "第%d機械化師団 『安』"  # %d 'Yasushi' Kikaika Shidan
+    }
+    54 = {
+      "第%d機械化師団 『兵』"  # %d 'Hei' Kikaika Shidan
+    }
+    55 = {
+      "第%d機械化師団 『壮』"  # %d 'Sou' Kikaika Shidan
+    }
+    56 = {
+      "第%d機械化師団 『龍』"  # %d 'Ryu' Kikaika Shidan
+    }
+    57 = {
+      "第%d機械化師団 『奥』"  # %d 'Oku' Kikaika Shidan
+    }
+    58 = {
+      "第%d機械化師団 『広』"  # %d 'Kou' Kikaika Shidan
+    }
+    59 = {
+      "第%d機械化師団 『衣』"  # %d 'Koromo' Kikaika Shidan
+    }
+    60 = {
+      "第%d機械化師団 『矛』"  # %d 'Hoko' Kikaika Shidan
+    }
+    68 = {
+      "第%d機械化師団 『檜』"  # %d 'Hinoki' Kikaika Shidan
+    }
+    69 = {
+      "第%d機械化師団 『勝』"  # %d 'Katsu' Kikaika Shidan
+    }
+    70 = {
+      "第%d機械化師団"  # %d Kikaika Shidan
+    }
+    71 = {
+      "第%d機械化師団 『命』"  # %d 'Mikoto' Kikaika Shidan
+    }
+    31 = {
+      "第%d機械化師団 『烈』"  # %d 'Retsu' Kikaika Shidan
+    }
+    61 = {
+      "第%d機械化師団 『鵄』"  # %d 'Tobi' Kikaika Shidan
+    }
+    30 = {
+      "第%d機械化師団 『豹』"  # %d 'Hyo' Kikaika Shidan
+    }
+    46 = {
+      "第%d機械化師団 『静』"  # %d 'Sei' Kikaika Shidan
+    }
+    47 = {
+      "第%d機械化師団 『弾』"  # %d 'Dan' Kikaika Shidan
+    }
+    62 = {
+      "第%d機械化師団 『石』"  # %d 'Ishi' Kikaika Shidan
+    }
+    63 = {
+      "第%d機械化師団 『陣』"  # %d 'Jin' Kikaika Shidan
+    }
+    64 = {
+      "第%d機械化師団 『開』"  # %d 'Kai' Kikaika Shidan
+    }
+    65 = {
+      "第%d機械化師団 『専』"  # %d 'Sen' Kikaika Shidan
+    }
+    49 = {
+      "第%d機械化師団 『狼』"  # %d 'Ookami' Kikaika Shidan
+    }
+    72 = {
+      "第%d機械化師団 『伝』"  # %d 'Ten' Kikaika Shidan
+    }
+    77 = {
+      "第%d機械化師団 『稔』"  # %d 'Nen' Kikaika Shidan
+    }
+    81 = {
+      "第%d機械化師団 『納』"  # %d 'No' Kikaika Shidan
+    }
+    86 = {
+      "第%d機械化師団 『積』"  # %d 'Seki' Kikaika Shidan
+    }
+    91 = {
+      "第%d機械化師団 『先』"  # %d 'Saki' Kikaika Shidan
+    }
+    100 = {
+      "第%d機械化師団 『拠』"  # %d 'Kyo' Kikaika Shidan
+    }
+    102 = {
+      "第%d機械化師団 『抜』"  # %d 'Hatsu' Kikaika Shidan
+    }
+    103 = {
+      "第%d機械化師団 『駿』"  # %d 'Shun' Kikaika Shidan
+    }
+    66 = {
+      "第%d機械化師団 『敢』"  # %d 'Kan' Kikaika Shidan
+    }
+    73 = {
+      "第%d機械化師団 『怒』"  # %d 'Ikari' Kikaika Shidan
+    }
+    84 = {
+      "第%d機械化師団 『突』"  # %d 'To' Kikaika Shidan
+    }
+    93 = {
+      "第%d機械化師団 『決』"  # %d 'Ketsu' Kikaika Shidan
+    }
+    105 = {
+      "第%d機械化師団 『勤』"  # %d 'Kin' Kikaika Shidan
+    }
+    107 = {
+      "第%d機械化師団 『凪』"  # %d 'Nagi' Kikaika Shidan
+    }
+    108 = {
+      "第%d機械化師団 『佑』"  # %d 'Yū' Kikaika Shidan
+    }
+    109 = {
+      "第%d機械化師団 『膽』"  # %d 'Tan' Kikaika Shidan
+    }
+    111 = {
+      "第%d機械化師団 『市』"  # %d 'Ichi' Kikaika Shidan
+    }
+    112 = {
+      "第%d機械化師団 『公』"  # %d 'Kimi' Kikaika Shidan
+    }
+    115 = {
+      "第%d機械化師団 『北』"  # %d 'Kita' Kikaika Shidan
+    }
+    117 = {
+      "第%d機械化師団 『弘』"  # %d 'Gu' Kikaika Shidan
+    }
+    114 = {
+      "第%d機械化師団 『将』"  # %d 'Sho' Kikaika Shidan
+    }
+    94 = {
+      "第%d機械化師団 『威烈』"  # %d 'Iretsu' Kikaika Shidan
+    }
+    118 = {
+      "第%d機械化師団 『恵』"  # %d 'Kei' Kikaika Shidan
+    }
+    119 = {
+      "第%d機械化師団 『宰』"  # %d 'Sai' Kikaika Shidan
+    }
+    120 = {
+      "第%d機械化師団 『邁進』"  # %d 'Maishin' Kikaika Shidan
+    }
+    96 = {
+      "第%d機械化師団 『玄』"  # %d 'Gen' Kikaika Shidan
+    }
+    167 = {
+      "第%d機械化師団"  # %d Kikaika Shidan
+    }
+    32 = {
+      "第%d機械化師団 『楓』"  # %d 'Kaede' Kikaika Shidan
+    }
+    33 = {
+      "第%d機械化師団 『弓』"  # %d 'Yumi' Kikaika Shidan
+    }
+    34 = {
+      "第%d機械化師団 『椿』"  # %d 'Tsubaki' Kikaika Shidan
+    }
+    79 = {
+      "第%d機械化師団 『奏』"  # %d 'So' Kikaika Shidan
+    }
+    88 = {
+      "第%d機械化師団 『要』"  # %d 'Kaname' Kikaika Shidan
+    }
+    89 = {
+      "第%d機械化師団 『摧』"  # %d 'Sai' Kikaika Shidan
+    }
+    101 = {
+      "第%d機械化師団"  # %d Kikaika Shidan
+    }
+    106 = {
+      "第%d機械化師団"  # %d Kikaika Shidan
+    }
+    110 = {
+      "第%d機械化師団 『鷺』"  # %d 'Sagi' Kikaika Shidan
+    }
+    121 = {
+      "第%d機械化師団 『栄光』"  # %d 'Eiko' Kikaika Shidan
+    }
+    122 = {
+      "第%d機械化師団 『真鶴』"  # %d 'Maizuru' Kikaika Shidan
+    }
+    123 = {
+      "第%d機械化師団 『松風』"  # %d 'Matsukaze' Kikaika Shidan
+    }
+    124 = {
+      "第%d機械化師団 『遠謀』"  # %d 'Enbo' Kikaika Shidan
+    }
+    125 = {
+      "第%d機械化師団 『英機』"  # %d 'Eiki' Kikaika Shidan
+    }
+    127 = {
+      "第%d機械化師団 『英邁』"  # %d 'Eimai' Kikaika Shidan
+    }
+    128 = {
+      "第%d機械化師団 『英武』"  # %d 'Eibu' Kikaika Shidan
+    }
+    129 = {
+      "第%d機械化師団 『振武』"  # %d 'Shinbu' Kikaika Shidan
+    }
+    130 = {
+      "第%d機械化師団 『鍾馗』"  # %d 'Shoki' Kikaika Shidan
+    }
+    131 = {
+      "第%d機械化師団 『秋水』"  # %d 'Shūsui' Kikaika Shidan
+    }
+    132 = {
+      "第%d機械化師団 『振起』"  # %d 'Shinki' Kikaika Shidan
+    }
+    133 = {
+      "第%d機械化師団 『進撃』"  # %d 'Shingeki' Kikaika Shidan
+    }
+    134 = {
+      "第%d機械化師団 『勾玉』"  # %d 'Magatama' Kikaika Shidan
+    }
+    135 = {
+      "第%d機械化師団 『真心』"  # %d 'Shinshin' Kikaika Shidan
+    }
+    136 = {
+      "第%d機械化師団 『不抜』"  # %d 'Fubatsu' Kikaika Shidan
+    }
+    137 = {
+      "第%d機械化師団 『扶翼』"  # %d 'Fuyoku' Kikaika Shidan
+    }
+    138 = {
+      "第%d機械化師団 『不動』"  # %d 'Fudo' Kikaika Shidan
+    }
+    139 = {
+      "第%d機械化師団 『不屈』"  # %d 'Fukutsu' Kikaika Shidan
+    }
+    140 = {
+      "第%d機械化師団 『護東』"  # %d 'Koto' Kikaika Shidan
+    }
+    142 = {
+      "第%d機械化師団 『護仙』"  # %d 'Kosen' Kikaika Shidan
+    }
+    143 = {
+      "第%d機械化師団 『護古』"  # %d 'Kogo' Kikaika Shidan
+    }
+    144 = {
+      "第%d機械化師団 『護阪』"  # %d 'Kosaka' Kikaika Shidan
+    }
+    145 = {
+      "第%d機械化師団 『護州』"  # %d 'Koshu' Kikaika Shidan
+    }
+    146 = {
+      "第%d機械化師団 『護南』"  # %d 'Konan' Kikaika Shidan
+    }
+    147 = {
+      "第%d機械化師団 『護北』"  # %d 'Koho' Kikaika Shidan
+    }
+    148 = {
+      "第%d機械化師団 『富嶽』"  # %d 'Fugaku' Kikaika Shidan
+    }
+    149 = {
+      "第%d機械化師団 『不撓』"  # %d 'Fugyo' Kikaika Shidan
+    }
+    150 = {
+      "第%d機械化師団 『護朝』"  # %d 'Gocho' Kikaika Shidan
+    }
+    151 = {
+      "第%d機械化師団 『護宇』"  # %d 'Gou' Kikaika Shidan
+    }
+    152 = {
+      "第%d機械化師団 『護沢』"  # %d 'Gozawa' Kikaika Shidan
+    }
+    153 = {
+      "第%d機械化師団 『護京』"  # %d 'Gokyo' Kikaika Shidan
+    }
+    154 = {
+      "第%d機械化師団 『護路』"  # %d 'Goji' Kikaika Shidan
+    }
+    155 = {
+      "第%d機械化師団 『護土』"  # %d 'Godo' Kikaika Shidan
+    }
+    156 = {
+      "第%d機械化師団 『護西』"  # %d 'Gosai' Kikaika Shidan
+    }
+    157 = {
+      "第%d機械化師団 『護弘』"  # %d 'Gogu' Kikaika Shidan
+    }
+    158 = {
+      "第%d機械化師団 『不滅』"  # %d 'Fumetsu' Kikaika Shidan
+    }
+    160 = {
+      "第%d機械化師団 『護鮮』"  # %d 'Gosen' Kikaika Shidan
+    }
+    161 = {
+      "第%d機械化師団 『震天』"  # %d 'Shinten' Kikaika Shidan
+    }
+    201 = {
+      "第%d機械化師団 『武蔵』"  # %d 'Musashi' Kikaika Shidan
+    }
+    202 = {
+      "第%d機械化師団 『青葉』"  # %d 'Aoba' Kikaika Shidan
+    }
+    205 = {
+      "第%d機械化師団 『安芸』"  # %d 'Aki' Kikaika Shidan
+    }
+    206 = {
+      "第%d機械化師団 『阿蘇』"  # %d 'Aso' Kikaika Shidan
+    }
+    209 = {
+      "第%d機械化師団 『加越』"  # %d 'Kaetsu' Kikaika Shidan
+    }
+    212 = {
+      "第%d機械化師団 『菊池』"  # %d 'Kikuchi' Kikaika Shidan
+    }
+    214 = {
+      "第%d機械化師団 『常盤』"  # %d 'Hitachi' Kikaika Shidan
+    }
+    216 = {
+      "第%d機械化師団 『比叡』"  # %d 'Hiei' Kikaika Shidan
+    }
+    221 = {
+      "第%d機械化師団 『天龍』"  # %d 'Tenryū' Kikaika Shidan
+    }
+    222 = {
+      "第%d機械化師団 『八甲』"  # %d 'Towada' Kikaika Shidan
+    }
+    224 = {
+      "第%d機械化師団 『赤穂』"  # %d 'Ako' Kikaika Shidan
+    }
+    225 = {
+      "第%d機械化師団 『金剛』"  # %d 'Kongo' Kikaika Shidan
+    }
+    229 = {
+      "第%d機械化師団 『北越』"  # %d 'Hokuetsu' Kikaika Shidan
+    }
+    230 = {
+      "第%d機械化師団 『総武』"  # %d 'Sobu' Kikaika Shidan
+    }
+    231 = {
+      "第%d機械化師団 『大国』"  # %d 'Taikoku' Kikaika Shidan
+    }
+    234 = {
+      "第%d機械化師団 『利根』"  # %d 'Tone' Kikaika Shidan
+    }
+    303 = {
+      "第%d機械化師団 『高師』"  # %d 'Takashi' Kikaika Shidan
+    }
+    308 = {
+      "第%d機械化師団 『岩木』"  # %d 'Iwaki' Kikaika Shidan
+    }
+    312 = {
+      "第%d機械化師団 『千歳』"  # %d 'Chitose' Kikaika Shidan
+    }
+    316 = {
+      "第%d機械化師団 『山城』"  # %d 'Yamajiro' Kikaika Shidan
+    }
+    320 = {
+      "第%d機械化師団 『宣武』"  # %d 'Senbu' Kikaika Shidan
+    }
+  }
+}
+JAP_ARM_01 = {
+  name = "戦車師団"  # Armored Division
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "light_armor"
+    "medium_armor"
+    "heavy_armor"
+    "modern_armor"
+  }
+  fallback_name = "第%d戦車師団"  # Sensha Dai-%d Shidan
+  ordered = {
+    1 = {
+      "第%d戦車師団 『拓』"  # Sensha Dai-%d 'Taku' Shidan
+    }
+    2 = {
+      "第%d戦車師団 『撃』"  # Sensha Dai-%d 'Geki' Shidan
+    }
+    3 = {
+      "第%d戦車師団 『瀧』"  # Sensha Dai-%d 'Taki' Shidan
+    }
+    4 = {
+      "第%d戦車師団 『鋼』"  # Sensha Dai-%d 'Hagane' Shidan
+    }
+    5 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    6 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    7 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    8 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    9 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    10 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    11 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    12 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    13 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    14 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    15 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    16 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    17 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    18 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    19 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    20 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    21 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    22 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    23 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    24 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    25 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    26 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    27 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    28 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    29 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+    30 = {
+      "第%d戦車師団"  # Sensha Dai-%d Shidan
+    }
+  }
+}
+JAP_PAR_01 = {
+  name = "空挺師団"  # Paratrooper Division
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "paratrooper"
+  }
+  fallback_name = "第%d空挺師団"  # %d Kutei Shidan
+  ordered = {
+    1 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    2 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    3 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    4 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    5 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    6 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    7 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    8 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    9 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    10 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    11 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    12 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    13 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    14 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    15 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    16 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    17 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    18 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    19 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+    20 = {
+      "第%d空挺師団"  # %d Kutei Shidan
+    }
+  }
+}
+JAP_MAR_01 = {
+  name = "海兵師団"  # Marine Division
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "marine"
+  }
+  fallback_name = "第%d陸戦隊"  # %d Rikusentai
+  ordered = {
+    21 = {
+      "佐世保陸戦隊"  # Sasebo Rikusentai
+    }
+    22 = {
+      "舞鶴陸戦隊"  # Maizaru Rikusentai
+    }
+    23 = {
+      "横須賀陸戦隊"  # Yokohama Rikusentai
+    }
+    24 = {
+      "呉陸戦隊"  # Kure Rikusentai
+    }
+    1 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    2 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    3 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    4 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    5 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    6 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    7 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    8 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    9 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    10 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    11 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    12 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    13 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    14 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    15 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    16 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    17 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    18 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    19 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+    20 = {
+      "第%d陸戦隊"  # %d Rikusentai
+    }
+  }
+}
+JAP_MNT_01 = {
+  name = "山岳師団"  # Mountain Division
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "mountaineers"
+  }
+  fallback_name = "第%d山岳師団"  # %d Mountain Division
+  ordered = {
+    6 = {
+      "第%d山岳師団 『熊本』"  # %d 'Kumamoto' Sangaku Shidan
+    }
+    7 = {
+      "第%d山岳師団 『旭川』"  # %d 'Asahigawa' Sangaku Shidan
+    }
+    9 = {
+      "第%d山岳師団 『金沢』"  # %d 'Kanazawa' Sangaku Shidan
+    }
+    11 = {
+      "第%d山岳師団 『善通寺』"  # %d 'Zentsuji' Sangaku Shidan
+    }
+    15 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    16 = {
+      "第%d山岳師団 『京都』"  # %d 'Kyoto' Sangaku Shidan
+    }
+    17 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    21 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    22 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    27 = {
+      "第%d山岳師団 『中国』"  # %d 'Chaina' Sangaku Shidan
+    }
+    29 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    32 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    33 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    34 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    35 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    36 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    37 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    38 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    39 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    40 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    41 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    52 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+    104 = {
+      "第%d山岳師団"  # %d Sangaku Shidan
+    }
+  }
+}
+JAP_GAR_01 = {
+  name = "独立守備隊"  # Garrison Units
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "infantry"
+  }
+  fallback_name = "第%d警備隊"  # %d Tokubetsu Keibitai
+  ordered = {
+    68 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    69 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    70 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    71 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    31 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    61 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    30 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    46 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    47 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    62 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    63 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    64 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    65 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    49 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    72 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    77 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    81 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    86 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    91 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    100 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    102 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    103 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    66 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    73 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    84 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    93 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    105 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    107 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    108 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    109 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    111 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    112 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    115 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    117 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    114 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    94 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    118 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    119 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    120 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    96 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+    167 = {
+      "第%d警備隊"  # %d Tokubetsu Keibitai
+    }
+  }
+}
+JAP_IMB_01 = {
+  name = "独立混成旅団"  # Mixed Brigade
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "infantry"
+  }
+  fallback_name = "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+  ordered = {
+    1 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    11 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    201 = {
+      "樺太独立混成旅団"  # Karafuto Dokuritsu Konsei Ryodan
+    }
+    202 = {
+      "近衛独立混成旅団"  # Konoe Dokuritsu Konsei Ryodan
+    }
+    12 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    15 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    18 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    203 = {
+      "近衛第2独立混成旅団"  # 2 Konoe Dokuritsu Konsei Ryodan
+    }
+    5 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    3 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    6 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    7 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    8 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    9 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    10 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    204 = {
+      "台湾独立混成旅団"  # Taiwan Dokuritsu Konsei Ryodan
+    }
+    13 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    17 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    19 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    21 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    22 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    14 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    16 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    20 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    65 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    4 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    29 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    30 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    32 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    2 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    24 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    25 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    26 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    27 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    28 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    34 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    31 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    33 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    35 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    36 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    37 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    38 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    39 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    40 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    43 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    46 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    47 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    48 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    49 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    50 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    51 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    52 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    53 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    54 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    55 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    56 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    57 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    58 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    61 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    62 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    64 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    68 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    70 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    71 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    72 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    73 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    75 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    77 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    89 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    91 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    23 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    44 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    45 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    59 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    60 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    66 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    67 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    69 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    76 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    78 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    79 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    80 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    81 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    82 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    83 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    84 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    85 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    86 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    87 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    88 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    90 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    92 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    95 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    96 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    97 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    98 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    100 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    101 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    102 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    103 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    105 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    107 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    108 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    109 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    112 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    113 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    114 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    115 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    116 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    117 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    118 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    119 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    120 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    121 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    122 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    123 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    124 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    125 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    126 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    127 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    128 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    129 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    130 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    131 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    132 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    133 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    134 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    135 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+    136 = {
+      "第%d独立混成旅団"  # %d Dokuritsu Konsei Ryodan
+    }
+  }
+}
+JAP_MIL_01 = {
+  name = "民兵部隊"  # Militia Units
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "infantry"
+  }
+  fallback_name = "第%d民兵"  # %d Minpei
+  ordered = {
+    1 = {
+      "第%d東京民兵"  # %d Tokyo Minpei
+    }
+    2 = {
+      "第%d大阪民兵"  # %d Osaka Minpei
+    }
+    3 = {
+      "第%d広島民兵"  # %d Hiroshima Minpei
+    }
+    4 = {
+      "第%d仙台民兵"  # %d Sendai Minpei
+    }
+    5 = {
+      "第%d札幌民兵"  # %d Sapporo Minpei
+    }
+    6 = {
+      "第%d函館民兵"  # %d Hakodate Minpei
+    }
+    7 = {
+      "第%d横浜民兵"  # %d Yokohama Minpei
+    }
+    8 = {
+      "第%d長野民兵"  # %d Nagano Minpei
+    }
+    9 = {
+      "第%d名古屋民兵"  # %d Nagoya Minpei
+    }
+    10 = {
+      "第%d岡山民兵"  # %d Okayama Minpei
+    }
+  }
+}
+JAP_MIL_02 = {
+  name = "民兵部隊"  # Militia Units
+  for_countries = {
+    JAP
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "infantry"
+  }
+  fallback_name = "第%d山村工作隊"  # %d Sanson Kōsakutai
+  ordered = {
+    1 = {
+      "第%d野坂山村工作隊"  # %d Nosaka Sanson Kōsakutai
+    }
+    2 = {
+      "第%d徳田山村工作隊"  # %d Tokuda Sanson Kōsakutai
+    }
+  }
+}

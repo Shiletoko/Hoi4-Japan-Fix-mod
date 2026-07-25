@@ -1,0 +1,395 @@
+
+
+###################################################################################
+
+ ## #  # ###  #   #  ##  ###  ### #  # ###     ###  ###   ##   ### ###  ##  ###  ## 
+#   #  # #  # ## ## #  # #  #  #  ## # #       #  # #  # #  #    # #   #  #  #  #   
+ #  #  # ###  # # # #### ###   #  # ## ##      ###  ###  #  #    # ##  #     #   #  
+  # #  # #  # #   # #  # #  #  #  #  # #       #    #  # #  # #  # #   #  #  #    # 
+##   ##  ###  #   # #  # #  # ### #  # ###     #    #  #  ##   ##  ###  ##   #  ##  
+
+###################################################################################
+
+
+#Super Heavy Battleship
+sp_naval_improved_super_heavy_battleship = {
+	specialization = specialization_naval
+
+	project_tags = sp_tag_surface_ship
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0 
+			AND = {
+				ROOT = { is_major = no } # Pointless unless we are big enough to do this
+				ROOT = { has_government = democratic }# Don't spend the tax payers' money on this, then they won't vote for you again
+			}
+		}
+		modifier = {
+			factor = 0.3 
+			AND = {
+				ROOT = { is_major = no } # Pointless unless we are big enough to do this
+			}
+		}
+		modifier = {
+			factor = 5
+			ROOT = { 
+				original_tag = JAP
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+		}
+	}
+
+	allowed = {
+		original_tag = JAP
+	}
+
+	available = {
+		FROM = {
+			if = {
+				limit = { 
+					has_dlc = "Man the Guns"
+				}
+				has_tech = early_ship_hull_heavy
+				is_special_project_completed = sp:sp_naval_super_heavy_battleship
+			}
+			else = {
+				has_tech = early_battleship
+				is_special_project_completed = sp:sp_naval_super_heavy_battleship
+			}
+		}
+	}
+
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+	
+
+	resource_cost = {
+		resources = { 
+			steel = 18
+			chromium = 6
+			tungsten = 6
+		 }
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	project_output = {
+		country_effects = {
+			if = {
+				limit = {
+				NOT = {has_dlc = "Man the Guns"}
+			}
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = heavy_battleship2
+				}
+										
+			}
+			else = {			
+				add_design_template_bonus = {
+					name = sp_naval_super_heavy_battleship_free_design
+					uses = 1
+					cost_factor = 1
+					equipment = ship_hull_super_heavy_1
+				}
+			}
+		}
+
+		enable_equipments = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			ship_hull_super_heavy_2
+		}
+		enable_equipments = {
+			limit = {
+				not = {has_dlc = "Man the Guns"}
+			}
+			SH_battleship_2
+		}
+
+		enable_equipment_modules = {	
+			limit = { has_dlc = "Man the Guns" } 		
+			ship_super_heavy_battery_2
+		}
+		enable_equipment_modules = {	
+			limit = { has_dlc = "Man the Guns" } 		
+			heavy_ship_engine_5
+		}
+		enable_equipment_modules = {	
+			limit = { has_dlc = "Man the Guns" } 		
+			ship_armor_shbb_2
+		}
+		enable_subunits = { 
+			
+		}
+
+		
+	}
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+		sp_naval_generic_reward_armor_tech_1
+		sp_naval_generic_reward_armor_tech_2
+		sp_naval_generic_reward_armor_tech_3
+		sp_naval_generic_reward_artillery_tech_1
+		sp_naval_generic_reward_artillery_tech_2
+		sp_naval_generic_reward_artillery_tech_3				
+	}
+
+	unique_prototype_rewards = {
+		sp_naval_super_heavy_battleship_unique_reward_a = {
+			fire_only_once = yes
+
+			threshold = { 
+				min = 10
+				max = 50
+			}
+
+			weight = {
+				base = 100
+			}
+
+			option = {
+				token = sp_naval_super_heavy_battleship_preference_a_a
+				
+				iteration_output = {
+					country_effects = {
+						if = {
+							limit = { has_dlc = "Man the Guns"}							
+						
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_heavy_attack
+								bonus = {
+									ship_hull_super_heavy_1 = {
+										naval_heavy_gun_hit_chance_factor = 0.15
+										hg_attack = 0.15
+										hg_armor_piercing = 0.1										
+									}
+								}
+							}
+						}
+						else = {
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_heavy_attack
+								bonus = {
+									SH_battleship_1 = {
+										naval_heavy_gun_hit_chance_factor = 0.15
+										hg_attack = 0.15
+										hg_armor_piercing = 0.1										
+									}
+								}
+							}						
+						}
+					}
+
+				}
+			}
+
+			option = {
+				token = sp_naval_super_heavy_battleship_preference_b_a
+				default = yes
+				iteration_output = {
+					country_effects = {
+						if = {
+							limit = { has_dlc = "Man the Guns"}							
+						
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_speed
+								bonus = {
+									ship_hull_super_heavy_1 = {
+										naval_speed = 0.1
+										surface_detection = 0.15
+										surface_visibility = -0.05									
+									}
+								}
+							}
+						}
+						else = {
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_speed
+								bonus = {
+									SH_battleship_1 = {
+										naval_speed = 0.1
+										surface_detection = 0.15
+										surface_visibility = -0.05									
+									}
+								}
+							}						
+						}
+					}					 
+				}
+			}
+			
+			option = {
+				token = sp_naval_super_heavy_battleship_preference_c_a
+				
+				iteration_output = {
+					country_effects = {
+						if = {
+							limit = { has_dlc = "Man the Guns"}							
+						
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_light_attack
+								bonus = {
+									ship_hull_super_heavy_1 = {
+										naval_light_gun_hit_chance_factor = 0.1
+										lg_attack = 0.1
+										lg_armor_piercing = 0.1								
+									}
+								}
+							}
+						}
+						else = {
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_light_attack
+								bonus = {
+									SH_battleship_1 = {
+										naval_light_gun_hit_chance_factor = 0.1
+										lg_attack = 0.1
+										lg_armor_piercing = 0.1								
+									}
+								}
+							}						
+						}
+					}					 
+				}
+			}
+
+		}
+
+		sp_naval_super_heavy_battleship_unique_reward_b = {
+			fire_only_once = yes
+
+			threshold = { 
+				min = 55
+				max = 95
+			}
+
+			weight = {
+				base = 100
+			}
+
+			option = {
+				token = sp_naval_super_heavy_battleship_preference_a_b
+				
+				iteration_output = {
+					country_effects = {
+						if = {
+							limit = { has_dlc = "Man the Guns"}							
+						
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_armor
+								bonus = {
+									ship_hull_super_heavy_1 = {
+										armor_value = 0.1
+										max_strength = 0.1 							
+									}
+								}
+							}
+						}
+						else = {
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_armor
+								bonus = {
+									SH_battleship_1 = {
+										armor_value = 0.1
+										max_strength = 0.1 						
+									}
+								}
+							}						
+						}
+					}
+
+				}
+			}
+
+			option = {
+				token = sp_naval_super_heavy_battleship_preference_b_b
+				
+				iteration_output = {
+					country_effects = {
+						if = {
+							limit = { has_dlc = "Man the Guns"}							
+						
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_anti_air
+								bonus = {
+									ship_hull_super_heavy_1 = {
+										anti_air_attack = 0.25
+										reliability = 0.05							
+									}
+								}
+							}
+						}
+						else = {
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_anti_air
+								bonus = {
+									SH_battleship_1 = {
+										anti_air_attack = 0.25
+										reliability = 0.05						
+									}
+								}
+							}						
+						}
+					}
+				}
+			}
+			
+			option = {
+				token = sp_naval_super_heavy_battleship_preference_c_b
+				
+				iteration_output = {
+					country_effects = {
+						if = {
+							limit = { has_dlc = "Man the Guns"}							
+						
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_anti_torpedo
+								bonus = {
+									ship_hull_super_heavy_1 = {
+										naval_torpedo_enemy_critical_chance_factor = 0.15
+										naval_torpedo_damage_reduction_factor = 0.15							
+									}
+								}
+							}
+						}
+						else = {
+							add_equipment_bonus = {
+								name = sp_super_heavy_battleship_eq_bonus_anti_torpedo
+								bonus = {
+									SH_battleship_1 = {
+										naval_torpedo_enemy_critical_chance_factor = 0.15
+										naval_torpedo_damage_reduction_factor = 0.15					
+									}
+								}
+							}						
+						}
+					}
+				}
+			}
+
+		}
+
+	}	
+	
+
+}
+

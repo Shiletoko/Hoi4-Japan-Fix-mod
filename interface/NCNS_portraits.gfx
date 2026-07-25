@@ -1,0 +1,15 @@
+spriteTypes = {
+
+	# テンプレ
+	# 国家元首や将軍で使う画像
+	#spriteType = {
+	#	name = "GFX_portrait_JAP_(人物名)"
+	#	texturefile = "gfx/leaders/JAP/(ファイル名).png"
+	#}
+	# 政治顧問で使う画像
+	#spriteType = {
+	#	name = "GFX_portrait_JAP_(人物名)_civilian_small"
+	#	texturefile = "gfx/interface/advisors/JAP/(ファイル名).png"
+	#}
+
+}
