@@ -1,0 +1,82 @@
+
+leader_traits = {
+	ima_kampaku = {
+		random = no
+		
+		stability_factor = 0.1
+		political_power_factor = 0.15
+		ai_will_do = { factor = 2 }
+	}
+	soutou_konoe = {
+		random = no
+		
+		stability_factor = 0.25
+		political_power_factor = 0.25
+		ai_will_do = { factor = 2 }
+	}
+	################################################################
+	Science_and_Technology_Group = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Public_Railway_organization = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	private_construction_company = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	special_bank = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	National_policy_company = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Coast_defense_ships = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mio_submarine_designer = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mio_heavy_cruiser_designer = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mio_Battleship_Designer = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

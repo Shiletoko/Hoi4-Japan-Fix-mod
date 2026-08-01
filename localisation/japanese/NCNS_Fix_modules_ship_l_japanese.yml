@@ -1,0 +1,21 @@
+﻿l_japanese:
+ EQ_MOD_CAT_ship_super_heavy_battery_2_TITLE: "改良型超大型砲"
+ sp_naval_improved_super_heavy_battleship: "改良型超大型戦艦"
+ JAP_sp_naval_improved_super_heavy_battleship: "改大和型戦艦"
+ sp_naval_improved_super_heavy_battleship_desc: "我々は今までの常識を覆すような戦艦を開発した。しかし、敵国の強大な海軍に対抗する為にはまだまだ改良できるところは多くある。"
+ ship_hull_super_heavy_2: "改良型超大型戦艦"
+ 
+ heavy_ship_engine_5: "艦本式タービン 166,000馬力"
+ heavy_ship_engine_5_short: "大型エンジン V"
+ heavy_ship_engine_5_desc: "近代的な戦艦が空母や巡洋艦と共に行動することができるエンジンのために、新素材の開発とボイラー設計の改良を行う。"
+ JAP_heavy_ship_engine_5: "艦本式タービン 166,000馬力"
+ 
+ ship_armor_shbb_2: "舷側 400mm/甲板 190mm"
+ ship_armor_shbb_2_short: "改良型超重装甲"
+ ship_armor_shbb_2_desc: "まさしく装甲案の決定版である。この装甲はありとあらゆる既知の主砲を打ち負かすことを意図しており、今日の世界にてありとあらゆる戦艦と交戦し撃沈させることを可能としている。"
+ JAP_ship_armor_shbb_2: "舷側 400mm/甲板 190mm"
+ 
+ ship_super_heavy_battery_2: "45口径51cm連装砲"
+ ship_super_heavy_battery_2_short: "改良型超大型砲"
+ ship_super_heavy_battery_2_desc: "艦載された中で最も巨大であるこの艦砲はどんな距離でも装甲を貫通するよう設計された。"
+ JAP_ship_super_heavy_battery_2: "45口径51cm連装砲"

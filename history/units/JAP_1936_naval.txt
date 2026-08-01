@@ -1,0 +1,752 @@
+﻿
+
+
+##### OOB #####
+units = {
+### IJN ###
+	#Yokosuka (Tokyo)
+	fleet = {
+		name = "第一艦隊"			
+		naval_base = 9998  #Yokosuka
+		task_force = {
+			name = "第一艦隊"
+			location = 9998  #Yokosuka
+			#Dai 1 Sentai
+			ship = { name = "長門"  pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "長門型" } } }
+			ship = { name = "榛名" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "金剛型"} } }
+			ship = { name = "扶桑" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "扶桑/伊勢型"} } }
+			ship = { name = "山城" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "扶桑/伊勢型"} } }
+			#Dai 8 Sentai
+			ship = { name = "川内" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "川内型"} } }
+			ship = { name = "神通" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "川内型"} } }
+			ship = { name = "長良" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型"} } }
+		}
+		task_force = {
+			name = "第一水雷戦隊" #A part of "Dai 1 Kantai"
+			location = 9998  #Yokosuka
+			#Flagship
+			ship = { name = "阿武隈" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型"} } }
+			#Dai 9 Kuchikutai
+			ship = { name = "有明" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "初春型"} } }
+			ship = { name = "夕暮" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "初春型"} } }
+			#Dai 21 Kuchikutai
+			ship = { name = "初春" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "初春型"} } }
+			ship = { name = "子日" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "初春型"} } }	
+			ship = { name = "若葉" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "初春型"} } }		
+			ship = { name = "初霜" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "初春型"} } }
+			#Dai 30 Kuchikutai
+			ship = { name = "睦月" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "如月" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "弥生" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "卯月" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+		}
+		task_force = {
+			name = "第一潜水戦隊" # A part of "Dai 1 Kantai"
+			location = 9998  #Yokosuka
+			#Kaidai-class Submarines
+			ship = { name = "伊51" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+			ship = { name = "伊152" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }		
+			ship = { name = "伊153" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }			
+			ship = { name = "伊154" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }	
+			ship = { name = "伊155" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }	
+			ship = { name = "伊156" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+			ship = { name = "伊157" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }	
+			ship = { name = "伊158" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+			ship = { name = "伊159" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+			ship = { name = "伊60" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+			ship = { name = "伊61" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+			ship = { name = "伊162" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }	
+			ship = { name = "伊63" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }	
+			ship = { name = "伊164" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+			ship = { name = "伊165" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }	
+			ship = { name = "伊166" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }	
+			ship = { name = "伊67" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+			ship = { name = "伊168" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+			ship = { name = "伊169" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+			ship = { name = "伊70" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+			ship = { name = "伊171" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }
+		}
+		task_force = {
+			name = "第一航空戦隊" # A part of "Dai 1 Kantai"
+			location = 9998  #Yokosuka
+			ship = { name = "龍驤" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = JAP version_name = "龍驤型" } }				
+				
+			}
+			#Dai 5 Kuchikutai
+			ship = { name = "朝風" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "春風" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "松風" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "旗風" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+		}
+		task_force = {
+			name = "横須賀予備隊" # Patrol and reserve fleet, including ships under modernization
+			location = 9998  #Yokosuka
+			ship = { name = "陸奥" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "長門型" } } }
+			ship = { name = "高雄" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "高雄型"} } }
+			ship = { name = "鳥海" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "高雄型"} } }
+			ship = { name = "摩耶" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "高雄型"} } }
+			ship = { name = "五十鈴" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型"} } }
+			ship = { name = "木曾" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型"} } }
+			# Dai 3 Kuchikutai
+			ship = { name = "汐風" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "夕風" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "太刀風" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "帆風" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			# Dai 10 Kuchikutai
+			ship = { name = "夕霧" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }	
+			ship = { name = "狭霧" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }		
+		}
+	}
+	
+	#Sasebo (Nagasaki)
+	fleet = {
+		name = "第二艦隊"			
+		naval_base = 9950  #Sasebo
+		task_force = {	
+			name = "第二艦隊"
+			location = 9950  #Sasebo
+			#Dai 5 Sentai
+			ship = { name = "羽黒" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "妙高型"} } }	
+			ship = { name = "那智" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "妙高型"} } }
+			ship = { name = "妙高" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "妙高型"} } }
+			ship = { name = "足柄" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "妙高型"} } }
+			ship = { name = "愛宕" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "高雄型"} } }
+			#Dai 7 Sentai
+			ship = { name = "青葉" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "古鷹/青葉型"} } }
+			ship = { name = "衣笠" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "古鷹/青葉型"} } }
+			# Dai 2 Koku Sentai
+			ship = { name = "加賀" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "加賀型"} }			
+				
+			}
+		}
+		task_force = {	
+			name = "第二水雷戦隊" #A part of "Dai 2 Kantai"
+			location = 9950  #Sasebo
+			#Flagship
+			ship = { name = "那珂" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "川内型"} } }
+			#Dai 6 Kuchikutai, Type III Fubuki-class destroyers
+			ship = { name = "暁" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }
+			ship = { name = "響" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }		
+			ship = { name = "雷" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }	
+			ship = { name = "電" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }		
+			#Dai 8 Kuchikutai
+			ship = { name = "天霧" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }			
+			ship = { name = "朝霧" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }	
+			#Dai 19 Kuchikutai
+			ship = { name = "浦波" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }	
+			ship = { name = "綾波" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }	
+			ship = { name = "敷波" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }
+			#Dai 20 Kuchikutai
+			ship = { name = "吹雪" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }		
+			ship = { name = "東雲" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }
+			ship = { name = "磯波" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }
+			#Dai 28 Kuchikutai
+			ship = { name = "朝凪" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "夕凪" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+		}
+		task_force = {	
+			name = "第二潜水戦隊" #A part of "Dai 2 Kantai"
+			location = 9950  #Sasebo
+			#Flagship
+			ship = { name = "鬼怒" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型"} } }	
+			#Junsen-class Submarines
+			ship = { name = "伊1" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }	
+			ship = { name = "伊2" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }		
+			ship = { name = "伊3" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }	
+			ship = { name = "伊4" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }		
+			ship = { name = "伊5" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }	
+			ship = { name = "伊6" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "海大三型"} } }	
+		}
+		task_force = {
+			name = "第三潜水戦隊"
+			location = 9950 #Sasebo
+			ship = { name = "伊121" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "機雷潜型"} } }	
+			ship = { name = "伊122" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "機雷潜型"} } }		
+			ship = { name = "伊123" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "機雷潜型"} } }	
+			ship = { name = "伊124" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_2 = {amount = 1 owner = JAP version_name = "機雷潜型"} } }
+		}
+		task_force = {
+			name = "佐世保予備隊" # Patrol and reserve fleet, including ships under modernization
+			location = 9950  #Sasebo
+			ship = { name = "金剛" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "金剛型"} } }
+			ship = { name = "霧島" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "金剛型"} } }
+			ship = { name = "赤城" definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "赤城型"} }				
+			
+			}	
+			ship = { name = "鳳翔" definition = carrier equipment = { ship_hull_carrier_conversion_ca = {amount = 1 owner = JAP version_name = "鳳翔型"} }				
+				
+			}
+			ship = { name = "名取" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型"} } }
+			ship = { name = "由良" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型"} } }
+			ship = { name = "北上" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型"} } }
+			ship = { name = "龍田" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "天龍型"} } }
+			#Dai 22 Kuchikutai
+			ship = { name = "皐月" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "水無月" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "文月" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "長月" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			# Dai 23 Kuchikutai 
+			ship = { name = "菊月" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "三日月" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "望月" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "夕月" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+		}
+	}
+	
+	#Taiwan (Goaxing)
+	fleet = {
+		name = "第三艦隊"			
+		naval_base = 12068	# Taiwan
+		task_force = {
+			name = "第三艦隊" #Later assigned for the Chinese theater
+			location = 12068	# Taiwan
+			#Dai 10 Sentai
+			ship = { name = "出雲" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = JAP version_name = "出雲型"} } }
+			ship = { name = "球磨" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型" } } }
+			#Dai 11 Sentai, Momi-class destroyers
+			#Dai 25 Kuchikutai
+			ship = { name = "榧" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "梨" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "竹" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			#Dai 26 Kuchikutai
+			ship = { name = "楡" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "栗" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "柿" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "栂" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			#Dai 27 Kuchikutai
+			ship = { name = "葦" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "菱" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "菫" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			#Former Dai 28 Kuchikutai
+			ship = { name = "蓮" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "蓬" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "蓼" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			#Other Momi-Class destroyers
+			ship = { name = "菊" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "葵" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "萩" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "藤" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "薄" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "蔦" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			#Minelayers
+			ship = { name = "八重山" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "測天型"} } }
+			ship = { name = "白鷹" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "測天型"} } }
+			ship = { name = "厳島" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "測天型"} } }
+		}
+		task_force = {
+			name = "第五水雷戦隊" #A part of "Dai 3 Kantai"
+			location = 12068	# Taiwan
+			#Flagship
+			ship = { name = "夕張" definition = light_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "夕張型"} } }
+			##Dai 13 Kuchikutai
+			ship = { name = "呉竹" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "若竹" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "早苗" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			##Dai 16 Kuchikutai
+			ship = { name = "芙蓉" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }
+			ship = { name = "刈萱" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }		
+			ship = { name = "朝顔" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "樅型"} } }		
+		}
+		task_force = {
+			name = "馬公警備戦隊"
+			location = 12068	# Taiwan
+			#Dai 4 Kuchikutai
+			ship = { name = "島風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "灘風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "秋風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "羽風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+		}
+	}
+
+	#Hiroshima (Kure)
+	fleet = {
+		name = "呉艦隊"			
+		naval_base = 1092  # Hiroshima
+		task_force = {
+			name = "呉予備艦隊" # Patrol and reserve fleet, including ships under modernization
+			location = 1092  # Hiroshima
+			ship = { name = "伊勢" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "扶桑/伊勢型"} } }		
+			ship = { name = "日向" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "扶桑/伊勢型"} } }
+			ship = { name = "最上" definition = light_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "最上型"} } }
+			ship = { name = "三隈" definition = light_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "最上型"} } }
+			ship = { name = "古鷹" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "古鷹/青葉型"} } }
+			ship = { name = "加古" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "古鷹/青葉型"} } }
+			ship = { name = "大井" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型"} } }
+			ship = { name = "天龍" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "天龍型"} } }
+			ship = { name = "多摩" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型"} } } # at Maizuru
+			# Dai 11 Kuchikutai
+			ship = { name = "白雪" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }
+			ship = { name = "初雪" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }
+			# Dai 12 Kuchikutai
+			ship = { name = "叢雲" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }		
+			ship = { name = "薄雲" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }	
+			ship = { name = "白雲" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }
+			# Dai 7 Kuchikutai
+			ship = { name = "朧" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }	
+			ship = { name = "曙" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }	
+			ship = { name = "漣" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }
+			ship = { name = "潮" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "吹雪型"} } }
+		}
+		task_force = {
+			name = "第三潜水艦隊"
+			location = 1092  # Hiroshima
+			#Kaichū-class Submarines
+			ship = { name = "呂26" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂27" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂28" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂30" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂31" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂32" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂33" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			#Type L-class Submarines
+			ship = { name = "呂51" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂56" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂57" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂58" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂59" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂60" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂61" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂62" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂63" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂64" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂65" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂66" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂67" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }
+			ship = { name = "呂68" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "海中四型"} } }	
+		}
+	}
+
+	# Naval District Forces #
+	fleet = {
+		name = "海軍予備艦隊"
+		naval_base = 9859  #Ominato
+		#Ominato
+		task_force = {
+			name = "大湊警備戦隊"
+			location = 9859  #Ominato
+			#Dai 1 Kuchikutai
+			ship = { name = "神風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "峯風型"} } }
+			ship = { name = "野風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "峯風型"} } }
+			ship = { name = "波風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "峯風型"} } }
+			ship = { name = "沼風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "峯風型"} } }	
+		}
+		#Pusan
+		task_force = {
+			name = "防護巡洋艦艦隊"
+			location = 4056  # Pusan
+			#Mutsuki-class destroyers
+			ship = { name = "磐手" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = JAP version_name = "出雲型"} } }
+			ship = { name = "平戸" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "筑摩型"} } }
+			ship = { name = "矢矧" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "筑摩型"} } }	
+		}
+	}
+	
+	### Pacific Forces ###
+	fleet = {
+		name = "太平洋艦隊"			
+		naval_base = 2489  # Truk
+		#Truk
+		task_force = {
+			name = "南方輸送船団"
+			location = 2489  # Truk
+			ship = { name = "追風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "疾風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "夕顔" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			#Former Dai 2 Kuchikutai
+			ship = { name = "峯風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "峯風型"} } }
+			ship = { name = "沢風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "峯風型"} } }
+			ship = { name = "沖風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+			ship = { name = "矢風" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "睦月型"} } }
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	
+### Ongoing Naval Production Jan 1 1936 ###
+
+		# BB (x1): "Hiei"
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_heavy_1
+				creator = "JAP"
+				version_name = "金剛型"
+			}
+			requested_factories = 5
+			progress = 0.2
+			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
+		}
+		# CV (x1): "蒼龍"
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_carrier_1
+				creator = "JAP" 
+				version_name = "蒼龍型"
+			}
+			requested_factories = 5
+			progress = 0.66
+			amount = 2
+			industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
+		}
+		#add_equipment_production = {				
+		#	equipment = {
+		#		type = ship_hull_carrier_conversion_ca
+		#		creator = "JAP" 
+		#		version_name = "瑞鳳型"
+		#	}
+		#	name = "瑞鳳"
+		#	requested_factories = 5
+		#	progress = 0.15
+		#	amount = 1
+		#	industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
+		#}
+		#add_equipment_production = {				
+		#	equipment = {
+		#		type = ship_hull_carrier_conversion_ca
+		#		creator = "JAP" 
+		#		version_name = "瑞鳳型"
+		#	}
+		#	name = "祥鳳"
+		#	requested_factories = 5
+		#	progress = 0.30
+		#	amount = 1
+		#	industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
+		#}
+
+		# CA (x1): "Suzuya"
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_cruiser_2
+				creator = "JAP" 
+				version_name = "最上型"
+			}
+			requested_factories = 10
+			progress = 0.2
+			amount = 2
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		# CL(CM) (x1): "Okinoshima"
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_cruiser_1
+				creator = "JAP" 
+				version_name = "沖島型"
+			}
+			requested_factories = 10
+			progress = 0.15
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+
+		#add_equipment_production = {				
+		#	equipment = {
+		#		type = ship_hull_cruiser_2
+		#		creator = "JAP" 
+		#		version_name = "千歳/瑞穂型"
+		#	}
+		#	name = "千歳"
+		#	requested_factories = 10
+		#	progress = 0.15
+		#	amount = 1
+		#	industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		#}
+
+		#add_equipment_production = {				
+		#	equipment = {
+		#		type = ship_hull_cruiser_2
+		#		creator = "JAP" 
+		#		version_name = "千歳/瑞穂型"
+		#	}
+		#	name = "千代田"
+		#	requested_factories = 10
+		#	progress = 0.15
+		#	amount = 1
+		#	industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		#}
+
+		# 白露型
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "白露型"
+			}
+			name = "白露" 
+			requested_factories = 10
+			progress = 0.7
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "白露型"
+			}
+			name = "時雨" 
+			requested_factories = 10
+			progress = 0.6
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "白露型"
+			}
+			name = "村雨" 
+			requested_factories = 10
+			progress = 0.5
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "白露型"
+			}
+			name = "夕立" 
+			requested_factories = 10
+			progress = 0.4
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "白露型"
+			}
+			name = "海風" 
+			requested_factories = 10
+			progress = 0.3
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "白露型"
+			}
+			name = "春雨" 
+			requested_factories = 10
+			progress = 0.3
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "白露型"
+			}
+			name = "五月雨" 
+			requested_factories = 10
+			progress = 0.3
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "白露型"
+			}
+			name = "涼風" 
+			requested_factories = 10
+			progress = 0.3
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "白露型"
+			}
+			name = "山風" 
+			requested_factories = 10
+			progress = 0.3
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "白露型"
+			}
+			name = "江風" 
+			requested_factories = 10
+			progress = 0.3
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "白露型"
+			}
+			name = "涼風" 
+			requested_factories = 10
+			progress = 0.3
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		# 朝潮型
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "朝潮型"
+			}
+			name = "朝潮" 
+			requested_factories = 10
+			progress = 0.2
+			amount = 4
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "朝潮型"
+			}
+			name = "満潮" 
+			requested_factories = 10
+			progress = 0.15
+			amount = 3
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "朝潮型"
+			}
+			name = "荒潮" 
+			requested_factories = 10
+			progress = 0.15
+			amount = 3
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+
+		# 千鳥/鴻型
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_1
+				creator = "JAP" 
+				version_name = "千鳥/鴻型"
+			}
+			name = "鴻" 
+			requested_factories = 10
+			progress = 0.5
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_1
+				creator = "JAP" 
+				version_name = "千鳥/鴻型"
+			}
+			name = "鵯" 
+			requested_factories = 10
+			progress = 0.3
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_1
+				creator = "JAP" 
+				version_name = "千鳥/鴻型"
+			}
+			name = "隼" 
+			requested_factories = 10
+			progress = 0.3
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_1
+				creator = "JAP" 
+				version_name = "千鳥/鴻型"
+			}
+			name = "鵲" 
+			requested_factories = 10
+			progress = 0.3
+			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
+		}
+
+		# SS (x4): "I-72" "I-73" "I-74" "I-75"
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_submarine_2
+				creator = "JAP" 
+				version_name = "海大三型"
+			}
+			requested_factories = 10
+			progress = 0.7
+			amount = 2
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_submarine_2
+				creator = "JAP" 
+				version_name = "海大三型"
+			}
+			requested_factories = 10
+			progress = 0.6
+			amount = 2
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
+		}
+		# SS (x2): "I-7" "I-8"
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_submarine_2
+				creator = "JAP" 
+				version_name = "海大三型"
+			}
+			requested_factories = 10
+			progress = 0.7
+			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_submarine_2
+				creator = "JAP" 
+				version_name = "海大三型"
+			}
+			requested_factories = 10
+			progress = 0.6
+			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
+		}
+		# SS (x1): "Ro-34"
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_submarine_1
+				creator = "JAP" 
+				version_name = "海中四型"
+			}
+			requested_factories = 10
+			progress = 0.80
+			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
+		}
+
+	}
+}
