@@ -17,7 +17,7 @@ units = {
 			ship = { name = "扶桑" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "扶桑/伊勢型"} } }
 			ship = { name = "山城" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "扶桑/伊勢型"} } }
 			#Dai 8 Sentai
-			ship = { name = "川内" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "川内型"} } }
+			ship = { name = "川内" definition = light_cruiser officer = { name = JAP_kosaku_aruga portraits = { navy = { large = GFX_portrait_JAP_kosaku_aruga small = GFX_portrait_JAP_kosaku_aruga_small } } } start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Sendai Class"} } } #Aruga was technically executive officer, but this is closest we can get.
 			ship = { name = "神通" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "川内型"} } }
 			ship = { name = "長良" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "球磨/長良型"} } }
 		}
