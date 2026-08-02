@@ -774,6 +774,11 @@ recruit_character = JAP_kisaburi_suzuki
 recruit_character = JAP_kurita_takeo
 recruit_character = JAP_mikawa_gunichi
 
+recruit_character = JAP_tanaka_raizo
+recruit_character = JAP_kuribayashi_tadamichi
+recruit_character = JAP_ushijima_mitsuru
+recruit_character = JAP_tsunenori_kaya
+
 
 ### DLC-SPECIFIC CHARACTERS ###
 IF = {

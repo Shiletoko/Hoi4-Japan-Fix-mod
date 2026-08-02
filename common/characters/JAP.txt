@@ -2490,9 +2490,9 @@ characters = {
 
 		field_marshal = {
 			traits = { politically_connected JAP_samurai_lineage inflexible_strategist old_guard JAP_royal_lineage }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = -1
@@ -2506,6 +2506,7 @@ characters = {
 
 		portraits = {
 			army = {
+				large="gfx/leaders/JAP/portrait_Hajime_Sugiyama.png"
 				small = GFX_idea_hajime_sugiyama
 			}
 		}
@@ -2530,6 +2531,16 @@ characters = {
 					has_active_mission = JAP_army_faction_demands_military_factories
 				}
 			}
+		}
+
+		field_marshal = {
+			traits = { politically_connected JAP_samurai_lineage inflexible_strategist organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
 		}
 
 	}
@@ -6038,5 +6049,88 @@ characters = {
 			coordination_skill=1
 			legacy_id=0
 		}
+	}
+
+	JAP_tanaka_raizo={
+		name=JAP_tanaka_raizo
+		portraits={
+			army={
+				large="gfx/leaders/JAP/portrait_Raizo_Tanaka.png"
+				small="gfx/interface/ideas/Portrait_Raizo_Tanaka_small.png"
+			}
+		}
+		navy_leader={
+			traits={ fleet_protector destroyer_leader gunnery_expert craven fly_swatter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=3
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+
+
+	JAP_kuribayashi_tadamichi={
+		name=JAP_kuribayashi_tadamichi
+		portraits={
+			army={
+				large="gfx/leaders/JAP/portrait_Tadamichi_Kuribayashi.png"
+				small="gfx/interface/ideas/Portrait_Tadamichi_Kuribayashi_small.png"
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious JAP_samurai_lineage infantry_leader trait_engineer}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+			legacy_id = 0
+		}
+	}
+
+	JAP_ushijima_mitsuru={
+		name=JAP_ushijima_mitsuru
+		portraits={
+			army={
+				large="gfx/leaders/JAP/portrait_Mitsuru_Ushijima.png"
+				small="gfx/interface/ideas/Portrait_Mitsuru_Ushijima_small.png"
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist JAP_samurai_lineage organizer infantry_leader trickster }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+
+	# Prince Tsunenori Kaya
+	JAP_tsunenori_kaya = {
+		name = JAP_tsunenori_kaya
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/portrait_Kaya_Tsunenori.png"
+				small = "gfx/interface/ideas/Portrait_Kaya_Tsunenori_small.png"
+			}
+		}
+
+		corps_commander = {
+			traits = { politically_connected JAP_royal_lineage cavalry_leader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+
 	}
 }
